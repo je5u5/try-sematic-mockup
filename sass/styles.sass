@@ -1,0 +1,100 @@
+// vars
+$width: 1000px
+
+$spacer: 20px
+$primario: #008081
+$secundario: #00BFB7
+$hover-menu: #00A2A0
+
+// imports
+@import "compass/css3"
+@import "compass/reset"
+@import "compass/typography"
+//@import "font-awesome"
+//@import "icons/*.png"
+//@import "bourbon/bourbon"
+//@import "neat/neat"
+
+// utils
+// .container
+//	@include outer-container
+
+// background
+body
+	background-image: url(http://www.w3schools.com/tags/w3s.png)
+
+// header
+header
+	position: relative
+	height: 100px
+	background: white
+	margin: 100px 0 0 0
+
+	#logo
+		position: absolute
+		bottom: 0
+		height: 200px
+		width: 400px
+		background: peru
+		margin: 0 0 0 50px
+	#filtro
+		float: right
+		height: 60px
+		width: 450px
+		background: black
+		margin: -70px 20px 0 0
+	#socialmedia
+		float: right
+		height: 52px
+		width: 420px
+		background: navy
+// menu
+nav
+	width: $width
+	margin: 0 auto
+	overflow: show
+	>ul
+		clear: both
+		float: right
+		>li
+		margin: 0 30px
+		padding: 0
+
+
+
+
+
+
+	/*
+	>ul
+		margin: 0 30px
+		padding: 0
+		>li
+			position: relative
+			text-align: center
+			float: left
+			>a 
+				height: 80px
+				display: table-cell
+				vertical-align: middle
+				width: 150px
+				color: white
+				text-transform: uppercase
+			ul
+				display: none
+				position: absolute
+				background: $hover-menu
+				width: 150px
+
+				li
+					a
+						display: block
+						color: white
+						padding: 10px 0
+						&:hover
+							background: #00BFB8
+
+			&:hover
+				background: $hover-menu
+				ul
+					display: block
