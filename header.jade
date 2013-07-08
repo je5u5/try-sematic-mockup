@@ -1,19 +1,29 @@
 !!! 5
-head
-	title HEADER
-	link(href='/css/styles.css',
-		media='all',
-		rel='stylesheet',
-		type='text/css')
-body
-	header
-		nav
-			div#logo LOGO
-			div#filtro Este es el filtro
-			div#socialmedia Social Media
-			ul
-				li desarrollos
-				li corretaje
-				li somos
-				li amigos
-				li contacto
+html
+	head
+		title HEADER
+		link(href='/css/styles.css',
+			media='all',
+			rel='stylesheet',
+			type='text/css')
+	body
+		header
+			.container
+				#logo LOGO
+				#filtro
+					a.active compra
+					a renta
+					div Estos son los filtros
+			nav
+				#socialmedia Social Media
+				ul
+					li 
+						a(href='#') desarrollos
+					li
+						a(href='#') corretaje
+					li
+						a(href='#') somos
+					li
+						a(href='#') amigos
+					li
+						a(href='#') contacto

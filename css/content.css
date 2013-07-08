@@ -1,0 +1,61 @@
+/* line 6, ../sass/content.sass */
+section {
+  height: 500px;
+  width: 1000px;
+  margin: 0 auto;
+}
+/* line 11, ../sass/content.sass */
+section #galeria {
+  width: 410px;
+  height: 400px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+/* line 17, ../sass/content.sass */
+section #galeria #picture {
+  background-color: white;
+  width: 350px;
+  height: 300px;
+  margin: 20px auto 0;
+  border-radius: 7px 7px 0 0;
+}
+/* line 23, ../sass/content.sass */
+section #galeria #slider {
+  background-color: white;
+  width: 350px;
+  height: 80px;
+  margin: 0 auto;
+  border-radius: 0 0 7px 7px;
+}
+/* line 30, ../sass/content.sass */
+section article {
+  background-color: white;
+  height: 250px;
+  width: 535px;
+  border-radius: 7px;
+  display: inline-block;
+  vertical-align: bottom;
+  padding: 0 10px;
+}
+/* line 39, ../sass/content.sass */
+section article h1 {
+  font-size: 30px;
+  padding: 10px 0px 4px;
+  border-bottom: 1px solid;
+  border-bottom-style: groove;
+}
+/* line 45, ../sass/content.sass */
+section article p {
+  padding: 10px 0;
+}
+/* line 47, ../sass/content.sass */
+section article ul {
+  list-style: square inside;
+  padding: 0 0 0 12px;
+}
+/* line 51, ../sass/content.sass */
+section article ul li {
+  padding: 10px 0;
+  float: left;
+  min-width: 50%;
+}
