@@ -1,0 +1,157 @@
+// vars
+$contentwidth: 1000px
+$navheight: 100px
+
+$orange: #E57823
+
+$test: 1px solid red
+
+
+
+
+$spacer: 20px
+$primario: #008081
+$secundario: #00BFB7
+$hover-menu: #00A2A0
+
+// imports
+@import "compass/css3"
+@import "compass/reset"
+@import "compass/typography"
+//@import "font-awesome"
+//@import "icons/*.png"
+//@import "bourbon/bourbon"
+//@import "neat/neat"
+
+// utils
+// .container
+//	@include outer-container
+
+// background
+body
+	background-image: url(http://www.w3schools.com/cssref/paper.gif)
+
+// header
+header
+	height: $navheight
+	background: white
+	margin: $navheight 0 0 0
+
+	.container
+		width: $contentwidth
+		position: relative
+		margin: 0 auto
+
+		#logo
+			float: left
+			height: 150px
+			width: 150px
+			background: $orange
+			margin: 0-$navheight/2 0 0 50px
+		#filtro
+			float: right
+			margin: -70px $navheight/2 0 0
+			height: $navheight/2
+			width: 480px
+
+			>div
+				width: 100%
+				background: $orange
+				height: 60%
+				padding: 5px 6px
+				margin: 20px 0 0 0
+				box-sizing: border-box
+				border-radius: 0 7px 7px 7px
+
+				>div
+					float: left
+					width: 212px
+					height: 20px
+					background: white
+					padding: 0 3px
+					margin: 0 6px 0 0
+					line-height: 20px
+			a
+				float: left
+				height: 40%
+				width: 100px
+				color: white
+				background: black
+				padding: 0 5px
+				border-radius: 7px 7px 0 0
+
+				&:hover
+					background: #B84E00
+			.active
+				background: $orange !important
+
+
+// menu
+nav
+	height: 100%
+	width: $contentwidth
+	position: relative
+	margin: 0 auto
+
+	#socialmedia
+		float: right
+		height: $navheight/2
+		width: 580px
+	>ul
+		float: right
+		height: $navheight/2		
+
+		>li
+			color: black
+			padding: 0 18px
+			position: relative
+			text-align: center
+			float: left
+
+			>a
+				color: inherit
+				text-shadow: 0 0.2em 0.2em #AAA
+				height: $navheight/2
+				display: table-cell
+				vertical-align: middle
+				width: 80px
+				text-transform: lowercase
+				text-decoration: none
+			ul
+				display: none
+				position: absolute
+				line-height: 2em
+				margin: 0 -18px
+				width: 100%
+
+				li
+					color: black
+					background: white
+
+					a
+						text-decoration: none
+						color: inherit
+						text-shadow: 0 0.2em 0.2em #AAA
+					&:last-of-type
+						border-radius: 0 0 7px 7px
+					&:hover
+						color: $orange
+			&:hover
+				color: $orange
+
+				ul
+					display: block
+footer
+	width: $contentwidth
+	color: white
+	margin: 0 auto
+	overflow: auto
+	text-shadow: 0 0.1em 0.2em #777
+
+	div
+		margin: 20px
+
+		&:first-of-type
+			float: left
+		&:last-of-type
+			float: right
