@@ -72,7 +72,7 @@ body {
 header {
   height: 100px;
   background: white;
-  margin: 100px 0 0 0;
+  margin: 100px 0 30px 0;
 }
 /* line 40, ../sass/styles.sass */
 header .container {
@@ -207,23 +207,51 @@ nav > ul > li:hover ul {
   display: block;
 }
 
-/* line 144, ../sass/styles.sass */
+/* line 147, ../sass/styles.sass */
 footer {
   width: 1000px;
   color: white;
-  margin: 0 auto;
+  margin: 30px auto;
   overflow: auto;
   text-shadow: 0 0.1em 0.2em #777777;
+  border: 1px solid red;
 }
-/* line 151, ../sass/styles.sass */
+/* line 155, ../sass/styles.sass */
 footer div {
   margin: 20px;
 }
-/* line 154, ../sass/styles.sass */
+/* line 158, ../sass/styles.sass */
 footer div:first-of-type {
   float: left;
 }
-/* line 156, ../sass/styles.sass */
+/* line 160, ../sass/styles.sass */
 footer div:last-of-type {
   float: right;
+}
+
+/* line 164, ../sass/styles.sass */
+#listado {
+  width: 700px;
+  height: 400px;
+  margin: 0 auto;
+  border-radius: 7px;
+  border: 1px solid red;
+}
+/* line 171, ../sass/styles.sass */
+#listado h1 {
+  float: left;
+  width: 45%;
+  font-size: 40px;
+  border: 1px solid red;
+}
+/* line 176, ../sass/styles.sass */
+#listado > div {
+  float: left;
+  width: 45%;
+  border: 1px solid red;
+}
+/* line 180, ../sass/styles.sass */
+#listado article {
+  width: 90%;
+  border: 1px solid red;
 }
