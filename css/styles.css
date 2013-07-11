@@ -233,37 +233,93 @@ footer div:last-of-type {
   width: 700px;
   height: 400px;
   margin: 0 auto;
+  background: white;
   border-radius: 7px;
-  border: 1px solid red;
 }
 /* line 170, ../sass/styles.sass */
 #listado h1 {
   float: left;
-  width: 48%;
-  font-size: 40px;
+  font-size: 25px;
+  padding: 15px;
+  line-height: 20px;
   box-sizing: border-box;
-  border: 1px solid red;
 }
 /* line 176, ../sass/styles.sass */
-#listado #orden {
-  float: left;
-  width: 47%;
+#listado #ordenacion {
+  float: right;
   height: auto;
+  padding: 15px;
   box-sizing: border-box;
-  border: 1px solid red;
 }
 /* line 182, ../sass/styles.sass */
-#listado #scrollinterno {
-  float: right;
-  width: 5%;
-  height: 100%;
+#listado #ordenacion div {
+  float: left;
+  height: 20px;
+  width: 100px;
+  background: #e57823;
+  color: white;
   box-sizing: border-box;
-  border: 1px solid red;
+  padding: 2px 5px;
+  margin: 0 2px;
 }
-/* line 188, ../sass/styles.sass */
-#listado article {
+/* line 191, ../sass/styles.sass */
+#listado #scrollinterno {
+  clear: both;
+  height: 340px;
+  margin: 50px 0 0 0;
+  overflow: auto;
+}
+/* line 197, ../sass/styles.sass */
+#listado #scrollinterno article {
   clear: left;
-  width: 95%;
+  margin: 0 15px;
+  padding: 15px;
   box-sizing: border-box;
-  border: 1px solid red;
+  border-bottom: 2px solid black;
+  overflow: auto;
+}
+/* line 205, ../sass/styles.sass */
+#listado #scrollinterno article:first-of-type {
+  border-top: 2px solid black;
+}
+/* line 207, ../sass/styles.sass */
+#listado #scrollinterno article a {
+  float: left;
+  cursor: pointer;
+}
+/* line 211, ../sass/styles.sass */
+#listado #scrollinterno article a img {
+  width: 185px;
+  height: 132px;
+}
+/* line 214, ../sass/styles.sass */
+#listado #scrollinterno article div {
+  float: left;
+  margin: 0 15px;
+}
+/* line 217, ../sass/styles.sass */
+#listado #scrollinterno article div h2 {
+  font-size: 18px;
+  margin: 0 0 0.5em 0;
+}
+/* line 220, ../sass/styles.sass */
+#listado #scrollinterno article div p {
+  margin: 0 0 1em 0;
+}
+/* line 223, ../sass/styles.sass */
+#listado #scrollinterno article div li:Before {
+  content: "- ";
+}
+
+/* line 226, ../sass/styles.sass */
+.nicescroll-rails {
+  border-radius: 5px;
+}
+
+/* line 231, ../sass/styles.sass */
+#prox {
+  width: 400px;
+  height: 200px;
+  overflow: auto;
+  margin: 200px auto;
 }
