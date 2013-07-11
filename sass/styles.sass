@@ -35,7 +35,7 @@ body
 header
 	height: $navheight
 	background: white
-	margin: $navheight 0 0 0
+	margin: $navheight 0 30px 0
 
 	.container
 		width: $contentwidth
@@ -141,17 +141,52 @@ nav
 
 				ul
 					display: block
+
+// footer
+
 footer
 	width: $contentwidth
 	color: white
-	margin: 0 auto
+	margin: 30px auto 0 auto
 	overflow: auto
 	text-shadow: 0 0.1em 0.2em #777
 
 	div
-		margin: 20px
+		margin: 12px
 
 		&:first-of-type
 			float: left
 		&:last-of-type
 			float: right
+
+// corretaje - compra
+#listado
+	width: 700px
+	height: 400px
+	margin: 0 auto
+	border-radius: 7px
+	border: 1px solid red
+
+	h1
+		float: left
+		width: 48%
+		font-size: 40px
+		box-sizing: border-box
+		border: 1px solid red
+	#orden
+		float: left
+		width: 47%
+		height: auto
+		box-sizing: border-box
+		border: 1px solid red
+	#scrollinterno
+		float: right
+		width: 5%
+		height: 100%
+		box-sizing: border-box
+		border: 1px solid red
+	article
+		clear: left
+		width: 95%
+		box-sizing: border-box
+		border: 1px solid red
