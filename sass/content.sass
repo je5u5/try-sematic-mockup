@@ -1,7 +1,8 @@
 //vars
 $sectionwidth: 1000px
-$sectionheight: 500px
-
+$sectionheight: 450px
+$fontfamily: "arial"
+$fontsize: 13px
 //section
 section
 	height: $sectionheight
@@ -11,7 +12,7 @@ section
 	//common styles
 	.whitecard
 		background-color: white
-		min-height: 250px
+		min-height: 200px
 		width: 535px
 		border-radius: 7px
 		padding: 0 10px
@@ -21,6 +22,7 @@ section
 		padding: 10px 0px 4px
 		border-bottom: 2px solid
 		border-bottom-style: groove
+		min-height: 40px
 
 	.whitep
 		padding: 10px 0
@@ -71,14 +73,30 @@ section
 				background: url(../img/flecha_der.png) no-repeat left 15px
 
 
+	#places
+		float: right
+		margin: 222px 50px 0 0
 
 	#specifications
-		@extend .whitecard
 		display: inline-block
 		vertical-align: bottom
 
+	#specifications, #places
+		@extend .whitecard
+		font-size: $fontsize
+		font-family: $fontfamily
+
+		#logos
+			width: 180px
+			height: 170px
+			position: absolute
+			right: 20px
+			top: -118px
+			background-color: white
+
 		h1
 			@extend .whiteh1
+			position: relative
 
 		p
 			@extend .whitep
@@ -87,7 +105,7 @@ section
 			padding: 0 0 0 12px
 
 			li
-				padding: 10px 0
+				padding: 5px 0
 				float: left
 				min-width: 50%
 
@@ -148,3 +166,35 @@ section
 				cursor: pointer
 				&:hover
 					background-color: #605E5F
+
+	#controls
+		background-color: white
+		height: 32px
+		width: 200px
+		border-radius: 7px
+		text-align: center
+		line-height: 32px
+		float: left
+		margin: 390px 0 0 50px
+
+		span
+			float: left
+			width: 160px
+
+		#back
+			width: 20px
+			height: 32px
+			float: left
+			background-color: transparent
+			cursor: pointer
+			background: url(../img/flecha_izq.png) no-repeat right 7px
+			background-size: 17px 20px
+
+		#go
+			width: 20px
+			height: 32px
+			float: right
+			background-color: transparent
+			cursor: pointer
+			background: url(../img/flecha_der.png) no-repeat right 7px
+			background-size: 17px 20px

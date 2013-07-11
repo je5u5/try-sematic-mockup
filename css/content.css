@@ -1,36 +1,37 @@
-/* line 6, ../sass/content.sass */
+/* line 7, ../sass/content.sass */
 section {
-  height: 500px;
+  height: 450px;
   width: 1000px;
   margin: 0 auto;
 }
-/* line 12, ../sass/content.sass */
-section .whitecard, section #specifications, section #contacto {
+/* line 13, ../sass/content.sass */
+section .whitecard, section #specifications, section #places, section #contacto {
   background-color: white;
-  min-height: 250px;
+  min-height: 200px;
   width: 535px;
   border-radius: 7px;
   padding: 0 10px;
 }
-/* line 19, ../sass/content.sass */
-section .whiteh1, section #specifications h1, section #contacto h1 {
+/* line 20, ../sass/content.sass */
+section .whiteh1, section #specifications h1, section #places h1, section #contacto h1 {
   font-size: 30px;
   padding: 10px 0px 4px;
   border-bottom: 2px solid;
   border-bottom-style: groove;
+  min-height: 40px;
 }
-/* line 25, ../sass/content.sass */
-section .whitep, section #specifications p, section #contacto p {
+/* line 27, ../sass/content.sass */
+section .whitep, section #specifications p, section #places p, section #contacto p {
   padding: 10px 0;
 }
-/* line 29, ../sass/content.sass */
+/* line 31, ../sass/content.sass */
 section #galeria {
   width: 410px;
   height: 400px;
   display: inline-block;
   vertical-align: bottom;
 }
-/* line 35, ../sass/content.sass */
+/* line 37, ../sass/content.sass */
 section #galeria #picture {
   background-color: white;
   width: 370px;
@@ -38,13 +39,13 @@ section #galeria #picture {
   margin: 0 auto;
   border-radius: 7px 7px 0 0;
 }
-/* line 42, ../sass/content.sass */
+/* line 44, ../sass/content.sass */
 section #galeria #picture img {
   display: block;
   margin: 0 auto;
   padding: 13px 0 0 0;
 }
-/* line 47, ../sass/content.sass */
+/* line 49, ../sass/content.sass */
 section #galeria #slider {
   background-color: white;
   width: 370px;
@@ -52,7 +53,7 @@ section #galeria #slider {
   margin: 0 auto;
   border-radius: 0 0 7px 7px;
 }
-/* line 54, ../sass/content.sass */
+/* line 56, ../sass/content.sass */
 section #galeria #slider .control, section #galeria #slider #prev, section #galeria #slider #next {
   width: 20px;
   height: 71px;
@@ -60,49 +61,72 @@ section #galeria #slider .control, section #galeria #slider #prev, section #gale
   background-color: transparent;
   cursor: pointer;
 }
-/* line 61, ../sass/content.sass */
+/* line 63, ../sass/content.sass */
 section #galeria #slider #prev {
   background: url(../img/flecha_izq.png) no-repeat right 15px;
 }
-/* line 64, ../sass/content.sass */
+/* line 66, ../sass/content.sass */
 section #galeria #slider #carousel {
   float: left;
 }
-/* line 67, ../sass/content.sass */
+/* line 69, ../sass/content.sass */
 section #galeria #slider #carousel img {
   margin: 0 5px;
 }
-/* line 69, ../sass/content.sass */
+/* line 71, ../sass/content.sass */
 section #galeria #slider #next {
   background: url(../img/flecha_der.png) no-repeat left 15px;
 }
-/* line 75, ../sass/content.sass */
+/* line 76, ../sass/content.sass */
+section #places {
+  float: right;
+  margin: 222px 50px 0 0;
+}
+/* line 80, ../sass/content.sass */
 section #specifications {
   display: inline-block;
   vertical-align: bottom;
 }
-/* line 85, ../sass/content.sass */
-section #specifications ul {
+/* line 84, ../sass/content.sass */
+section #specifications, section #places {
+  font-size: 13px;
+  font-family: "arial";
+}
+/* line 89, ../sass/content.sass */
+section #specifications #logos, section #places #logos {
+  width: 180px;
+  height: 170px;
+  position: absolute;
+  right: 20px;
+  top: -118px;
+  background-color: white;
+}
+/* line 97, ../sass/content.sass */
+section #specifications h1, section #places h1 {
+  position: relative;
+}
+/* line 103, ../sass/content.sass */
+section #specifications ul, section #places ul {
   list-style: square inside;
   padding: 0 0 0 12px;
 }
-/* line 89, ../sass/content.sass */
-section #specifications ul li {
-  padding: 10px 0;
+/* line 107, ../sass/content.sass */
+section #specifications ul li, section #places ul li {
+  padding: 5px 0;
   float: left;
   min-width: 50%;
 }
-/* line 94, ../sass/content.sass */
+/* line 112, ../sass/content.sass */
 section #contacto {
   height: 400px;
   float: right;
   margin: 20px 50px 0 0;
 }
-/* line 107, ../sass/content.sass */
+/* line 125, ../sass/content.sass */
 section #contacto form .row {
   padding: 0 0 11px 0;
 }
-/* line 110, ../sass/content.sass */
+/* line 128, ../sass/content.sass */
 section #contacto form .row label {
   width: 20%;
   display: block;
@@ -113,7 +137,7 @@ section #contacto form .row label {
   padding: 0 10px 0 0;
   box-sizing: border-box;
 }
-/* line 120, ../sass/content.sass */
+/* line 138, ../sass/content.sass */
 section #contacto form .row input {
   border: none;
   background-color: #eaedf4;
@@ -123,7 +147,7 @@ section #contacto form .row input {
   box-sizing: border-box;
   border-radius: 15px 0 0 15px;
 }
-/* line 129, ../sass/content.sass */
+/* line 147, ../sass/content.sass */
 section #contacto form .row textarea {
   border: none;
   background-color: #eaedf4;
@@ -134,7 +158,7 @@ section #contacto form .row textarea {
   padding: 5px 5px;
   resize: none;
 }
-/* line 139, ../sass/content.sass */
+/* line 157, ../sass/content.sass */
 section #contacto form button {
   background-color: #4c4849;
   color: white;
@@ -146,7 +170,43 @@ section #contacto form button {
   float: right;
   cursor: pointer;
 }
-/* line 149, ../sass/content.sass */
+/* line 167, ../sass/content.sass */
 section #contacto form button:hover {
   background-color: #605e5f;
+}
+/* line 170, ../sass/content.sass */
+section #controls {
+  background-color: white;
+  height: 32px;
+  width: 200px;
+  border-radius: 7px;
+  text-align: center;
+  line-height: 32px;
+  float: left;
+  margin: 390px 0 0 50px;
+}
+/* line 180, ../sass/content.sass */
+section #controls span {
+  float: left;
+  width: 160px;
+}
+/* line 184, ../sass/content.sass */
+section #controls #back {
+  width: 20px;
+  height: 32px;
+  float: left;
+  background-color: transparent;
+  cursor: pointer;
+  background: url(../img/flecha_izq.png) no-repeat right 7px;
+  background-size: 17px 20px;
+}
+/* line 193, ../sass/content.sass */
+section #controls #go {
+  width: 20px;
+  height: 32px;
+  float: right;
+  background-color: transparent;
+  cursor: pointer;
+  background: url(../img/flecha_der.png) no-repeat right 7px;
+  background-size: 17px 20px;
 }

@@ -5,5 +5,5 @@ $(document).ready(function(){
 	});
 	$("#carousel img").click(function() {
 	    $("#picture img").attr("src", $(this).attr("src"));
-	})
+	});
 });
