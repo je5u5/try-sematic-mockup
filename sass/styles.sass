@@ -2,15 +2,9 @@
 $contentwidth: 1000px
 $navheight: 100px
 
-$orange: #E57823
-
-$test: 1px solid red
-
-
-
+$primario: #E57823
 
 $spacer: 20px
-$primario: #008081
 $secundario: #00BFB7
 $hover-menu: #00A2A0
 
@@ -27,6 +21,9 @@ $hover-menu: #00A2A0
 // .container
 //	@include outer-container
 
+.show
+	display: block !important
+
 // background
 body
 	background-image: url(http://www.w3schools.com/cssref/paper.gif)
@@ -39,6 +36,7 @@ header
 
 	.container
 		width: $contentwidth
+		z-index: 1
 		position: relative
 		margin: 0 auto
 
@@ -46,7 +44,7 @@ header
 			float: left
 			height: 150px
 			width: 150px
-			background: $orange
+			background: $primario
 			margin: 0-$navheight/2 0 0 50px
 		#filtro
 			float: right
@@ -54,23 +52,51 @@ header
 			height: $navheight/2
 			width: 480px
 
+			.seleccionado
+				color: black
+
 			>div
 				width: 100%
-				background: $orange
+				background: $primario
 				height: 60%
 				padding: 5px 6px
 				margin: 20px 0 0 0
 				box-sizing: border-box
-				border-radius: 0 7px 7px 7px
+				border-radius: 0 7px 7px 7px				
 
 				>div
 					float: left
 					width: 212px
-					height: 20px
 					background: white
+					color: #AAA
 					padding: 0 3px
 					margin: 0 6px 0 0
+					cursor: pointer
 					line-height: 20px
+
+					span
+						display: block
+					div
+						max-height: 200px
+						display: none
+
+						ul
+							float: right
+							width: 212px
+							padding: 0 8px 0 0
+							box-sizing: border-box
+
+							li
+								float: left
+								text-align: left
+								width: 100%
+								color: black
+								padding: 0 10px 0 5px
+								box-sizing: border-box
+								position: relative
+
+								&:hover
+									background: #FAE1CD
 			a
 				float: left
 				height: 40%
@@ -83,7 +109,7 @@ header
 				&:hover
 					background: #B84E00
 			.active
-				background: $orange !important
+				background: $primario !important
 
 
 // menu
@@ -135,9 +161,9 @@ nav
 					&:last-of-type
 						border-radius: 0 0 7px 7px
 					&:hover
-						color: $orange
+						color: $primario
 			&:hover
-				color: $orange
+				color: $primario
 
 				ul
 					display: block
@@ -183,7 +209,7 @@ footer
 			float: left
 			height: 20px
 			width: 100px
-			background: $orange
+			background: $primario
 			color: white
 			box-sizing: border-box
 			padding: 2px 5px
@@ -220,8 +246,56 @@ footer
 				p
 					margin: 0 0 1em 0
 				li
-					&:Before
+					&:before
 						content: "- "
+// Nuestras-oficinas
+#contenedor
+	width: $contentwidth
+	margin: 0 auto
+	overflow: auto
+
+	section
+		float: right
+		height: 400px
+		width: 550px
+		margin: 0 50px 0 0
+		background: white
+		border-radius: 7px
+		padding: 15px
+		box-sizing: border-box
+
+		h1
+			font-size: 25px
+			padding: 0 0 15px 0
+			line-height: 20px
+			box-sizing: border-box
+			border-bottom: 2px solid black
+		p
+			margin: 15px 0
+		article
+			float: left
+			height: 113px
+			width: 230px
+			margin: 15px
+			padding: 0 15px
+			box-sizing: border-box
+
+			.telefonos
+				color: #666
+				font-size: 14px
+			.email
+				color: black
+				font-size: 13px
+			h2
+				font-size: 18px
+				margin: 0 0 .5em 0
+			ul
+				margin: 0 0 .5em 0
+
+		.border
+			border-right: 2px solid black
+
+
 // Nicescroll rail fix
 .nicescroll-rails
 	border-radius: 5px

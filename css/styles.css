@@ -63,24 +63,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 31, ../sass/styles.sass */
+/* line 24, ../sass/styles.sass */
+.show {
+  display: block !important;
+}
+
+/* line 28, ../sass/styles.sass */
 body {
   background-image: url(http://www.w3schools.com/cssref/paper.gif);
 }
 
-/* line 35, ../sass/styles.sass */
+/* line 32, ../sass/styles.sass */
 header {
   height: 100px;
   background: white;
   margin: 100px 0 30px 0;
 }
-/* line 40, ../sass/styles.sass */
+/* line 37, ../sass/styles.sass */
 header .container {
   width: 1000px;
+  z-index: 1;
   position: relative;
   margin: 0 auto;
 }
-/* line 45, ../sass/styles.sass */
+/* line 43, ../sass/styles.sass */
 header .container #logo {
   float: left;
   height: 150px;
@@ -88,14 +94,18 @@ header .container #logo {
   background: #e57823;
   margin: -50px 0 0 50px;
 }
-/* line 51, ../sass/styles.sass */
+/* line 49, ../sass/styles.sass */
 header .container #filtro {
   float: right;
   margin: -70px 50px 0 0;
   height: 50px;
   width: 480px;
 }
-/* line 57, ../sass/styles.sass */
+/* line 55, ../sass/styles.sass */
+header .container #filtro .seleccionado {
+  color: black;
+}
+/* line 58, ../sass/styles.sass */
 header .container #filtro > div {
   width: 100%;
   background: #e57823;
@@ -105,17 +115,48 @@ header .container #filtro > div {
   box-sizing: border-box;
   border-radius: 0 7px 7px 7px;
 }
-/* line 66, ../sass/styles.sass */
+/* line 67, ../sass/styles.sass */
 header .container #filtro > div > div {
   float: left;
   width: 212px;
-  height: 20px;
   background: white;
+  color: #aaaaaa;
   padding: 0 3px;
   margin: 0 6px 0 0;
+  cursor: pointer;
   line-height: 20px;
 }
-/* line 74, ../sass/styles.sass */
+/* line 77, ../sass/styles.sass */
+header .container #filtro > div > div span {
+  display: block;
+}
+/* line 79, ../sass/styles.sass */
+header .container #filtro > div > div div {
+  max-height: 200px;
+  display: none;
+}
+/* line 83, ../sass/styles.sass */
+header .container #filtro > div > div div ul {
+  float: right;
+  width: 212px;
+  padding: 0 8px 0 0;
+  box-sizing: border-box;
+}
+/* line 89, ../sass/styles.sass */
+header .container #filtro > div > div div ul li {
+  float: left;
+  text-align: left;
+  width: 100%;
+  color: black;
+  padding: 0 10px 0 5px;
+  box-sizing: border-box;
+  position: relative;
+}
+/* line 98, ../sass/styles.sass */
+header .container #filtro > div > div div ul li:hover {
+  background: #fae1cd;
+}
+/* line 100, ../sass/styles.sass */
 header .container #filtro a {
   float: left;
   height: 40%;
@@ -125,34 +166,34 @@ header .container #filtro a {
   padding: 0 5px;
   border-radius: 7px 7px 0 0;
 }
-/* line 83, ../sass/styles.sass */
+/* line 109, ../sass/styles.sass */
 header .container #filtro a:hover {
   background: #b84e00;
 }
-/* line 85, ../sass/styles.sass */
+/* line 111, ../sass/styles.sass */
 header .container #filtro .active {
   background: #e57823 !important;
 }
 
-/* line 90, ../sass/styles.sass */
+/* line 116, ../sass/styles.sass */
 nav {
   height: 100%;
   width: 1000px;
   position: relative;
   margin: 0 auto;
 }
-/* line 96, ../sass/styles.sass */
+/* line 122, ../sass/styles.sass */
 nav #socialmedia {
   float: right;
   height: 50px;
   width: 580px;
 }
-/* line 100, ../sass/styles.sass */
+/* line 126, ../sass/styles.sass */
 nav > ul {
   float: right;
   height: 50px;
 }
-/* line 104, ../sass/styles.sass */
+/* line 130, ../sass/styles.sass */
 nav > ul > li {
   color: black;
   padding: 0 18px;
@@ -160,7 +201,7 @@ nav > ul > li {
   text-align: center;
   float: left;
 }
-/* line 111, ../sass/styles.sass */
+/* line 137, ../sass/styles.sass */
 nav > ul > li > a {
   color: inherit;
   text-shadow: 0 0.2em 0.2em #aaaaaa;
@@ -171,7 +212,7 @@ nav > ul > li > a {
   text-transform: lowercase;
   text-decoration: none;
 }
-/* line 120, ../sass/styles.sass */
+/* line 146, ../sass/styles.sass */
 nav > ul > li ul {
   display: none;
   position: absolute;
@@ -179,35 +220,35 @@ nav > ul > li ul {
   margin: 0 -18px;
   width: 100%;
 }
-/* line 127, ../sass/styles.sass */
+/* line 153, ../sass/styles.sass */
 nav > ul > li ul li {
   color: black;
   background: white;
 }
-/* line 131, ../sass/styles.sass */
+/* line 157, ../sass/styles.sass */
 nav > ul > li ul li a {
   text-decoration: none;
   color: inherit;
   text-shadow: 0 0.2em 0.2em #aaaaaa;
 }
-/* line 135, ../sass/styles.sass */
+/* line 161, ../sass/styles.sass */
 nav > ul > li ul li:last-of-type {
   border-radius: 0 0 7px 7px;
 }
-/* line 137, ../sass/styles.sass */
+/* line 163, ../sass/styles.sass */
 nav > ul > li ul li:hover {
   color: #e57823;
 }
-/* line 139, ../sass/styles.sass */
+/* line 165, ../sass/styles.sass */
 nav > ul > li:hover {
   color: #e57823;
 }
-/* line 142, ../sass/styles.sass */
+/* line 168, ../sass/styles.sass */
 nav > ul > li:hover ul {
   display: block;
 }
 
-/* line 147, ../sass/styles.sass */
+/* line 173, ../sass/styles.sass */
 footer {
   width: 1000px;
   color: white;
@@ -215,20 +256,20 @@ footer {
   overflow: auto;
   text-shadow: 0 0.1em 0.2em #777777;
 }
-/* line 154, ../sass/styles.sass */
+/* line 180, ../sass/styles.sass */
 footer div {
   margin: 12px;
 }
-/* line 157, ../sass/styles.sass */
+/* line 183, ../sass/styles.sass */
 footer div:first-of-type {
   float: left;
 }
-/* line 159, ../sass/styles.sass */
+/* line 185, ../sass/styles.sass */
 footer div:last-of-type {
   float: right;
 }
 
-/* line 163, ../sass/styles.sass */
+/* line 189, ../sass/styles.sass */
 #listado {
   width: 700px;
   height: 400px;
@@ -236,7 +277,7 @@ footer div:last-of-type {
   background: white;
   border-radius: 7px;
 }
-/* line 170, ../sass/styles.sass */
+/* line 196, ../sass/styles.sass */
 #listado h1 {
   float: left;
   font-size: 25px;
@@ -244,14 +285,14 @@ footer div:last-of-type {
   line-height: 20px;
   box-sizing: border-box;
 }
-/* line 176, ../sass/styles.sass */
+/* line 202, ../sass/styles.sass */
 #listado #ordenacion {
   float: right;
   height: auto;
   padding: 15px;
   box-sizing: border-box;
 }
-/* line 182, ../sass/styles.sass */
+/* line 208, ../sass/styles.sass */
 #listado #ordenacion div {
   float: left;
   height: 20px;
@@ -262,14 +303,14 @@ footer div:last-of-type {
   padding: 2px 5px;
   margin: 0 2px;
 }
-/* line 191, ../sass/styles.sass */
+/* line 217, ../sass/styles.sass */
 #listado #scrollinterno {
   clear: both;
   height: 340px;
   margin: 50px 0 0 0;
   overflow: auto;
 }
-/* line 197, ../sass/styles.sass */
+/* line 223, ../sass/styles.sass */
 #listado #scrollinterno article {
   clear: left;
   margin: 0 15px;
@@ -278,45 +319,107 @@ footer div:last-of-type {
   border-bottom: 2px solid black;
   overflow: auto;
 }
-/* line 205, ../sass/styles.sass */
+/* line 231, ../sass/styles.sass */
 #listado #scrollinterno article:first-of-type {
   border-top: 2px solid black;
 }
-/* line 207, ../sass/styles.sass */
+/* line 233, ../sass/styles.sass */
 #listado #scrollinterno article a {
   float: left;
   cursor: pointer;
 }
-/* line 211, ../sass/styles.sass */
+/* line 237, ../sass/styles.sass */
 #listado #scrollinterno article a img {
   width: 185px;
   height: 132px;
 }
-/* line 214, ../sass/styles.sass */
+/* line 240, ../sass/styles.sass */
 #listado #scrollinterno article div {
   float: left;
   margin: 0 15px;
 }
-/* line 217, ../sass/styles.sass */
+/* line 243, ../sass/styles.sass */
 #listado #scrollinterno article div h2 {
   font-size: 18px;
   margin: 0 0 0.5em 0;
 }
-/* line 220, ../sass/styles.sass */
+/* line 246, ../sass/styles.sass */
 #listado #scrollinterno article div p {
   margin: 0 0 1em 0;
 }
-/* line 223, ../sass/styles.sass */
-#listado #scrollinterno article div li:Before {
+/* line 249, ../sass/styles.sass */
+#listado #scrollinterno article div li:before {
   content: "- ";
 }
 
-/* line 226, ../sass/styles.sass */
+/* line 252, ../sass/styles.sass */
+#contenedor {
+  width: 1000px;
+  margin: 0 auto;
+  overflow: auto;
+}
+/* line 257, ../sass/styles.sass */
+#contenedor section {
+  float: right;
+  height: 400px;
+  width: 550px;
+  margin: 0 50px 0 0;
+  background: white;
+  border-radius: 7px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+/* line 267, ../sass/styles.sass */
+#contenedor section h1 {
+  font-size: 25px;
+  padding: 0 0 15px 0;
+  line-height: 20px;
+  box-sizing: border-box;
+  border-bottom: 2px solid black;
+}
+/* line 273, ../sass/styles.sass */
+#contenedor section p {
+  margin: 15px 0;
+}
+/* line 275, ../sass/styles.sass */
+#contenedor section article {
+  float: left;
+  height: 113px;
+  width: 230px;
+  margin: 15px;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+/* line 283, ../sass/styles.sass */
+#contenedor section article .telefonos {
+  color: #666666;
+  font-size: 14px;
+}
+/* line 286, ../sass/styles.sass */
+#contenedor section article .email {
+  color: black;
+  font-size: 13px;
+}
+/* line 289, ../sass/styles.sass */
+#contenedor section article h2 {
+  font-size: 18px;
+  margin: 0 0 0.5em 0;
+}
+/* line 292, ../sass/styles.sass */
+#contenedor section article ul {
+  margin: 0 0 0.5em 0;
+}
+/* line 295, ../sass/styles.sass */
+#contenedor section .border {
+  border-right: 2px solid black;
+}
+
+/* line 300, ../sass/styles.sass */
 .nicescroll-rails {
   border-radius: 5px;
 }
 
-/* line 231, ../sass/styles.sass */
+/* line 305, ../sass/styles.sass */
 #prox {
   width: 400px;
   height: 200px;
