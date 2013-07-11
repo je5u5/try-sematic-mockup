@@ -4,14 +4,33 @@ section {
   width: 1000px;
   margin: 0 auto;
 }
-/* line 11, ../sass/content.sass */
+/* line 12, ../sass/content.sass */
+section .whitecard, section #specifications, section #contacto {
+  background-color: white;
+  min-height: 250px;
+  width: 535px;
+  border-radius: 7px;
+  padding: 0 10px;
+}
+/* line 19, ../sass/content.sass */
+section .whiteh1, section #specifications h1, section #contacto h1 {
+  font-size: 30px;
+  padding: 10px 0px 4px;
+  border-bottom: 1px solid;
+  border-bottom-style: groove;
+}
+/* line 25, ../sass/content.sass */
+section .whitep, section #specifications p, section #contacto p {
+  padding: 10px 0;
+}
+/* line 29, ../sass/content.sass */
 section #galeria {
   width: 410px;
   height: 400px;
   display: inline-block;
   vertical-align: bottom;
 }
-/* line 17, ../sass/content.sass */
+/* line 35, ../sass/content.sass */
 section #galeria #picture {
   background-color: white;
   width: 350px;
@@ -19,7 +38,7 @@ section #galeria #picture {
   margin: 20px auto 0;
   border-radius: 7px 7px 0 0;
 }
-/* line 23, ../sass/content.sass */
+/* line 41, ../sass/content.sass */
 section #galeria #slider {
   background-color: white;
   width: 350px;
@@ -27,35 +46,77 @@ section #galeria #slider {
   margin: 0 auto;
   border-radius: 0 0 7px 7px;
 }
-/* line 30, ../sass/content.sass */
-section article {
-  background-color: white;
-  height: 250px;
-  width: 535px;
-  border-radius: 7px;
+/* line 48, ../sass/content.sass */
+section #specifications {
   display: inline-block;
   vertical-align: bottom;
-  padding: 0 10px;
 }
-/* line 39, ../sass/content.sass */
-section article h1 {
-  font-size: 30px;
-  padding: 10px 0px 4px;
-  border-bottom: 1px solid;
-  border-bottom-style: groove;
-}
-/* line 45, ../sass/content.sass */
-section article p {
-  padding: 10px 0;
-}
-/* line 47, ../sass/content.sass */
-section article ul {
+/* line 58, ../sass/content.sass */
+section #specifications ul {
   list-style: square inside;
   padding: 0 0 0 12px;
 }
-/* line 51, ../sass/content.sass */
-section article ul li {
+/* line 62, ../sass/content.sass */
+section #specifications ul li {
   padding: 10px 0;
   float: left;
   min-width: 50%;
+}
+/* line 67, ../sass/content.sass */
+section #contacto {
+  height: 400px;
+  float: right;
+  margin: 20px 50px 0 0;
+}
+/* line 80, ../sass/content.sass */
+section #contacto form .row {
+  padding: 0 0 11px 0;
+}
+/* line 83, ../sass/content.sass */
+section #contacto form .row label {
+  width: 20%;
+  display: block;
+  float: left;
+  height: 22px;
+  line-height: 22px;
+  text-align: right;
+  padding: 0 10px 0 0;
+  box-sizing: border-box;
+}
+/* line 93, ../sass/content.sass */
+section #contacto form .row input {
+  border: none;
+  background-color: #eaedf4;
+  width: 80%;
+  height: 22px;
+  text-indent: 5px;
+  box-sizing: border-box;
+  border-radius: 15px 0 0 15px;
+}
+/* line 102, ../sass/content.sass */
+section #contacto form .row textarea {
+  border: none;
+  background-color: #eaedf4;
+  width: 80%;
+  box-sizing: border-box;
+  border-radius: 15px 0 0 15px;
+  height: 122px;
+  padding: 5px 5px;
+  resize: none;
+}
+/* line 112, ../sass/content.sass */
+section #contacto form button {
+  background-color: #4c4849;
+  color: white;
+  display: block;
+  height: 30px;
+  width: 83px;
+  border: none;
+  border-radius: 15px;
+  float: right;
+  cursor: pointer;
+}
+/* line 122, ../sass/content.sass */
+section #contacto form button:hover {
+  background-color: #605e5f;
 }

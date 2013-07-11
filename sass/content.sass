@@ -4,51 +4,120 @@ $sectionheight: 500px
 
 //section
 section
-    height: $sectionheight
-    width: $sectionwidth
-    margin: 0 auto
+	height: $sectionheight
+	width: $sectionwidth
+	margin: 0 auto
 
-    #galeria
-        width: 410px
-        height: 400px
-        display: inline-block
-        vertical-align: bottom
+	//common styles
+	.whitecard
+		background-color: white
+		min-height: 250px
+		width: 535px
+		border-radius: 7px
+		padding: 0 10px
 
-        #picture
-            background-color: white
-            width: 350px
-            height: 300px
-            margin: 20px auto 0
-            border-radius: 7px 7px 0 0
-        #slider
-            background-color: white
-            width: 350px
-            height: 80px
-            margin: 0 auto
-            border-radius: 0 0 7px 7px
+	.whiteh1
+		font-size: 30px
+		padding: 10px 0px 4px
+		border-bottom: 1px solid
+		border-bottom-style: groove
 
-    article
-        background-color: white
-        height: 250px
-        width: 535px
-        border-radius: 7px
-        display: inline-block
-        vertical-align: bottom
-        padding: 0 10px
+	.whitep
+		padding: 10px 0
+	//above classes to extend
 
-        h1
-            font-size: 30px
-            padding: 10px 0px 4px
-            border-bottom: 1px solid
-            border-bottom-style: groove
+	#galeria
+		width: 410px
+		height: 400px
+		display: inline-block
+		vertical-align: bottom
 
-        p
-            padding: 10px 0
-        ul
-            list-style: square inside
-            padding: 0 0 0 12px
+		#picture
+			background-color: white
+			width: 350px
+			height: 300px
+			margin: 20px auto 0
+			border-radius: 7px 7px 0 0
+		#slider
+			background-color: white
+			width: 350px
+			height: 80px
+			margin: 0 auto
+			border-radius: 0 0 7px 7px
 
-            li
-                padding: 10px 0
-                float: left
-                min-width: 50%
+	#specifications
+		@extend .whitecard
+		display: inline-block
+		vertical-align: bottom
+
+		h1
+			@extend .whiteh1
+
+		p
+			@extend .whitep
+		ul
+			list-style: square inside
+			padding: 0 0 0 12px
+
+			li
+				padding: 10px 0
+				float: left
+				min-width: 50%
+
+	#contacto
+		@extend .whitecard
+		height: 400px
+		float: right
+		margin: 20px 50px 0 0
+
+		h1
+			@extend .whiteh1
+
+		p
+			@extend .whitep
+
+		form
+			.row
+				padding: 0 0 11px 0
+
+				label
+					width: 20%
+					display: block
+					float: left
+					height: 22px
+					line-height: 22px
+					text-align: right
+					padding: 0 10px 0 0
+					box-sizing: border-box
+
+				input
+					border: none
+					background-color: #EAEDF4
+					width: 80%
+					height: 22px
+					text-indent: 5px
+					box-sizing: border-box
+					border-radius: 15px 0 0 15px
+
+				textarea
+					border: none
+					background-color: #EAEDF4
+					width: 80%
+					box-sizing: border-box
+					border-radius: 15px 0 0 15px
+					height: 122px
+					padding: 5px 5px
+					resize: none
+
+			button
+				background-color: #4C4849
+				color: white
+				display: block
+				height: 30px
+				width: 83px
+				border: none
+				border-radius: 15px
+				float: right
+				cursor: pointer
+				&:hover
+					background-color: #605E5F
