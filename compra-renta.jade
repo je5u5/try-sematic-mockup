@@ -10,12 +10,36 @@ html
 			media='all',
 			rel='stylesheet',
 			type='text/css')
+		script(type="text/javascript",
+			src="js/jquery-1.8.3.min.js")
+		script(type="text/javascript",
+			src="js/jcarousellite_1.0.1.min.js")
+		script(type="text/javascript",
+			src="js/all.js")
+
 	body
 		include includes/header
 		section
 			#galeria
 				#picture
+						img(src="http://placehold.it/342x288/87a0b5/ffffff")
 				#slider
+					#prev
+					#carousel
+						ul
+							li
+								img(src="http://placehold.it/342x288/87a0b5/ffffff",
+									width="100px",height="68px")
+							li
+								img(src="http://placehold.it/342x288/80ad88/ffffff",
+									width="100px",height="68px")
+							li
+								img(src="http://placehold.it/342x288/a39fa0/ffffff",
+									width="100px",height="68px")
+							li
+								img(src="http://placehold.it/342x288/dbbfa8/ffffff",
+									width="100px",height="68px")
+					#next
 			#specifications
 				h1 Especificaciones
 				p.

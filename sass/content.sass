@@ -19,7 +19,7 @@ section
 	.whiteh1
 		font-size: 30px
 		padding: 10px 0px 4px
-		border-bottom: 1px solid
+		border-bottom: 2px solid
 		border-bottom-style: groove
 
 	.whitep
@@ -34,16 +34,43 @@ section
 
 		#picture
 			background-color: white
-			width: 350px
-			height: 300px
-			margin: 20px auto 0
+			width: 370px
+			height: 310px
+			margin: 0 auto
 			border-radius: 7px 7px 0 0
+
+			img
+				display: block
+				margin: 0 auto
+				padding: 13px 0 0 0
+
 		#slider
 			background-color: white
-			width: 350px
-			height: 80px
+			width: 370px
+			height: 90px
 			margin: 0 auto
 			border-radius: 0 0 7px 7px
+
+			.control
+				width: 20px
+				height: 71px
+				float: left
+				background-color: transparent
+				cursor: pointer
+
+			#prev
+				@extend .control
+				background: url(../img/flecha_izq.png) no-repeat right 15px
+			#carousel
+				float: left
+
+				img
+					margin: 0 5px
+			#next
+				@extend .control
+				background: url(../img/flecha_der.png) no-repeat left 15px
+
+
 
 	#specifications
 		@extend .whitecard

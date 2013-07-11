@@ -16,7 +16,7 @@ section .whitecard, section #specifications, section #contacto {
 section .whiteh1, section #specifications h1, section #contacto h1 {
   font-size: 30px;
   padding: 10px 0px 4px;
-  border-bottom: 1px solid;
+  border-bottom: 2px solid;
   border-bottom-style: groove;
 }
 /* line 25, ../sass/content.sass */
@@ -33,46 +33,76 @@ section #galeria {
 /* line 35, ../sass/content.sass */
 section #galeria #picture {
   background-color: white;
-  width: 350px;
-  height: 300px;
-  margin: 20px auto 0;
+  width: 370px;
+  height: 310px;
+  margin: 0 auto;
   border-radius: 7px 7px 0 0;
 }
-/* line 41, ../sass/content.sass */
+/* line 42, ../sass/content.sass */
+section #galeria #picture img {
+  display: block;
+  margin: 0 auto;
+  padding: 13px 0 0 0;
+}
+/* line 47, ../sass/content.sass */
 section #galeria #slider {
   background-color: white;
-  width: 350px;
-  height: 80px;
+  width: 370px;
+  height: 90px;
   margin: 0 auto;
   border-radius: 0 0 7px 7px;
 }
-/* line 48, ../sass/content.sass */
+/* line 54, ../sass/content.sass */
+section #galeria #slider .control, section #galeria #slider #prev, section #galeria #slider #next {
+  width: 20px;
+  height: 71px;
+  float: left;
+  background-color: transparent;
+  cursor: pointer;
+}
+/* line 61, ../sass/content.sass */
+section #galeria #slider #prev {
+  background: url(../img/flecha_izq.png) no-repeat right 15px;
+}
+/* line 64, ../sass/content.sass */
+section #galeria #slider #carousel {
+  float: left;
+}
+/* line 67, ../sass/content.sass */
+section #galeria #slider #carousel img {
+  margin: 0 5px;
+}
+/* line 69, ../sass/content.sass */
+section #galeria #slider #next {
+  background: url(../img/flecha_der.png) no-repeat left 15px;
+}
+/* line 75, ../sass/content.sass */
 section #specifications {
   display: inline-block;
   vertical-align: bottom;
 }
-/* line 58, ../sass/content.sass */
+/* line 85, ../sass/content.sass */
 section #specifications ul {
   list-style: square inside;
   padding: 0 0 0 12px;
 }
-/* line 62, ../sass/content.sass */
+/* line 89, ../sass/content.sass */
 section #specifications ul li {
   padding: 10px 0;
   float: left;
   min-width: 50%;
 }
-/* line 67, ../sass/content.sass */
+/* line 94, ../sass/content.sass */
 section #contacto {
   height: 400px;
   float: right;
   margin: 20px 50px 0 0;
 }
-/* line 80, ../sass/content.sass */
+/* line 107, ../sass/content.sass */
 section #contacto form .row {
   padding: 0 0 11px 0;
 }
-/* line 83, ../sass/content.sass */
+/* line 110, ../sass/content.sass */
 section #contacto form .row label {
   width: 20%;
   display: block;
@@ -83,7 +113,7 @@ section #contacto form .row label {
   padding: 0 10px 0 0;
   box-sizing: border-box;
 }
-/* line 93, ../sass/content.sass */
+/* line 120, ../sass/content.sass */
 section #contacto form .row input {
   border: none;
   background-color: #eaedf4;
@@ -93,7 +123,7 @@ section #contacto form .row input {
   box-sizing: border-box;
   border-radius: 15px 0 0 15px;
 }
-/* line 102, ../sass/content.sass */
+/* line 129, ../sass/content.sass */
 section #contacto form .row textarea {
   border: none;
   background-color: #eaedf4;
@@ -104,7 +134,7 @@ section #contacto form .row textarea {
   padding: 5px 5px;
   resize: none;
 }
-/* line 112, ../sass/content.sass */
+/* line 139, ../sass/content.sass */
 section #contacto form button {
   background-color: #4c4849;
   color: white;
@@ -116,7 +146,7 @@ section #contacto form button {
   float: right;
   cursor: pointer;
 }
-/* line 122, ../sass/content.sass */
+/* line 149, ../sass/content.sass */
 section #contacto form button:hover {
   background-color: #605e5f;
 }
