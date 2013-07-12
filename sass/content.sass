@@ -1,6 +1,6 @@
 //vars
 $sectionwidth: 1000px
-$sectionheight: 450px
+$sectionheight: 400px
 $fontfamily: "arial"
 $fontsize: 13px
 //section
@@ -13,16 +13,16 @@ section
 	.whitecard
 		background-color: white
 		min-height: 200px
-		width: 535px
+		width: 510px
 		border-radius: 7px
-		padding: 0 10px
+		padding: 0 20px
 
 	.whiteh1
 		font-size: 30px
-		padding: 10px 0px 4px
+		padding: 22px 0px 0px
 		border-bottom: 2px solid
 		border-bottom-style: groove
-		min-height: 40px
+		min-height: 27px
 
 	.whitep
 		padding: 10px 0
@@ -75,7 +75,7 @@ section
 
 	#places
 		float: right
-		margin: 222px 50px 0 0
+		margin: 192px 50px 0 0
 
 	#specifications
 		display: inline-block
@@ -91,8 +91,16 @@ section
 			height: 170px
 			position: absolute
 			right: 20px
-			top: -118px
+			top: -122px
 			background-color: white
+			text-align: center
+			font-size: 25px
+
+			img
+				display: block
+				margin: 0 auto
+			span
+
 
 		h1
 			@extend .whiteh1
@@ -113,7 +121,7 @@ section
 		@extend .whitecard
 		height: 400px
 		float: right
-		margin: 20px 50px 0 0
+		margin: 0px 50px 0 0
 
 		h1
 			@extend .whiteh1
@@ -175,7 +183,11 @@ section
 		text-align: center
 		line-height: 32px
 		float: left
-		margin: 390px 0 0 50px
+		margin: 360px 0 0 50px
+
+		#placeslist
+			float: left
+			width: 160px
 
 		span
 			float: left

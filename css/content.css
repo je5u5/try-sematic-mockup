@@ -1,6 +1,6 @@
 /* line 7, ../sass/content.sass */
 section {
-  height: 450px;
+  height: 400px;
   width: 1000px;
   margin: 0 auto;
 }
@@ -8,17 +8,17 @@ section {
 section .whitecard, section #specifications, section #places, section #contacto {
   background-color: white;
   min-height: 200px;
-  width: 535px;
+  width: 510px;
   border-radius: 7px;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 /* line 20, ../sass/content.sass */
 section .whiteh1, section #specifications h1, section #places h1, section #contacto h1 {
   font-size: 30px;
-  padding: 10px 0px 4px;
+  padding: 22px 0px 0px;
   border-bottom: 2px solid;
   border-bottom-style: groove;
-  min-height: 40px;
+  min-height: 27px;
 }
 /* line 27, ../sass/content.sass */
 section .whitep, section #specifications p, section #places p, section #contacto p {
@@ -80,7 +80,7 @@ section #galeria #slider #next {
 /* line 76, ../sass/content.sass */
 section #places {
   float: right;
-  margin: 222px 50px 0 0;
+  margin: 192px 50px 0 0;
 }
 /* line 80, ../sass/content.sass */
 section #specifications {
@@ -98,35 +98,42 @@ section #specifications #logos, section #places #logos {
   height: 170px;
   position: absolute;
   right: 20px;
-  top: -118px;
+  top: -122px;
   background-color: white;
+  text-align: center;
+  font-size: 25px;
 }
-/* line 97, ../sass/content.sass */
+/* line 99, ../sass/content.sass */
+section #specifications #logos img, section #places #logos img {
+  display: block;
+  margin: 0 auto;
+}
+/* line 105, ../sass/content.sass */
 section #specifications h1, section #places h1 {
   position: relative;
 }
-/* line 103, ../sass/content.sass */
+/* line 111, ../sass/content.sass */
 section #specifications ul, section #places ul {
   list-style: square inside;
   padding: 0 0 0 12px;
 }
-/* line 107, ../sass/content.sass */
+/* line 115, ../sass/content.sass */
 section #specifications ul li, section #places ul li {
   padding: 5px 0;
   float: left;
   min-width: 50%;
 }
-/* line 112, ../sass/content.sass */
+/* line 120, ../sass/content.sass */
 section #contacto {
   height: 400px;
   float: right;
-  margin: 20px 50px 0 0;
+  margin: 0px 50px 0 0;
 }
-/* line 125, ../sass/content.sass */
+/* line 133, ../sass/content.sass */
 section #contacto form .row {
   padding: 0 0 11px 0;
 }
-/* line 128, ../sass/content.sass */
+/* line 136, ../sass/content.sass */
 section #contacto form .row label {
   width: 20%;
   display: block;
@@ -137,7 +144,7 @@ section #contacto form .row label {
   padding: 0 10px 0 0;
   box-sizing: border-box;
 }
-/* line 138, ../sass/content.sass */
+/* line 146, ../sass/content.sass */
 section #contacto form .row input {
   border: none;
   background-color: #eaedf4;
@@ -147,7 +154,7 @@ section #contacto form .row input {
   box-sizing: border-box;
   border-radius: 15px 0 0 15px;
 }
-/* line 147, ../sass/content.sass */
+/* line 155, ../sass/content.sass */
 section #contacto form .row textarea {
   border: none;
   background-color: #eaedf4;
@@ -158,7 +165,7 @@ section #contacto form .row textarea {
   padding: 5px 5px;
   resize: none;
 }
-/* line 157, ../sass/content.sass */
+/* line 165, ../sass/content.sass */
 section #contacto form button {
   background-color: #4c4849;
   color: white;
@@ -170,11 +177,11 @@ section #contacto form button {
   float: right;
   cursor: pointer;
 }
-/* line 167, ../sass/content.sass */
+/* line 175, ../sass/content.sass */
 section #contacto form button:hover {
   background-color: #605e5f;
 }
-/* line 170, ../sass/content.sass */
+/* line 178, ../sass/content.sass */
 section #controls {
   background-color: white;
   height: 32px;
@@ -183,14 +190,19 @@ section #controls {
   text-align: center;
   line-height: 32px;
   float: left;
-  margin: 390px 0 0 50px;
+  margin: 360px 0 0 50px;
 }
-/* line 180, ../sass/content.sass */
+/* line 188, ../sass/content.sass */
+section #controls #placeslist {
+  float: left;
+  width: 160px;
+}
+/* line 192, ../sass/content.sass */
 section #controls span {
   float: left;
   width: 160px;
 }
-/* line 184, ../sass/content.sass */
+/* line 196, ../sass/content.sass */
 section #controls #back {
   width: 20px;
   height: 32px;
@@ -200,7 +212,7 @@ section #controls #back {
   background: url(../img/flecha_izq.png) no-repeat right 7px;
   background-size: 17px 20px;
 }
-/* line 193, ../sass/content.sass */
+/* line 205, ../sass/content.sass */
 section #controls #go {
   width: 20px;
   height: 32px;
