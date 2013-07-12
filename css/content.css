@@ -2,9 +2,11 @@
 section {
   height: 400px;
   width: 1000px;
+  font-family: Calibri;
+  font-size: 12px;
   margin: 0 auto;
 }
-/* line 13, ../sass/content.sass */
+/* line 16, ../sass/content.sass */
 section .whitecard, section #specifications, section #places, section #contacto {
   background-color: white;
   min-height: 200px;
@@ -12,7 +14,7 @@ section .whitecard, section #specifications, section #places, section #contacto 
   border-radius: 7px;
   padding: 0 20px;
 }
-/* line 20, ../sass/content.sass */
+/* line 23, ../sass/content.sass */
 section .whiteh1, section #specifications h1, section #places h1, section #contacto h1 {
   font-size: 30px;
   padding: 22px 0px 0px;
@@ -20,18 +22,18 @@ section .whiteh1, section #specifications h1, section #places h1, section #conta
   border-bottom-style: groove;
   min-height: 27px;
 }
-/* line 27, ../sass/content.sass */
+/* line 30, ../sass/content.sass */
 section .whitep, section #specifications p, section #places p, section #contacto p {
   padding: 10px 0;
 }
-/* line 31, ../sass/content.sass */
+/* line 34, ../sass/content.sass */
 section #galeria {
   width: 410px;
   height: 400px;
   display: inline-block;
   vertical-align: bottom;
 }
-/* line 37, ../sass/content.sass */
+/* line 40, ../sass/content.sass */
 section #galeria #picture {
   background-color: white;
   width: 370px;
@@ -39,13 +41,13 @@ section #galeria #picture {
   margin: 0 auto;
   border-radius: 7px 7px 0 0;
 }
-/* line 44, ../sass/content.sass */
+/* line 47, ../sass/content.sass */
 section #galeria #picture img {
   display: block;
   margin: 0 auto;
   padding: 13px 0 0 0;
 }
-/* line 49, ../sass/content.sass */
+/* line 52, ../sass/content.sass */
 section #galeria #slider {
   background-color: white;
   width: 370px;
@@ -53,7 +55,7 @@ section #galeria #slider {
   margin: 0 auto;
   border-radius: 0 0 7px 7px;
 }
-/* line 56, ../sass/content.sass */
+/* line 59, ../sass/content.sass */
 section #galeria #slider .control, section #galeria #slider #prev, section #galeria #slider #next {
   width: 20px;
   height: 71px;
@@ -61,38 +63,38 @@ section #galeria #slider .control, section #galeria #slider #prev, section #gale
   background-color: transparent;
   cursor: pointer;
 }
-/* line 63, ../sass/content.sass */
+/* line 66, ../sass/content.sass */
 section #galeria #slider #prev {
   background: url(../img/flecha_izq.png) no-repeat right 15px;
 }
-/* line 66, ../sass/content.sass */
+/* line 69, ../sass/content.sass */
 section #galeria #slider #carousel {
   float: left;
 }
-/* line 69, ../sass/content.sass */
+/* line 72, ../sass/content.sass */
 section #galeria #slider #carousel img {
   margin: 0 5px;
 }
-/* line 71, ../sass/content.sass */
+/* line 74, ../sass/content.sass */
 section #galeria #slider #next {
   background: url(../img/flecha_der.png) no-repeat left 15px;
 }
-/* line 76, ../sass/content.sass */
+/* line 79, ../sass/content.sass */
 section #places {
   float: right;
   margin: 192px 50px 0 0;
 }
-/* line 80, ../sass/content.sass */
+/* line 83, ../sass/content.sass */
 section #specifications {
   display: inline-block;
   vertical-align: bottom;
 }
-/* line 84, ../sass/content.sass */
+/* line 87, ../sass/content.sass */
 section #specifications, section #places {
   font-size: 13px;
-  font-family: "arial";
+  font-family: "Calibri";
 }
-/* line 89, ../sass/content.sass */
+/* line 92, ../sass/content.sass */
 section #specifications #logos, section #places #logos {
   width: 180px;
   height: 170px;
@@ -103,37 +105,42 @@ section #specifications #logos, section #places #logos {
   text-align: center;
   font-size: 25px;
 }
-/* line 99, ../sass/content.sass */
+/* line 102, ../sass/content.sass */
 section #specifications #logos img, section #places #logos img {
   display: block;
   margin: 0 auto;
 }
-/* line 105, ../sass/content.sass */
+/* line 108, ../sass/content.sass */
 section #specifications h1, section #places h1 {
   position: relative;
 }
-/* line 111, ../sass/content.sass */
+/* line 114, ../sass/content.sass */
 section #specifications ul, section #places ul {
   list-style: square inside;
   padding: 0 0 0 12px;
 }
-/* line 115, ../sass/content.sass */
+/* line 118, ../sass/content.sass */
 section #specifications ul li, section #places ul li {
   padding: 5px 0;
   float: left;
   min-width: 50%;
 }
-/* line 120, ../sass/content.sass */
+/* line 123, ../sass/content.sass */
 section #contacto {
   height: 400px;
   float: right;
   margin: 0px 50px 0 0;
 }
-/* line 133, ../sass/content.sass */
+/* line 135, ../sass/content.sass */
+section #contacto form {
+  font-family: Calibri;
+  font-size: 12px;
+}
+/* line 138, ../sass/content.sass */
 section #contacto form .row {
   padding: 0 0 11px 0;
 }
-/* line 136, ../sass/content.sass */
+/* line 141, ../sass/content.sass */
 section #contacto form .row label {
   width: 20%;
   display: block;
@@ -144,7 +151,7 @@ section #contacto form .row label {
   padding: 0 10px 0 0;
   box-sizing: border-box;
 }
-/* line 146, ../sass/content.sass */
+/* line 151, ../sass/content.sass */
 section #contacto form .row input {
   border: none;
   background-color: #eaedf4;
@@ -154,9 +161,11 @@ section #contacto form .row input {
   box-sizing: border-box;
   border-radius: 15px 0 0 15px;
 }
-/* line 155, ../sass/content.sass */
+/* line 160, ../sass/content.sass */
 section #contacto form .row textarea {
   border: none;
+  font-family: Calibri;
+  font-size: 12px;
   background-color: #eaedf4;
   width: 80%;
   box-sizing: border-box;
@@ -165,7 +174,7 @@ section #contacto form .row textarea {
   padding: 5px 5px;
   resize: none;
 }
-/* line 165, ../sass/content.sass */
+/* line 172, ../sass/content.sass */
 section #contacto form button {
   background-color: #4c4849;
   color: white;
@@ -177,11 +186,11 @@ section #contacto form button {
   float: right;
   cursor: pointer;
 }
-/* line 175, ../sass/content.sass */
+/* line 182, ../sass/content.sass */
 section #contacto form button:hover {
   background-color: #605e5f;
 }
-/* line 178, ../sass/content.sass */
+/* line 185, ../sass/content.sass */
 section #controls {
   background-color: white;
   height: 32px;
@@ -192,17 +201,18 @@ section #controls {
   float: left;
   margin: 360px 0 0 50px;
 }
-/* line 188, ../sass/content.sass */
+/* line 195, ../sass/content.sass */
 section #controls #placeslist {
   float: left;
   width: 160px;
+  font-size: 18px;
 }
-/* line 192, ../sass/content.sass */
+/* line 200, ../sass/content.sass */
 section #controls span {
   float: left;
   width: 160px;
 }
-/* line 196, ../sass/content.sass */
+/* line 204, ../sass/content.sass */
 section #controls #back {
   width: 20px;
   height: 32px;
@@ -212,7 +222,7 @@ section #controls #back {
   background: url(../img/flecha_izq.png) no-repeat right 7px;
   background-size: 17px 20px;
 }
-/* line 205, ../sass/content.sass */
+/* line 213, ../sass/content.sass */
 section #controls #go {
   width: 20px;
   height: 32px;
