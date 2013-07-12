@@ -6,10 +6,10 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css"><!--[if lt IE 7]>
+    <link rel="stylesheet" href="css/font-awesome-ie7.min.css"><![endif]-->
     <script src="js/jquery-1.8.3.js"></script>
     <script src="js/jquery.nicescroll.min.js"></script>
-    <!-- script(src='js/jquery.hashchange.min.js')-->
-    <!-- script(src='js/jquery.easytabs.min.js')-->
     <script src="js/scripts.js"></script><!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script><![endif]-->
   </head>
@@ -19,7 +19,7 @@
         <div id="logo"></div>
         <div id="filtro"><a class="active">compra</a><a>renta</a>
           <div>
-            <div><span>Zona de inmueble</span>
+            <div><span id="anyselector">Zona de inmueble</span>
               <div id="zona">
                 <ul>
                   <li>aaa</li>
@@ -39,7 +39,7 @@
                 </ul>
               </div>
             </div>
-            <div><span>Tipo de inmueble</span>
+            <div><span id="anyselector">Tipo de inmueble</span>
               <div id="tipo">
                 <ul>
                   <li>aaa</li>
@@ -63,7 +63,7 @@
         </div>
       </div>
       <nav>
-        <div id="socialmedia"></div>
+        <div id="socialmedia"><a href="#"><i class="icon-linkedin"></i></a><a href="#"><i class="icon-twitter"></i></a></div>
         <ul>
           <li> <a href="#">desarrollos</a>
             <ul>
@@ -93,7 +93,7 @@
         </ul>
       </nav>
     </header>
-    <div id="contenedor">
+    <div class="contenedor">
       <section id="nuestrasOficinas">
         <h1>Nuestras Oficinas</h1>
         <p>Nos ponemos a tus órdenes para cualquier tipo de duda o aclaración.</p>

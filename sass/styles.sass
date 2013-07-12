@@ -12,6 +12,8 @@ $tiempo: 400ms
 @import "compass/css3"
 @import "compass/reset"
 @import "compass/typography"
+@import "fonts"
+
 //@import "font-awesome"
 //@import "icons/*.png"
 //@import "bourbon/bourbon"
@@ -34,6 +36,10 @@ body
 	background-repeat: no-repeat
 	background-size: 100% 100%
 	background-image: url(../img/foto-01.jpg)
+
+h1
+	font-family: CaviarDreams
+	font-size: 25px
 
 // header
 header
@@ -58,6 +64,8 @@ header
 			margin: -70px $navheight/2 0 0
 			height: $navheight/2
 			width: 480px
+			font-family: CaviarDreams
+			font-size: 14px
 
 			.seleccionado
 				color: black
@@ -111,6 +119,7 @@ header
 				color: white
 				background: $secundario
 				padding: 0 5px
+				line-height: 17px
 				border-radius: 7px 7px 0 0
 
 				&:hover
@@ -129,10 +138,23 @@ nav
 	#socialmedia
 		float: right
 		height: $navheight/2
+		line-height: $navheight/1.5
+		padding: 0 40px 0 0
+		text-align: right
 		width: 580px
+
+		a
+			text-decoration: none
+			color: black
+
+			i
+				font-size: 25px
+				margin: 0 10px 0 0
 	>ul
 		float: right
-		height: $navheight/2		
+		height: $navheight/2	
+		font-family: CaviarDreams
+		font-size: 14px
 
 		>li
 			color: black
@@ -160,6 +182,7 @@ nav
 				li
 					color: black
 					background: white
+					transition-duration: $tiempo
 
 					a
 						text-decoration: none
@@ -168,6 +191,7 @@ nav
 					&:last-of-type
 						border-radius: 0 0 7px 7px
 					&:hover
+						transition-duration: $tiempo
 						color: $primario
 			&:hover
 				color: $primario
@@ -176,12 +200,13 @@ nav
 					display: block
 
 // footer
-
 footer
 	width: $contentwidth
 	color: white
 	margin: 30px auto 0 auto
 	overflow: auto
+	font-family: Calibri
+	font-size: 12px
 	text-shadow: 0 0.1em 0.2em #777
 
 	div
@@ -204,6 +229,8 @@ footer
 		padding: 3px 20px
 		margin: 5px 0 5px -50px
 		line-height: 29px
+		font-family: Calibri
+		font-size: 21px
 		text-align: right
 		text-decoration: none
 		box-sizing: border-box
@@ -228,12 +255,16 @@ footer
 		float: left
 		font-size: 25px
 		padding: 15px
+		font-family: CaviarDreams
+		font-size: 25px
 		line-height: 20px
 		box-sizing: border-box
 	#ordenacion
 		float: right
 		height: auto
 		padding: 15px
+		font-family: Calibri
+		font-size: 14px
 		box-sizing: border-box
 
 		div
@@ -243,7 +274,7 @@ footer
 			background: $primario
 			color: white
 			box-sizing: border-box
-			padding: 2px 5px
+			padding: 3px 8px
 			margin: 0 2px
 	#scrollinterno
 		clear: both
@@ -255,6 +286,8 @@ footer
 			clear: left
 			margin: 0 15px
 			padding: 15px
+			font-family: Calibri
+			font-size: 15px
 			box-sizing: border-box
 			border-bottom: 2px solid black
 			overflow: auto
@@ -272,54 +305,58 @@ footer
 				float: left
 				margin: 0 15px
 				h2
-					font-size: 18px
-					margin: 0 0 .5em 0
+					font-size: 22px
+					margin: 0 0 .3em 0
 				p
-					margin: 0 0 1em 0
+					font-size: 16px
+					margin: 0 0 .3em 0
 				li
 					&:before
 						content: "- "
 // Nuestras-oficinas
-section#nuestrasOficinas
-	float: right
-	height: 400px
-	width: 550px
-	margin: 0 50px 0 0
-	background: white
-	border-radius: 7px
-	padding: 15px
-	box-sizing: border-box
-
-	h1
-		font-size: 25px
-		padding: 0 0 15px 0
-		line-height: 20px
-		box-sizing: border-box
-		border-bottom: 2px solid black
-	p
-		margin: 15px 0
-	article
-		float: left
-		height: 113px
-		width: 230px
-		margin: 15px
-		padding: 0 15px
+div.contenedor
+	section#nuestrasOficinas
+		float: right
+		height: 400px
+		width: 550px
+		margin: 0 50px 0 0
+		background: white
+		border-radius: 7px
+		padding: 15px
+		font-family: Calibri
+		font-size: 12px
 		box-sizing: border-box
 
-		.telefonos
-			color: #666
-			font-size: 14px
-		.email
-			color: black
-			font-size: 13px
-		h2
-			font-size: 18px
-			margin: 0 0 .5em 0
-		ul
-			margin: 0 0 .5em 0
+		h1
+			font-size: 25px
+			padding: 0 0 15px 0
+			line-height: 20px
+			box-sizing: border-box
+			border-bottom: 2px solid black
+		p
+			margin: 15px 0
+		article
+			float: left
+			height: 113px
+			width: 230px
+			margin: 15px
+			padding: 0 15px
+			box-sizing: border-box
 
-	.border
-		border-right: 2px solid black
+			.telefonos
+				color: #666
+				font-size: 14px
+			.email
+				color: black
+				font-size: 13px
+			h2
+				font-size: 18px
+				margin: 0 0 .5em 0
+			ul
+				margin: 0 0 .5em 0
+
+		.border
+			border-right: 2px solid black
 
 
 // Nicescroll rail fix

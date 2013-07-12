@@ -1,8 +1,9 @@
 $("document").ready( function() {
 	$("#scrollinterno").niceScroll({cursorcolor:"#C2ECE2", cursorwidth:"7px", autohidemode:"false", background:"#C0D3CF", railoffset: {top:0, left:-3}});
-	$("#zona").niceScroll({cursorcolor:"#C2ECE2", autohidemode:"false", background:"#C0D3CF", railoffset: {top:0, left:-3}});
-	$("#tipo").niceScroll({cursorcolor:"#C2ECE2", autohidemode:"false", background:"#C0D3CF", railoffset: {top:0, left:-3}});
-	assignEvents();
+	$("#zona").niceScroll({cursorcolor:"#C2ECE2", cursorborder:"0", autohidemode:"false", background:"#C0D3CF", railoffset: {top:0, left:-3}});
+	$("#tipo").niceScroll({cursorcolor:"#C2ECE2", cursorborder:"0", autohidemode:"false", background:"#C0D3CF", railoffset: {top:0, left:-3}});
+	//assignEvents();
+	console.log("Script loaded");
 });
 
 function assignEvents() {
@@ -25,10 +26,13 @@ function assignEvents() {
 
 	//Filtros - drop-down
 	$("#filtro li").click(function(index){
-		console.log( index + ": " + $(this).text() );
-		$("#filtro>div>div").removeClass("show");
-/*		$(this).parent().children("span").text = $("this").text()
-		console.log($(this).parent().text());
-		$(this).parent().addClass("seleccionado");*/
-	});
+	//	$("#zona li").click(function(){
+  		$(".anyselector").html($(this).html());
+ 	});
 }
+/*		console.log( index + ": " + $(this).text() );
+		$("#filtro>div>div").removeClass("show");
+		$(this).parent().children("span").text = $("this").text()
+		console.log($(this).parent().text());
+		$(this).parent().addClass("seleccionado");
+	});*/
