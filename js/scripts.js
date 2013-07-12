@@ -3,7 +3,7 @@ $("document").ready( function() {
 	$("#zona").niceScroll({cursorcolor:"#C2ECE2", cursorborder:"0", autohidemode:"false", background:"#C0D3CF", railoffset: {top:0, left:-3}});
 	$("#tipo").niceScroll({cursorcolor:"#C2ECE2", cursorborder:"0", autohidemode:"false", background:"#C0D3CF", railoffset: {top:0, left:-3}});
 	//assignEvents();
-	console.log("Script loaded");
+	function init_cover();
 });
 
 function assignEvents() {
@@ -29,10 +29,23 @@ function assignEvents() {
 	//	$("#zona li").click(function(){
   		$(".anyselector").html($(this).html());
  	});
-}
-/*		console.log( index + ": " + $(this).text() );
+	/*	console.log( index + ": " + $(this).text() );
 		$("#filtro>div>div").removeClass("show");
 		$(this).parent().children("span").text = $("this").text()
 		console.log($(this).parent().text());
 		$(this).parent().addClass("seleccionado");
 	});*/
+}
+
+function init_cover(){
+	$("body").append("<div class=whiteUp style='height: 0px; width: 100%;background: white;position: absolute;top: 150px;z-index: 10;'><div style='width: 100%;position: absolute;	background-color: white;height: 0px;'></div></div>");	
+	$("body").append("<div class=whiteDown style='height: 0; width: 100%;background: white;position: absolute;top: 150px;z-index: 10;'></div>");
+}	
+function cover(){
+	$(".whiteDown").animate({height:'100%'}, 500);
+	$(".whiteUp div").animate({height:'150px',top:'-150px'}, 500);
+}
+function uncover(){
+	$(".whiteDown").animate({height:'0'}, 500);
+	$(".whiteUp div").animate({height:'0',top:'0'}, 500);
+}
