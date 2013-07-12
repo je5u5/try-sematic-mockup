@@ -32,9 +32,11 @@ function assignEvents() {
 
  	$("#zona li").click(function(){
 		$("#anyselector").html($(this).html());
+		$("#zona").removeClass("show");
 	});
 	$("#tipo li").click(function(){
-		$("#tipo").prev().html($(this).html());
+		$("#tiposelector").html($(this).html());
+		$("#tipo").removeClass("show");
 	});
 	/*	console.log( index + ": " + $(this).text() );
 		$("#filtro>div>div").removeClass("show");
