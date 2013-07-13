@@ -13,8 +13,7 @@ function assignEvents() {
 		$(this).addClass("active");
 	});
 
-	//Filtros - drop-down
-	$("#filtro>div>div span").click(function(){
+	function dropDown(){
 		if ($(this).parent().children("div").hasClass("show")) {
 			$(this).parent().children("div").removeClass("show");
 		} else {
@@ -22,22 +21,29 @@ function assignEvents() {
 			$("#zona").niceScroll().resize();
 			$("#tipo").niceScroll().resize();
 		}
-	});
-
+	}
 	//Filtros - drop-down
-	/*$("#zona li").click(function(index){
-	//	$("#zona li").click(function(){
-  		$(".anyselector").html($(this).html());
- 	});*/
+	$("#filtro>div>div span").first().click(dropDown);
 
- 	$("#zona li").click(function(){
+ 	$("#zona li").on("click",unlock);
+
+ 	function unlock(){
+		changeZone();
+		
+		$("#filtro>div>div span").last().click(dropDown);
+		//Filtros - tipos
+		$("#tipo li").click(function(){
+			$("#tiposelector").html($(this).html());
+			$("#tipo").removeClass("show");
+		});
+		$("#zona li").off("click",unlock);
+		$("#zona li").on("click",changeZone);
+	}
+	function changeZone(){
 		$("#anyselector").html($(this).html());
 		$("#zona").removeClass("show");
-	});
-	$("#tipo li").click(function(){
-		$("#tiposelector").html($(this).html());
-		$("#tipo").removeClass("show");
-	});
+	}
+
 	/*	console.log( index + ": " + $(this).text() );
 		$("#filtro>div>div").removeClass("show");
 		$(this).parent().children("span").text = $("this").text()
