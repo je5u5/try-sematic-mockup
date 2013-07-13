@@ -236,3 +236,22 @@ section #controls #go {
   background: url(../img/flecha_der.png) no-repeat right 7px;
   background-size: 17px 20px;
 }
+
+/* line 223, ../sass/content.sass */
+#mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  display: none;
+  z-index: -98;
+}
+
+/* line 230, ../sass/content.sass */
+#imgbg {
+  position: absolute;
+  z-index: -99;
+  top: 0;
+  left: 0;
+  background-size: cover;
+}

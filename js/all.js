@@ -16,7 +16,16 @@ $(document).ready(function(){
 
 			//$("#logos img").attr("src",src)
 			//$("#logos span").html(name)
-			$("body").css("background-image",src)
+
+			//$("body").css("background-image",src)
+
+			$('#mask').css({height: $(window).height(),width: $(window).width()})
+              .fadeIn('slow', function(){
+
+              	  $('#imgbg').css('background-image', src);
+                  $('#mask').fadeOut('slow');
+            });
 		}
 	});
+	$('#imgbg').css({height: $(window).height(),width: $(window).width()});
 });
