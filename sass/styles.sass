@@ -268,15 +268,34 @@ footer
 		font-size: 14px
 		box-sizing: border-box
 
-		div
+		>div
 			float: left
 			height: 20px
 			width: 100px
 			background: $primario
 			color: white
 			box-sizing: border-box
-			padding: 3px 8px
-			margin: 0 2px
+			margin: 0 5px
+
+			&:hover
+				div
+					display: block
+			span
+				display: block
+				padding: 3px 8px
+			div
+				display: none
+				background: #F79B34
+				font-family: CaviarDreams
+				max-height: 200px
+				font-size: 14px
+				line-height: 20px
+
+				li
+					padding: 0 5px
+
+					&:hover
+						background: #83684D
 	#scrollinterno
 		clear: both
 		height: 340px
