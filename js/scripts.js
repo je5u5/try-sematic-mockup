@@ -21,14 +21,17 @@ function assignEvents() {
 			$("#zona").niceScroll().resize();
 			$("#tipo").niceScroll().resize();
 		}
+
 	}
+	
 	//Filtros - drop-down
 	$("#filtro>div>div span").first().click(dropDown);
 
  	$("#zona li").on("click",unlock);
 
  	function unlock(){
-		changeZone();
+		$("#anyselector").html($(this).html());
+		$("#zona").removeClass("show");
 		
 		$("#filtro>div>div span").last().click(dropDown);
 		//Filtros - tipos
