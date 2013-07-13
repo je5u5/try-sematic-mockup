@@ -56,14 +56,19 @@ function assignEvents() {
 }
 
 function init_cover(){
-	$("body").append("<div class=whiteUp style='height: 0px; width: 100%;background: white;position: absolute;top: 150px;z-index: 10;'><div style='width: 100%;position: absolute;	background-color: white;height: 0px;'></div></div>");	
-	$("body").append("<div class=whiteDown style='height: 0; width: 100%;background: white;position: absolute;top: 150px;z-index: 10;'></div>");
+	$("body").append("<div class=whiteUp style='height: 0px; width: 100%;background: white;position: absolute;top: 0px;z-index: 10;'><div style='width: 100%;position: absolute;	background-color: white;height: 150px; bottom:-150px;'></div></div>");
+	$("body").append("<div class=whiteDown style='height: 100%; width: 100%;background: white;position: absolute;top: 150px;z-index: 10;'></div>");
 }	
 function cover(){
 	$(".whiteDown").animate({height:'100%'}, 500);
-	$(".whiteUp div").animate({height:'150px',top:'-150px'}, 500);
+	$(".whiteUp div").animate({height:'150px'}, 500);
 }
 function uncover(){
 	$(".whiteDown").animate({height:'0'}, 500);
-	$(".whiteUp div").animate({height:'0',top:'0'}, 500);
+	$(".whiteUp div").animate({height:'0'}, 500);
 }
+function flasheo(){
+	init_cover();
+	uncover();
+}
+window.onload = flasheo;
