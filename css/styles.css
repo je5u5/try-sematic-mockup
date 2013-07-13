@@ -161,10 +161,9 @@ header .container #logo {
   display: block;
   height: 163px;
   width: 189px;
-  background: url(../img/logo-good-house.png);
   margin: -63px 0 0 50px;
 }
-/* line 63, ../sass/styles.sass */
+/* line 62, ../sass/styles.sass */
 header .container #filtro {
   float: right;
   margin: -70px 50px 0 0;
@@ -173,11 +172,11 @@ header .container #filtro {
   font-family: CaviarDreams;
   font-size: 14px;
 }
-/* line 71, ../sass/styles.sass */
+/* line 70, ../sass/styles.sass */
 header .container #filtro .seleccionado {
   color: black;
 }
-/* line 74, ../sass/styles.sass */
+/* line 73, ../sass/styles.sass */
 header .container #filtro > div {
   width: 100%;
   background: #e57823;
@@ -187,7 +186,7 @@ header .container #filtro > div {
   box-sizing: border-box;
   border-radius: 0 7px 7px 7px;
 }
-/* line 83, ../sass/styles.sass */
+/* line 82, ../sass/styles.sass */
 header .container #filtro > div > div {
   float: left;
   width: 212px;
@@ -198,23 +197,23 @@ header .container #filtro > div > div {
   cursor: pointer;
   line-height: 20px;
 }
-/* line 93, ../sass/styles.sass */
+/* line 92, ../sass/styles.sass */
 header .container #filtro > div > div span {
   display: block;
 }
-/* line 95, ../sass/styles.sass */
+/* line 94, ../sass/styles.sass */
 header .container #filtro > div > div div {
   max-height: 200px;
   display: none;
 }
-/* line 99, ../sass/styles.sass */
+/* line 98, ../sass/styles.sass */
 header .container #filtro > div > div div ul {
   float: right;
   width: 212px;
   padding: 0 8px 0 0;
   box-sizing: border-box;
 }
-/* line 105, ../sass/styles.sass */
+/* line 104, ../sass/styles.sass */
 header .container #filtro > div > div div ul li {
   float: left;
   text-align: left;
@@ -224,11 +223,11 @@ header .container #filtro > div > div div ul li {
   box-sizing: border-box;
   position: relative;
 }
-/* line 114, ../sass/styles.sass */
+/* line 113, ../sass/styles.sass */
 header .container #filtro > div > div div ul li:hover {
   background: #fae1cd;
 }
-/* line 116, ../sass/styles.sass */
+/* line 115, ../sass/styles.sass */
 header .container #filtro a {
   float: left;
   height: 40%;
@@ -239,23 +238,23 @@ header .container #filtro a {
   line-height: 17px;
   border-radius: 7px 7px 0 0;
 }
-/* line 126, ../sass/styles.sass */
+/* line 125, ../sass/styles.sass */
 header .container #filtro a:hover {
   background: #b84e00;
 }
-/* line 128, ../sass/styles.sass */
+/* line 127, ../sass/styles.sass */
 header .container #filtro .active {
   background: #e57823 !important;
 }
 
-/* line 133, ../sass/styles.sass */
+/* line 132, ../sass/styles.sass */
 nav {
   height: 100%;
   width: 1000px;
   position: relative;
   margin: 0 auto;
 }
-/* line 139, ../sass/styles.sass */
+/* line 138, ../sass/styles.sass */
 nav #socialmedia {
   float: right;
   height: 50px;
@@ -264,21 +263,22 @@ nav #socialmedia {
   text-align: right;
   width: 580px;
 }
-/* line 147, ../sass/styles.sass */
+/* line 146, ../sass/styles.sass */
 nav #socialmedia a {
   text-decoration: none;
   color: black;
 }
-/* line 151, ../sass/styles.sass */
+/* line 150, ../sass/styles.sass */
 nav #socialmedia a i {
   font-size: 25px;
   margin: 0 10px 0 0;
 }
-/* line 154, ../sass/styles.sass */
+/* line 153, ../sass/styles.sass */
 nav > ul {
   float: right;
   height: 50px;
   font-family: CaviarDreams;
+  margin: 0 25px 0 0;
   font-size: 16px;
 }
 /* line 160, ../sass/styles.sass */
