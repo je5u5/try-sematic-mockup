@@ -331,11 +331,31 @@ footer
 				border-top: 2px solid black
 			a
 				float: left
+				position: relative
 				cursor: pointer
 
 				img
 					width: 185px
 					height: 132px
+				>div
+					position: absolute
+					background: $secundario
+					color: white
+					bottom: 0
+					border: 0
+					margin: 0
+					height: 30px
+					width: 100%
+					line-height: 28px
+					text-align: center
+					text-transform: uppercase
+					overflow: hidden
+					font-size: 12px
+					transition-duration: $tiempo
+				&:hover
+					>div
+						transition-duration: $tiempo
+						height: 0
 			div
 				float: left
 				margin: 0 15px
