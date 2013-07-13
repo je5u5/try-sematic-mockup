@@ -65,14 +65,50 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 @font-face {
   font-family: "CaviarDreams";
-  src: url("../font/CaviarDreams.ttf") format("truetype");
+  src: url("../font/CaviarDreams-webfont.eot");
+  src: url("../font/CaviarDreams-webfont.eot?#iefix") format("embedded-opentype"), url("../font/CaviarDreams-webfont.woff") format("woff"), url("../font/CaviarDreams-webfont.ttf") format("truetype"), url("../font/CaviarDreams-webfont.svg#nunitobold") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Calibri";
-  src: url("../font/Calibri.ttf") format("truetype");
+  font-family: "CaviarDreamsBold";
+  src: url("../font/Caviar_Dreams_Bold-webfont.eot");
+  src: url("../font/Caviar_Dreams_Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../font/Caviar_Dreams_Bold-webfont.woff") format("woff"), url("../font/Caviar_Dreams_Bold-webfont.ttf") format("truetype"), url("../font/Caviar_Dreams_Bold-webfont.svg#nunitobold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSansBold";
+  src: url("../font/OpenSans-Bold-webfont.eot");
+  src: url("../font/OpenSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../font/OpenSans-Bold-webfont.woff") format("woff"), url("../font/OpenSans-Bold-webfont.ttf") format("truetype"), url("../font/OpenSans-Bold-webfont.svg#nunitobold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSansLight";
+  src: url("../font/OpenSans-Light-webfont.eot");
+  src: url("../font/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../font/OpenSans-Light-webfont.woff") format("woff"), url("../font/OpenSans-Light-webfont.ttf") format("truetype"), url("../font/OpenSans-Light-webfont.svg#nunitobold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../font/OpenSans-Regular-webfont.eot");
+  src: url("../font/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../font/OpenSans-Regular-webfont.woff") format("woff"), url("../font/OpenSans-Regular-webfont.ttf") format("truetype"), url("../font/OpenSans-Regular-webfont.svg#nunitobold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSansSemibold";
+  src: url("../font/OpenSans-Semibold-webfont.eot");
+  src: url("../font/OpenSans-Semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../font/OpenSans-Semibold-webfont.woff") format("woff"), url("../font/OpenSans-Semibold-webfont.ttf") format("truetype"), url("../font/OpenSans-Semibold-webfont.svg#nunitobold") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* line 23, ../sass/styles.sass */
@@ -96,7 +132,7 @@ html {
 /* line 35, ../sass/styles.sass */
 body {
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   background-image: url(../img/foto-01.jpg);
 }
 
@@ -122,12 +158,13 @@ header .container {
 /* line 56, ../sass/styles.sass */
 header .container #logo {
   float: left;
+  display: block;
   height: 163px;
   width: 189px;
   background: url(../img/logo-good-house.png);
   margin: -63px 0 0 50px;
 }
-/* line 62, ../sass/styles.sass */
+/* line 63, ../sass/styles.sass */
 header .container #filtro {
   float: right;
   margin: -70px 50px 0 0;
@@ -136,11 +173,11 @@ header .container #filtro {
   font-family: CaviarDreams;
   font-size: 14px;
 }
-/* line 70, ../sass/styles.sass */
+/* line 71, ../sass/styles.sass */
 header .container #filtro .seleccionado {
   color: black;
 }
-/* line 73, ../sass/styles.sass */
+/* line 74, ../sass/styles.sass */
 header .container #filtro > div {
   width: 100%;
   background: #e57823;
@@ -150,7 +187,7 @@ header .container #filtro > div {
   box-sizing: border-box;
   border-radius: 0 7px 7px 7px;
 }
-/* line 82, ../sass/styles.sass */
+/* line 83, ../sass/styles.sass */
 header .container #filtro > div > div {
   float: left;
   width: 212px;
@@ -161,23 +198,23 @@ header .container #filtro > div > div {
   cursor: pointer;
   line-height: 20px;
 }
-/* line 92, ../sass/styles.sass */
+/* line 93, ../sass/styles.sass */
 header .container #filtro > div > div span {
   display: block;
 }
-/* line 94, ../sass/styles.sass */
+/* line 95, ../sass/styles.sass */
 header .container #filtro > div > div div {
   max-height: 200px;
   display: none;
 }
-/* line 98, ../sass/styles.sass */
+/* line 99, ../sass/styles.sass */
 header .container #filtro > div > div div ul {
   float: right;
   width: 212px;
   padding: 0 8px 0 0;
   box-sizing: border-box;
 }
-/* line 104, ../sass/styles.sass */
+/* line 105, ../sass/styles.sass */
 header .container #filtro > div > div div ul li {
   float: left;
   text-align: left;
@@ -187,11 +224,11 @@ header .container #filtro > div > div div ul li {
   box-sizing: border-box;
   position: relative;
 }
-/* line 113, ../sass/styles.sass */
+/* line 114, ../sass/styles.sass */
 header .container #filtro > div > div div ul li:hover {
   background: #fae1cd;
 }
-/* line 115, ../sass/styles.sass */
+/* line 116, ../sass/styles.sass */
 header .container #filtro a {
   float: left;
   height: 40%;
@@ -202,23 +239,23 @@ header .container #filtro a {
   line-height: 17px;
   border-radius: 7px 7px 0 0;
 }
-/* line 125, ../sass/styles.sass */
+/* line 126, ../sass/styles.sass */
 header .container #filtro a:hover {
   background: #b84e00;
 }
-/* line 127, ../sass/styles.sass */
+/* line 128, ../sass/styles.sass */
 header .container #filtro .active {
   background: #e57823 !important;
 }
 
-/* line 132, ../sass/styles.sass */
+/* line 133, ../sass/styles.sass */
 nav {
   height: 100%;
   width: 1000px;
   position: relative;
   margin: 0 auto;
 }
-/* line 138, ../sass/styles.sass */
+/* line 139, ../sass/styles.sass */
 nav #socialmedia {
   float: right;
   height: 50px;
@@ -227,24 +264,24 @@ nav #socialmedia {
   text-align: right;
   width: 580px;
 }
-/* line 146, ../sass/styles.sass */
+/* line 147, ../sass/styles.sass */
 nav #socialmedia a {
   text-decoration: none;
   color: black;
 }
-/* line 150, ../sass/styles.sass */
+/* line 151, ../sass/styles.sass */
 nav #socialmedia a i {
   font-size: 25px;
   margin: 0 10px 0 0;
 }
-/* line 153, ../sass/styles.sass */
+/* line 154, ../sass/styles.sass */
 nav > ul {
   float: right;
   height: 50px;
   font-family: CaviarDreams;
-  font-size: 14px;
+  font-size: 16px;
 }
-/* line 159, ../sass/styles.sass */
+/* line 160, ../sass/styles.sass */
 nav > ul > li {
   color: black;
   padding: 0 18px;
@@ -252,7 +289,7 @@ nav > ul > li {
   text-align: center;
   float: left;
 }
-/* line 166, ../sass/styles.sass */
+/* line 167, ../sass/styles.sass */
 nav > ul > li > a {
   color: inherit;
   text-shadow: 0 0.2em 0.2em #aaaaaa;
@@ -263,7 +300,7 @@ nav > ul > li > a {
   text-transform: lowercase;
   text-decoration: none;
 }
-/* line 175, ../sass/styles.sass */
+/* line 176, ../sass/styles.sass */
 nav > ul > li ul {
   display: none;
   position: absolute;
@@ -271,60 +308,60 @@ nav > ul > li ul {
   margin: 0 -18px;
   width: 100%;
 }
-/* line 182, ../sass/styles.sass */
+/* line 183, ../sass/styles.sass */
 nav > ul > li ul li {
   color: black;
   background: white;
   transition-duration: 400ms;
 }
-/* line 187, ../sass/styles.sass */
+/* line 188, ../sass/styles.sass */
 nav > ul > li ul li a {
   text-decoration: none;
   color: inherit;
   text-shadow: 0 0.2em 0.2em #aaaaaa;
 }
-/* line 191, ../sass/styles.sass */
+/* line 192, ../sass/styles.sass */
 nav > ul > li ul li:last-of-type {
   border-radius: 0 0 7px 7px;
 }
-/* line 193, ../sass/styles.sass */
+/* line 194, ../sass/styles.sass */
 nav > ul > li ul li:hover {
   transition-duration: 400ms;
   color: #e57823;
 }
-/* line 196, ../sass/styles.sass */
+/* line 197, ../sass/styles.sass */
 nav > ul > li:hover {
   color: #e57823;
 }
-/* line 199, ../sass/styles.sass */
+/* line 200, ../sass/styles.sass */
 nav > ul > li:hover ul {
   display: block;
 }
 
-/* line 203, ../sass/styles.sass */
+/* line 204, ../sass/styles.sass */
 footer {
   width: 1000px;
   color: white;
   margin: 30px auto 0 auto;
   overflow: auto;
-  font-family: Calibri;
+  font-family: OpenSans;
   font-size: 12px;
   text-shadow: 0 0.1em 0.2em #777777;
 }
-/* line 212, ../sass/styles.sass */
+/* line 213, ../sass/styles.sass */
 footer div {
   margin: 12px;
 }
-/* line 215, ../sass/styles.sass */
+/* line 216, ../sass/styles.sass */
 footer div:first-of-type {
   float: left;
 }
-/* line 217, ../sass/styles.sass */
+/* line 218, ../sass/styles.sass */
 footer div:last-of-type {
   float: right;
 }
 
-/* line 222, ../sass/styles.sass */
+/* line 223, ../sass/styles.sass */
 #portada a {
   clear: both;
   float: left;
@@ -335,7 +372,7 @@ footer div:last-of-type {
   padding: 3px 20px;
   margin: 5px 0 5px -50px;
   line-height: 29px;
-  font-family: Calibri;
+  font-family: OpenSans;
   font-size: 21px;
   text-align: right;
   text-decoration: none;
@@ -343,7 +380,7 @@ footer div:last-of-type {
   transition-duration: 400ms;
   border-radius: 0 5px 5px 0;
 }
-/* line 240, ../sass/styles.sass */
+/* line 241, ../sass/styles.sass */
 #portada a:hover {
   transition-property: background, margin;
   transition-duration: 400ms;
@@ -351,7 +388,7 @@ footer div:last-of-type {
   margin: 5px 0;
 }
 
-/* line 247, ../sass/styles.sass */
+/* line 248, ../sass/styles.sass */
 #listado {
   width: 700px;
   height: 400px;
@@ -359,7 +396,7 @@ footer div:last-of-type {
   background: white;
   border-radius: 7px;
 }
-/* line 254, ../sass/styles.sass */
+/* line 255, ../sass/styles.sass */
 #listado h1 {
   float: left;
   font-size: 25px;
@@ -369,16 +406,16 @@ footer div:last-of-type {
   line-height: 20px;
   box-sizing: border-box;
 }
-/* line 262, ../sass/styles.sass */
+/* line 263, ../sass/styles.sass */
 #listado #ordenacion {
   float: right;
   height: auto;
   padding: 15px;
-  font-family: Calibri;
+  font-family: OpenSans;
   font-size: 14px;
   box-sizing: border-box;
 }
-/* line 270, ../sass/styles.sass */
+/* line 271, ../sass/styles.sass */
 #listado #ordenacion div {
   float: left;
   height: 20px;
@@ -389,59 +426,59 @@ footer div:last-of-type {
   padding: 3px 8px;
   margin: 0 2px;
 }
-/* line 279, ../sass/styles.sass */
+/* line 280, ../sass/styles.sass */
 #listado #scrollinterno {
   clear: both;
   height: 340px;
   margin: 50px 0 0 0;
   overflow: auto;
 }
-/* line 285, ../sass/styles.sass */
+/* line 286, ../sass/styles.sass */
 #listado #scrollinterno article {
   clear: left;
   margin: 0 15px;
   padding: 15px;
-  font-family: Calibri;
+  font-family: OpenSans;
   font-size: 15px;
   box-sizing: border-box;
   border-bottom: 2px solid black;
   overflow: auto;
 }
-/* line 295, ../sass/styles.sass */
+/* line 296, ../sass/styles.sass */
 #listado #scrollinterno article:first-of-type {
   border-top: 2px solid black;
 }
-/* line 297, ../sass/styles.sass */
+/* line 298, ../sass/styles.sass */
 #listado #scrollinterno article a {
   float: left;
   cursor: pointer;
 }
-/* line 301, ../sass/styles.sass */
+/* line 302, ../sass/styles.sass */
 #listado #scrollinterno article a img {
   width: 185px;
   height: 132px;
 }
-/* line 304, ../sass/styles.sass */
+/* line 305, ../sass/styles.sass */
 #listado #scrollinterno article div {
   float: left;
   margin: 0 15px;
 }
-/* line 307, ../sass/styles.sass */
+/* line 308, ../sass/styles.sass */
 #listado #scrollinterno article div h2 {
   font-size: 22px;
   margin: 0 0 0.3em 0;
 }
-/* line 310, ../sass/styles.sass */
+/* line 311, ../sass/styles.sass */
 #listado #scrollinterno article div p {
   font-size: 16px;
   margin: 0 0 0.3em 0;
 }
-/* line 314, ../sass/styles.sass */
+/* line 315, ../sass/styles.sass */
 #listado #scrollinterno article div li:before {
   content: "- ";
 }
 
-/* line 318, ../sass/styles.sass */
+/* line 319, ../sass/styles.sass */
 div.contenedor section#nuestrasOficinas {
   float: right;
   height: 400px;
@@ -450,11 +487,11 @@ div.contenedor section#nuestrasOficinas {
   background: white;
   border-radius: 7px;
   padding: 15px;
-  font-family: Calibri;
+  font-family: OpenSans;
   font-size: 12px;
   box-sizing: border-box;
 }
-/* line 330, ../sass/styles.sass */
+/* line 331, ../sass/styles.sass */
 div.contenedor section#nuestrasOficinas h1 {
   font-size: 25px;
   padding: 0 0 15px 0;
@@ -462,11 +499,11 @@ div.contenedor section#nuestrasOficinas h1 {
   box-sizing: border-box;
   border-bottom: 2px solid black;
 }
-/* line 336, ../sass/styles.sass */
+/* line 337, ../sass/styles.sass */
 div.contenedor section#nuestrasOficinas p {
   margin: 15px 0;
 }
-/* line 338, ../sass/styles.sass */
+/* line 339, ../sass/styles.sass */
 div.contenedor section#nuestrasOficinas article {
   float: left;
   height: 113px;
@@ -475,36 +512,36 @@ div.contenedor section#nuestrasOficinas article {
   padding: 0 15px;
   box-sizing: border-box;
 }
-/* line 346, ../sass/styles.sass */
+/* line 347, ../sass/styles.sass */
 div.contenedor section#nuestrasOficinas article .telefonos {
   color: #666666;
   font-size: 14px;
 }
-/* line 349, ../sass/styles.sass */
+/* line 350, ../sass/styles.sass */
 div.contenedor section#nuestrasOficinas article .email {
   color: black;
   font-size: 13px;
 }
-/* line 352, ../sass/styles.sass */
+/* line 353, ../sass/styles.sass */
 div.contenedor section#nuestrasOficinas article h2 {
   font-size: 18px;
   margin: 0 0 0.5em 0;
 }
-/* line 355, ../sass/styles.sass */
+/* line 356, ../sass/styles.sass */
 div.contenedor section#nuestrasOficinas article ul {
   margin: 0 0 0.5em 0;
 }
-/* line 358, ../sass/styles.sass */
+/* line 359, ../sass/styles.sass */
 div.contenedor section#nuestrasOficinas .border {
   border-right: 2px solid black;
 }
 
-/* line 363, ../sass/styles.sass */
+/* line 364, ../sass/styles.sass */
 .nicescroll-rails {
   border-radius: 5px;
 }
 
-/* line 368, ../sass/styles.sass */
+/* line 369, ../sass/styles.sass */
 #prox {
   width: 400px;
   height: 200px;
