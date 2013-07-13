@@ -11,11 +11,11 @@ $(document).ready(function(){
 		btnPrev: "#back",
 		visible: 1,
 		afterEnd: function (a){
-			title = a.find("span").attr("title")
-			src = a.find("span").attr("src")
+			name = a.find("span").attr("class")
+			src = a.find("span").attr("title")
 
 			$("#logos img").attr("src",src)
-			$("#logos span").html(title)
+			$("#logos span").html(name)
 		}
 	});
 });

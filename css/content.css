@@ -15,7 +15,7 @@ section .whitecard, section #specifications, section #places, section #contacto 
   padding: 0 20px;
 }
 /* line 23, ../sass/content.sass */
-section .whiteh1, section #specifications h1, section #places h1, section #contacto h1 {
+section .whiteh1, section #specifications #placesh1, section #places #placesh1, section #contacto h1 {
   font-size: 30px;
   padding: 22px 0px 0px;
   border-bottom: 2px solid;
@@ -110,37 +110,41 @@ section #specifications #logos img, section #places #logos img {
   display: block;
   margin: 0 auto;
 }
-/* line 108, ../sass/content.sass */
-section #specifications h1, section #places h1 {
+/* line 105, ../sass/content.sass */
+section #specifications #logos span, section #places #logos span {
+  vertical-align: text-bottom;
+}
+/* line 109, ../sass/content.sass */
+section #specifications #placesh1, section #places #placesh1 {
   position: relative;
 }
-/* line 114, ../sass/content.sass */
+/* line 115, ../sass/content.sass */
 section #specifications ul, section #places ul {
   list-style: square inside;
   padding: 0 0 0 12px;
 }
-/* line 118, ../sass/content.sass */
+/* line 119, ../sass/content.sass */
 section #specifications ul li, section #places ul li {
   padding: 5px 0;
   float: left;
   min-width: 50%;
 }
-/* line 123, ../sass/content.sass */
+/* line 124, ../sass/content.sass */
 section #contacto {
   height: 400px;
   float: right;
   margin: 0px 50px 0 0;
 }
-/* line 135, ../sass/content.sass */
+/* line 136, ../sass/content.sass */
 section #contacto form {
   font-family: Calibri;
   font-size: 12px;
 }
-/* line 138, ../sass/content.sass */
+/* line 139, ../sass/content.sass */
 section #contacto form .row {
   padding: 0 0 11px 0;
 }
-/* line 141, ../sass/content.sass */
+/* line 142, ../sass/content.sass */
 section #contacto form .row label {
   width: 20%;
   display: block;
@@ -151,7 +155,7 @@ section #contacto form .row label {
   padding: 0 10px 0 0;
   box-sizing: border-box;
 }
-/* line 151, ../sass/content.sass */
+/* line 152, ../sass/content.sass */
 section #contacto form .row input {
   border: none;
   background-color: #eaedf4;
@@ -161,7 +165,7 @@ section #contacto form .row input {
   box-sizing: border-box;
   border-radius: 15px 0 0 15px;
 }
-/* line 160, ../sass/content.sass */
+/* line 161, ../sass/content.sass */
 section #contacto form .row textarea {
   border: none;
   font-family: Calibri;
@@ -174,7 +178,7 @@ section #contacto form .row textarea {
   padding: 5px 5px;
   resize: none;
 }
-/* line 172, ../sass/content.sass */
+/* line 173, ../sass/content.sass */
 section #contacto form button {
   background-color: #4c4849;
   color: white;
@@ -186,11 +190,11 @@ section #contacto form button {
   float: right;
   cursor: pointer;
 }
-/* line 182, ../sass/content.sass */
+/* line 183, ../sass/content.sass */
 section #contacto form button:hover {
   background-color: #605e5f;
 }
-/* line 185, ../sass/content.sass */
+/* line 186, ../sass/content.sass */
 section #controls {
   background-color: white;
   height: 32px;
@@ -201,18 +205,18 @@ section #controls {
   float: left;
   margin: 360px 0 0 50px;
 }
-/* line 195, ../sass/content.sass */
+/* line 196, ../sass/content.sass */
 section #controls #placeslist {
   float: left;
   width: 160px;
   font-size: 18px;
 }
-/* line 200, ../sass/content.sass */
+/* line 201, ../sass/content.sass */
 section #controls span {
   float: left;
   width: 160px;
 }
-/* line 204, ../sass/content.sass */
+/* line 205, ../sass/content.sass */
 section #controls #back {
   width: 20px;
   height: 32px;
@@ -222,7 +226,7 @@ section #controls #back {
   background: url(../img/flecha_izq.png) no-repeat right 7px;
   background-size: 17px 20px;
 }
-/* line 213, ../sass/content.sass */
+/* line 214, ../sass/content.sass */
 section #controls #go {
   width: 20px;
   height: 32px;
