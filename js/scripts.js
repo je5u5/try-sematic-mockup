@@ -47,12 +47,28 @@ function assignEvents() {
 		$("#zona").removeClass("show");
 	}
 
-	/*	console.log( index + ": " + $(this).text() );
-		$("#filtro>div>div").removeClass("show");
-		$(this).parent().children("span").text = $("this").text()
-		console.log($(this).parent().text());
-		$(this).parent().addClass("seleccionado");
-	});*/
+	//Ordenación - drop-down
+	$("#ordenacion>div span").first().click(dropDown);
+
+ 	$("#ordenOp li").on("click",unlock);
+
+ 	function unlock(){
+		$("#ordenSeleccionado").html($(this).html());
+		$("#ordenOp").removeClass("show");
+		
+		$("#ordenacion>div span").last().click(dropDown);
+		//Filtros - tipos
+		$("#criterioOp li").click(function(){
+			$("#criterioSeleccionado").html($(this).html());
+			$("#criterioOp").removeClass("show");
+		});
+		$("#ordenOp li").off("click",unlock);
+		$("#ordenOp li").on("click",changeZone);
+	}
+	function changeZone(){
+		$("#ordenSeleccionado").html($(this).html());
+		$("#ordenOp").removeClass("show");
+	}
 }
 
 function init_cover(){
