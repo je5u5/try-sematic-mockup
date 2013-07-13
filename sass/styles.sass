@@ -77,8 +77,16 @@ header
 				padding: 5px 6px
 				margin: 20px 0 0 0
 				box-sizing: border-box
-				border-radius: 0 7px 7px 7px				
+				-moz-box-sizing: border-box
+				border-radius: 0 7px 7px 7px
 
+				button
+					width: 23px
+					padding: 0
+					height: 24px
+					margin: -2px 0 0 -3px
+					border: none
+					background-color: transparent
 				>div
 					float: left
 					width: 212px
@@ -100,6 +108,7 @@ header
 							width: 212px
 							padding: 0 8px 0 0
 							box-sizing: border-box
+							-moz-box-sizing: border-box
 
 							li
 								float: left
@@ -108,13 +117,14 @@ header
 								color: black
 								padding: 0 10px 0 5px
 								box-sizing: border-box
+								-moz-box-sizing: border-box
 								position: relative
 
 								&:hover
 									background: #FAE1CD
 			a
 				float: left
-				height: 40%
+				height: 20px
 				width: 100px
 				color: white
 				background: $secundario
@@ -235,6 +245,7 @@ footer
 		text-align: right
 		text-decoration: none
 		box-sizing: border-box
+		-moz-box-sizing: border-box
 		transition-duration: $tiempo
 		border-radius: 0 5px 5px 0
 
@@ -260,6 +271,7 @@ footer
 		font-size: 25px
 		line-height: 20px
 		box-sizing: border-box
+		-moz-box-sizing: border-box
 	#ordenacion
 		float: right
 		height: auto
@@ -267,6 +279,7 @@ footer
 		font-family: OpenSans
 		font-size: 14px
 		box-sizing: border-box
+		-moz-box-sizing: border-box
 
 		>div
 			float: left
@@ -275,6 +288,7 @@ footer
 			background: $primario
 			color: white
 			box-sizing: border-box
+			-moz-box-sizing: border-box
 			margin: 0 5px
 
 			&:hover
@@ -301,14 +315,15 @@ footer
 		height: 340px
 		margin: 50px 0 0 0
 		overflow: auto
+		font-size: 14px
 
 		article
 			clear: left
 			margin: 0 15px
 			padding: 15px
 			font-family: OpenSans
-			font-size: 15px
 			box-sizing: border-box
+			-moz-box-sizing: border-box
 			border-bottom: 2px solid black
 			overflow: auto
 
@@ -326,10 +341,10 @@ footer
 				margin: 0 15px
 				h2
 					font-size: 22px
-					margin: 0 0 .3em 0
+					margin: 0 0 .5em 0
 				p
 					font-size: 16px
-					margin: 0 0 .3em 0
+					margin: 0 0 .5em 0
 				li
 					&:before
 						content: "- "
@@ -346,12 +361,14 @@ div.contenedor
 		font-family: OpenSans
 		font-size: 12px
 		box-sizing: border-box
+		-moz-box-sizing: border-box
 
 		h1
 			font-size: 25px
 			padding: 0 0 15px 0
 			line-height: 20px
 			box-sizing: border-box
+			-moz-box-sizing: border-box
 			border-bottom: 2px solid black
 		p
 			margin: 15px 0
@@ -362,6 +379,7 @@ div.contenedor
 			margin: 15px
 			padding: 0 15px
 			box-sizing: border-box
+			-moz-box-sizing: border-box
 
 			.telefonos
 				color: #666
