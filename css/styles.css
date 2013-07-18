@@ -179,7 +179,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .contenedor {
   width: 1000px;
   margin: 0 auto;
-  height: 400px;
+  min-height: 300px;
   overflow: hidden;
   *zoom: 1;
 }
@@ -326,16 +326,8 @@ header .container #filtro .active {
   background: #e57823 !important;
 }
 
-/* line 142, ../sass/styles.sass */
-nav {
-  position: relative;
-  margin: 0 auto;
-  float: right;
-  width: 70%;
-  z-index: -1;
-}
-/* line 149, ../sass/styles.sass */
-nav #socialmedia {
+/* line 140, ../sass/styles.sass */
+#socialmedia {
   float: right;
   height: 50px;
   line-height: 75px;
@@ -343,15 +335,24 @@ nav #socialmedia {
   text-align: right;
   width: 580px;
 }
-/* line 157, ../sass/styles.sass */
-nav #socialmedia a {
+/* line 148, ../sass/styles.sass */
+#socialmedia a {
   text-decoration: none;
   color: black;
 }
-/* line 161, ../sass/styles.sass */
-nav #socialmedia a i {
+/* line 152, ../sass/styles.sass */
+#socialmedia a i {
   font-size: 20px;
   margin: 0 10px 0 0;
+}
+
+/* line 157, ../sass/styles.sass */
+nav {
+  position: relative;
+  margin: 0 auto;
+  float: right;
+  width: 70%;
+  z-index: -1;
 }
 /* line 164, ../sass/styles.sass */
 nav > ul {
@@ -419,28 +420,39 @@ nav > ul > li:hover ul {
 
 /* line 217, ../sass/styles.sass */
 footer {
-  width: 1000px;
   color: white;
-  margin: 30px auto 0 auto;
   overflow: auto;
   font-family: OpenSans;
   font-size: 12px;
   text-shadow: 0 0.1em 0.2em #777777;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
 }
-/* line 226, ../sass/styles.sass */
+/* line 227, ../sass/styles.sass */
 footer div {
-  margin: 12px;
+  width: 1000px;
+  margin: 0 auto;
 }
-/* line 229, ../sass/styles.sass */
-footer div:first-of-type {
+/* line 230, ../sass/styles.sass */
+footer p {
+  padding: 10px 0;
+}
+/* line 232, ../sass/styles.sass */
+footer p:first-of-type {
   float: left;
 }
-/* line 231, ../sass/styles.sass */
-footer div:last-of-type {
+/* line 234, ../sass/styles.sass */
+footer p:last-of-type {
   float: right;
 }
-
 /* line 236, ../sass/styles.sass */
+footer p:last-of-type a {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 242, ../sass/styles.sass */
 #portada a {
   clear: both;
   float: left;
@@ -460,7 +472,7 @@ footer div:last-of-type {
   transition-duration: 200ms;
   border-radius: 0 5px 5px 0;
 }
-/* line 255, ../sass/styles.sass */
+/* line 261, ../sass/styles.sass */
 #portada a:hover {
   transition-property: background, margin;
   transition-duration: 200ms;
@@ -468,7 +480,7 @@ footer div:last-of-type {
   margin: 5px 0;
 }
 
-/* line 262, ../sass/styles.sass */
+/* line 268, ../sass/styles.sass */
 #listado {
   width: 700px;
   height: 400px;
@@ -476,7 +488,7 @@ footer div:last-of-type {
   background: white;
   border-radius: 7px;
 }
-/* line 269, ../sass/styles.sass */
+/* line 275, ../sass/styles.sass */
 #listado h1 {
   float: left;
   font-size: 25px;
@@ -487,7 +499,7 @@ footer div:last-of-type {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
-/* line 278, ../sass/styles.sass */
+/* line 284, ../sass/styles.sass */
 #listado #ordenacion {
   float: right;
   height: auto;
@@ -497,7 +509,7 @@ footer div:last-of-type {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
-/* line 287, ../sass/styles.sass */
+/* line 293, ../sass/styles.sass */
 #listado #ordenacion > div {
   float: left;
   height: 20px;
@@ -509,12 +521,12 @@ footer div:last-of-type {
   -moz-box-sizing: border-box;
   margin: 0 5px;
 }
-/* line 298, ../sass/styles.sass */
+/* line 304, ../sass/styles.sass */
 #listado #ordenacion > div span {
   display: block;
   padding: 3px 8px;
 }
-/* line 301, ../sass/styles.sass */
+/* line 307, ../sass/styles.sass */
 #listado #ordenacion > div div {
   display: none;
   position: relative;
@@ -525,15 +537,15 @@ footer div:last-of-type {
   font-size: 14px;
   line-height: 20px;
 }
-/* line 311, ../sass/styles.sass */
+/* line 317, ../sass/styles.sass */
 #listado #ordenacion > div div li {
   padding: 0 5px;
 }
-/* line 314, ../sass/styles.sass */
+/* line 320, ../sass/styles.sass */
 #listado #ordenacion > div div li:hover {
   background: #83684d;
 }
-/* line 316, ../sass/styles.sass */
+/* line 322, ../sass/styles.sass */
 #listado #scrollinterno {
   clear: both;
   height: 340px;
@@ -541,7 +553,7 @@ footer div:last-of-type {
   overflow: auto;
   font-size: 14px;
 }
-/* line 323, ../sass/styles.sass */
+/* line 329, ../sass/styles.sass */
 #listado #scrollinterno article {
   clear: left;
   margin: 0 15px;
@@ -552,22 +564,22 @@ footer div:last-of-type {
   border-bottom: 2px solid black;
   overflow: auto;
 }
-/* line 333, ../sass/styles.sass */
+/* line 339, ../sass/styles.sass */
 #listado #scrollinterno article:first-of-type {
   border-top: 2px solid black;
 }
-/* line 335, ../sass/styles.sass */
+/* line 341, ../sass/styles.sass */
 #listado #scrollinterno article a {
   float: left;
   position: relative;
   cursor: pointer;
 }
-/* line 340, ../sass/styles.sass */
+/* line 346, ../sass/styles.sass */
 #listado #scrollinterno article a img {
   width: 185px;
   height: 132px;
 }
-/* line 343, ../sass/styles.sass */
+/* line 349, ../sass/styles.sass */
 #listado #scrollinterno article a > div {
   position: absolute;
   background: #4c4849;
@@ -584,32 +596,32 @@ footer div:last-of-type {
   font-size: 12px;
   transition-duration: 200ms;
 }
-/* line 359, ../sass/styles.sass */
+/* line 365, ../sass/styles.sass */
 #listado #scrollinterno article a:hover > div {
   transition-duration: 200ms;
   height: 0;
 }
-/* line 362, ../sass/styles.sass */
+/* line 368, ../sass/styles.sass */
 #listado #scrollinterno article div {
   float: left;
   margin: 0 15px;
 }
-/* line 365, ../sass/styles.sass */
+/* line 371, ../sass/styles.sass */
 #listado #scrollinterno article div h2 {
   font-size: 22px;
   margin: 0 0 0.5em 0;
 }
-/* line 368, ../sass/styles.sass */
+/* line 374, ../sass/styles.sass */
 #listado #scrollinterno article div p {
   font-size: 16px;
   margin: 0 0 0.5em 0;
 }
-/* line 372, ../sass/styles.sass */
+/* line 378, ../sass/styles.sass */
 #listado #scrollinterno article div li:before {
   content: "- ";
 }
 
-/* line 376, ../sass/styles.sass */
+/* line 382, ../sass/styles.sass */
 div.contenedor section#nuestrasOficinas {
   float: right;
   height: 400px;
@@ -623,7 +635,7 @@ div.contenedor section#nuestrasOficinas {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
-/* line 389, ../sass/styles.sass */
+/* line 395, ../sass/styles.sass */
 div.contenedor section#nuestrasOficinas h1 {
   font-size: 25px;
   padding: 0 0 15px 0;
@@ -632,11 +644,11 @@ div.contenedor section#nuestrasOficinas h1 {
   -moz-box-sizing: border-box;
   border-bottom: 2px solid black;
 }
-/* line 396, ../sass/styles.sass */
+/* line 402, ../sass/styles.sass */
 div.contenedor section#nuestrasOficinas p {
   margin: 15px 0;
 }
-/* line 398, ../sass/styles.sass */
+/* line 404, ../sass/styles.sass */
 div.contenedor section#nuestrasOficinas article {
   float: left;
   height: 113px;
@@ -646,39 +658,303 @@ div.contenedor section#nuestrasOficinas article {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
-/* line 407, ../sass/styles.sass */
+/* line 413, ../sass/styles.sass */
 div.contenedor section#nuestrasOficinas article .telefonos {
   color: #666666;
   font-size: 14px;
 }
-/* line 410, ../sass/styles.sass */
+/* line 416, ../sass/styles.sass */
 div.contenedor section#nuestrasOficinas article .email {
   color: black;
   font-size: 13px;
 }
-/* line 413, ../sass/styles.sass */
+/* line 419, ../sass/styles.sass */
 div.contenedor section#nuestrasOficinas article h2 {
   font-size: 18px;
   margin: 0 0 0.5em 0;
 }
-/* line 416, ../sass/styles.sass */
+/* line 422, ../sass/styles.sass */
 div.contenedor section#nuestrasOficinas article ul {
   margin: 0 0 0.5em 0;
 }
-/* line 419, ../sass/styles.sass */
+/* line 425, ../sass/styles.sass */
 div.contenedor section#nuestrasOficinas .border {
   border-right: 2px solid black;
 }
 
-/* line 424, ../sass/styles.sass */
+/* line 430, ../sass/styles.sass */
 .nicescroll-rails {
   border-radius: 5px;
 }
 
-/* line 429, ../sass/styles.sass */
+/* line 435, ../sass/styles.sass */
 #prox {
   width: 400px;
   height: 200px;
   overflow: auto;
   margin: 200px auto;
+}
+
+/* line 449, ../sass/styles.sass */
+section {
+  width: 1000px;
+  font-family: Calibri;
+  font-size: 12px;
+  margin: 0 auto;
+}
+/* line 457, ../sass/styles.sass */
+section .whitecard, section #specifications, section #places, section #contacto {
+  background-color: white;
+  min-height: 200px;
+  width: 510px;
+  border-radius: 7px;
+  padding: 0 20px;
+}
+/* line 464, ../sass/styles.sass */
+section .whiteh1, section #specifications #placesh1, section #places #placesh1, section #contacto h1 {
+  font-size: 30px;
+  padding: 22px 0px 0px;
+  border-bottom: 2px solid;
+  border-bottom-style: groove;
+  min-height: 27px;
+}
+/* line 471, ../sass/styles.sass */
+section .whitep, section #specifications p, section #places p, section #contacto p {
+  padding: 10px 0;
+}
+/* line 475, ../sass/styles.sass */
+section #galeria {
+  width: 410px;
+  height: 400px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+/* line 481, ../sass/styles.sass */
+section #galeria #picture {
+  background-color: white;
+  width: 370px;
+  height: 310px;
+  margin: 0 auto;
+  border-radius: 7px 7px 0 0;
+}
+/* line 488, ../sass/styles.sass */
+section #galeria #picture img {
+  display: block;
+  margin: 0 auto;
+  padding: 13px 0 0 0;
+}
+/* line 493, ../sass/styles.sass */
+section #galeria #slider {
+  background-color: white;
+  width: 370px;
+  height: 90px;
+  margin: 0 auto;
+  border-radius: 0 0 7px 7px;
+}
+/* line 500, ../sass/styles.sass */
+section #galeria #slider .control, section #galeria #slider #prev, section #galeria #slider #next {
+  width: 20px;
+  height: 71px;
+  float: left;
+  background-color: transparent;
+  cursor: pointer;
+}
+/* line 507, ../sass/styles.sass */
+section #galeria #slider #prev {
+  background: url(../img/flecha_izq.png) no-repeat right 15px;
+}
+/* line 510, ../sass/styles.sass */
+section #galeria #slider #carousel {
+  float: left;
+}
+/* line 513, ../sass/styles.sass */
+section #galeria #slider #carousel img {
+  margin: 0 5px;
+}
+/* line 515, ../sass/styles.sass */
+section #galeria #slider #next {
+  background: url(../img/flecha_der.png) no-repeat left 15px;
+}
+/* line 520, ../sass/styles.sass */
+section #places {
+  float: right;
+  margin: 192px 50px 0 0;
+}
+/* line 524, ../sass/styles.sass */
+section #specifications {
+  display: inline-block;
+  vertical-align: bottom;
+}
+/* line 528, ../sass/styles.sass */
+section #specifications, section #places {
+  font-size: 13px;
+  font-family: "Calibri";
+}
+/* line 533, ../sass/styles.sass */
+section #specifications #logos, section #places #logos {
+  width: 180px;
+  height: 170px;
+  position: absolute;
+  right: 45px;
+  top: -165px;
+  background-color: white;
+  text-align: center;
+  padding-top: 15px;
+  font-family: "CaviarDreams";
+  border-radius: 5px 5px 0 0;
+}
+/* line 545, ../sass/styles.sass */
+section #specifications #logos img, section #places #logos img {
+  display: block;
+  margin: 0 auto;
+}
+/* line 548, ../sass/styles.sass */
+section #specifications #logos span, section #places #logos span {
+  vertical-align: text-bottom;
+  font-size: 25px;
+}
+/* line 552, ../sass/styles.sass */
+section #specifications #placesh1, section #places #placesh1 {
+  position: relative;
+}
+/* line 558, ../sass/styles.sass */
+section #specifications ul, section #places ul {
+  list-style: square inside;
+  padding: 0 0 0 12px;
+}
+/* line 562, ../sass/styles.sass */
+section #specifications ul li, section #places ul li {
+  padding: 5px 0;
+  float: left;
+  min-width: 50%;
+}
+/* line 567, ../sass/styles.sass */
+section #contacto {
+  height: 400px;
+  float: right;
+  margin: 0px 50px 0 0;
+}
+/* line 579, ../sass/styles.sass */
+section #contacto form {
+  font-family: Calibri;
+  font-size: 12px;
+}
+/* line 582, ../sass/styles.sass */
+section #contacto form .row {
+  padding: 0 0 11px 0;
+}
+/* line 585, ../sass/styles.sass */
+section #contacto form .row label {
+  width: 20%;
+  display: block;
+  float: left;
+  height: 22px;
+  line-height: 22px;
+  text-align: right;
+  padding: 0 10px 0 0;
+  box-sizing: border-box;
+}
+/* line 595, ../sass/styles.sass */
+section #contacto form .row input {
+  border: none;
+  background-color: #eaedf4;
+  width: 80%;
+  height: 22px;
+  text-indent: 5px;
+  box-sizing: border-box;
+  border-radius: 15px 0 0 15px;
+}
+/* line 604, ../sass/styles.sass */
+section #contacto form .row textarea {
+  border: none;
+  font-family: Calibri;
+  font-size: 12px;
+  background-color: #eaedf4;
+  width: 80%;
+  box-sizing: border-box;
+  border-radius: 15px 0 0 15px;
+  height: 122px;
+  padding: 5px 5px;
+  resize: none;
+}
+/* line 616, ../sass/styles.sass */
+section #contacto form button {
+  background-color: #4c4849;
+  color: white;
+  display: block;
+  height: 30px;
+  width: 83px;
+  border: none;
+  border-radius: 15px;
+  float: right;
+  cursor: pointer;
+}
+/* line 626, ../sass/styles.sass */
+section #contacto form button:hover {
+  background-color: #605e5f;
+}
+/* line 629, ../sass/styles.sass */
+section #controls {
+  background-color: white;
+  height: 32px;
+  width: 200px;
+  border-radius: 7px;
+  text-align: center;
+  line-height: 32px;
+  float: left;
+  margin: 360px 0 0 50px;
+}
+/* line 639, ../sass/styles.sass */
+section #controls #placeslist {
+  float: left;
+  width: 160px;
+  font-size: 18px;
+}
+/* line 644, ../sass/styles.sass */
+section #controls span {
+  float: left;
+  width: 160px;
+}
+/* line 648, ../sass/styles.sass */
+section #controls #back {
+  width: 20px;
+  height: 32px;
+  float: left;
+  background-color: transparent;
+  cursor: pointer;
+  background: url(../img/flecha_izq.png) no-repeat right 7px;
+  background-size: 17px 20px;
+}
+/* line 657, ../sass/styles.sass */
+section #controls #go {
+  width: 20px;
+  height: 32px;
+  float: right;
+  background-color: transparent;
+  cursor: pointer;
+  background: url(../img/flecha_der.png) no-repeat right 7px;
+  background-size: 17px 20px;
+}
+
+/* line 666, ../sass/styles.sass */
+#mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  display: none;
+  z-index: -98;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 675, ../sass/styles.sass */
+#imgbg {
+  position: absolute;
+  z-index: -99;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 }
