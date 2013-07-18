@@ -1,47 +1,25 @@
 header
 	.container
-		a#logo(href='portada.html')
+		a#logo(href='index.html')
 			img(src='img/logo-good-house.png')
 		#filtro
-			a.active compra
-			a renta
+			a(href='#').active compra
+			a(href='#') renta
 			div
 				div
 					span#anyselector Zona de inmueble
 					#zona
 						ul
-							li aaa
-							li aaa
-							li aaa
-							li kdfjg
-							li kjdhfkjasdh
-							li kjdhkjfdhas
-							li afkjhasdf
-							li aaa
-							li aaa
-							li aaa
-							li kdfjg
-							li kjdhfkjasdh
-							li kjdhkjfdhas
-							li afkjhasdf
+							- for (var j = 1; j <= 10; ++j) {
+							li Zona #{j}						
+							- }
 				div
 					span#tiposelector Tipo de inmueble
 					#tipo
 						ul
-							li aaa
-							li aaa
-							li aaa
-							li kdfjg
-							li kjdhfkjasdh
-							li kjdhkjfdhas
-							li afkjhasdf
-							li aaa
-							li aaa
-							li aaa
-							li kdfjg
-							li kjdhfkjasdh
-							li kjdhkjfdhas
-							li afkjhasdf
+							- for (var j = 1; j <= 10; ++j) {
+							li Tipo #{j}						
+							- }
 				button
 					i.icon-search
 		nav

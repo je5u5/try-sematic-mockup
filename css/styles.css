@@ -269,17 +269,20 @@ header .container #filtro > div > div {
   margin: 0 6px 0 0;
   cursor: pointer;
   line-height: 20px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
 }
-/* line 98, ../sass/styles.sass */
+/* line 99, ../sass/styles.sass */
 header .container #filtro > div > div span {
   display: block;
 }
-/* line 100, ../sass/styles.sass */
+/* line 101, ../sass/styles.sass */
 header .container #filtro > div > div div {
-  max-height: 200px;
+  max-height: 100px;
   display: none;
 }
-/* line 104, ../sass/styles.sass */
+/* line 105, ../sass/styles.sass */
 header .container #filtro > div > div div ul {
   float: right;
   width: 212px;
@@ -287,7 +290,7 @@ header .container #filtro > div > div div ul {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
-/* line 111, ../sass/styles.sass */
+/* line 112, ../sass/styles.sass */
 header .container #filtro > div > div div ul li {
   float: left;
   text-align: left;
@@ -298,11 +301,11 @@ header .container #filtro > div > div div ul li {
   -moz-box-sizing: border-box;
   position: relative;
 }
-/* line 121, ../sass/styles.sass */
+/* line 122, ../sass/styles.sass */
 header .container #filtro > div > div div ul li:hover {
   background: #fae1cd;
 }
-/* line 123, ../sass/styles.sass */
+/* line 124, ../sass/styles.sass */
 header .container #filtro a {
   float: left;
   height: 20px;
@@ -312,24 +315,26 @@ header .container #filtro a {
   padding: 0 5px;
   line-height: 17px;
   border-radius: 7px 7px 0 0;
+  text-decoration: none;
 }
-/* line 133, ../sass/styles.sass */
+/* line 135, ../sass/styles.sass */
 header .container #filtro a:hover {
   background: #b84e00;
 }
-/* line 135, ../sass/styles.sass */
+/* line 137, ../sass/styles.sass */
 header .container #filtro .active {
   background: #e57823 !important;
 }
 
-/* line 140, ../sass/styles.sass */
+/* line 142, ../sass/styles.sass */
 nav {
   position: relative;
   margin: 0 auto;
   float: right;
   width: 70%;
+  z-index: -1;
 }
-/* line 146, ../sass/styles.sass */
+/* line 149, ../sass/styles.sass */
 nav #socialmedia {
   float: right;
   height: 50px;
@@ -338,17 +343,17 @@ nav #socialmedia {
   text-align: right;
   width: 580px;
 }
-/* line 154, ../sass/styles.sass */
+/* line 157, ../sass/styles.sass */
 nav #socialmedia a {
   text-decoration: none;
   color: black;
 }
-/* line 158, ../sass/styles.sass */
+/* line 161, ../sass/styles.sass */
 nav #socialmedia a i {
   font-size: 20px;
   margin: 0 10px 0 0;
 }
-/* line 161, ../sass/styles.sass */
+/* line 164, ../sass/styles.sass */
 nav > ul {
   float: right;
   height: 50px;
@@ -356,14 +361,14 @@ nav > ul {
   margin: 0 25px 0 0;
   font-size: 16px;
 }
-/* line 168, ../sass/styles.sass */
+/* line 171, ../sass/styles.sass */
 nav > ul > li {
   padding: 0 18px;
   position: relative;
   text-align: center;
   float: left;
 }
-/* line 174, ../sass/styles.sass */
+/* line 177, ../sass/styles.sass */
 nav > ul > li > a {
   color: black;
   text-shadow: 0 0.2em 0.2em #aaaaaa;
@@ -374,11 +379,11 @@ nav > ul > li > a {
   text-transform: lowercase;
   text-decoration: none;
 }
-/* line 183, ../sass/styles.sass */
+/* line 186, ../sass/styles.sass */
 nav > ul > li > a:hover {
   color: #e57823;
 }
-/* line 185, ../sass/styles.sass */
+/* line 188, ../sass/styles.sass */
 nav > ul > li ul {
   display: none;
   position: absolute;
@@ -389,11 +394,11 @@ nav > ul > li ul {
   border-radius: 0 0 7px 7px;
   padding: 0 10px;
 }
-/* line 195, ../sass/styles.sass */
+/* line 198, ../sass/styles.sass */
 nav > ul > li ul li {
   transition-duration: 200ms;
 }
-/* line 198, ../sass/styles.sass */
+/* line 201, ../sass/styles.sass */
 nav > ul > li ul li a {
   text-decoration: none;
   color: black;
@@ -402,17 +407,17 @@ nav > ul > li ul li a {
   margin: 20px 0;
   display: block;
 }
-/* line 206, ../sass/styles.sass */
+/* line 209, ../sass/styles.sass */
 nav > ul > li ul li a:hover {
   transition-duration: 200ms;
   color: #e57823;
 }
-/* line 210, ../sass/styles.sass */
+/* line 213, ../sass/styles.sass */
 nav > ul > li:hover ul {
   display: block;
 }
 
-/* line 214, ../sass/styles.sass */
+/* line 217, ../sass/styles.sass */
 footer {
   width: 1000px;
   color: white;
@@ -422,20 +427,20 @@ footer {
   font-size: 12px;
   text-shadow: 0 0.1em 0.2em #777777;
 }
-/* line 223, ../sass/styles.sass */
+/* line 226, ../sass/styles.sass */
 footer div {
   margin: 12px;
 }
-/* line 226, ../sass/styles.sass */
+/* line 229, ../sass/styles.sass */
 footer div:first-of-type {
   float: left;
 }
-/* line 228, ../sass/styles.sass */
+/* line 231, ../sass/styles.sass */
 footer div:last-of-type {
   float: right;
 }
 
-/* line 233, ../sass/styles.sass */
+/* line 236, ../sass/styles.sass */
 #portada a {
   clear: both;
   float: left;
@@ -447,7 +452,7 @@ footer div:last-of-type {
   margin: 5px 0 5px -50px;
   line-height: 29px;
   font-family: OpenSans;
-  font-size: 21px;
+  font-size: 18px;
   text-align: right;
   text-decoration: none;
   box-sizing: border-box;
@@ -455,7 +460,7 @@ footer div:last-of-type {
   transition-duration: 200ms;
   border-radius: 0 5px 5px 0;
 }
-/* line 252, ../sass/styles.sass */
+/* line 255, ../sass/styles.sass */
 #portada a:hover {
   transition-property: background, margin;
   transition-duration: 200ms;
@@ -463,7 +468,7 @@ footer div:last-of-type {
   margin: 5px 0;
 }
 
-/* line 259, ../sass/styles.sass */
+/* line 262, ../sass/styles.sass */
 #listado {
   width: 700px;
   height: 400px;
@@ -471,7 +476,7 @@ footer div:last-of-type {
   background: white;
   border-radius: 7px;
 }
-/* line 266, ../sass/styles.sass */
+/* line 269, ../sass/styles.sass */
 #listado h1 {
   float: left;
   font-size: 25px;
@@ -482,7 +487,7 @@ footer div:last-of-type {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
-/* line 275, ../sass/styles.sass */
+/* line 278, ../sass/styles.sass */
 #listado #ordenacion {
   float: right;
   height: auto;
@@ -492,7 +497,7 @@ footer div:last-of-type {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
-/* line 284, ../sass/styles.sass */
+/* line 287, ../sass/styles.sass */
 #listado #ordenacion > div {
   float: left;
   height: 20px;
@@ -504,12 +509,12 @@ footer div:last-of-type {
   -moz-box-sizing: border-box;
   margin: 0 5px;
 }
-/* line 295, ../sass/styles.sass */
+/* line 298, ../sass/styles.sass */
 #listado #ordenacion > div span {
   display: block;
   padding: 3px 8px;
 }
-/* line 298, ../sass/styles.sass */
+/* line 301, ../sass/styles.sass */
 #listado #ordenacion > div div {
   display: none;
   position: relative;
@@ -520,15 +525,15 @@ footer div:last-of-type {
   font-size: 14px;
   line-height: 20px;
 }
-/* line 308, ../sass/styles.sass */
+/* line 311, ../sass/styles.sass */
 #listado #ordenacion > div div li {
   padding: 0 5px;
 }
-/* line 311, ../sass/styles.sass */
+/* line 314, ../sass/styles.sass */
 #listado #ordenacion > div div li:hover {
   background: #83684d;
 }
-/* line 313, ../sass/styles.sass */
+/* line 316, ../sass/styles.sass */
 #listado #scrollinterno {
   clear: both;
   height: 340px;
@@ -536,7 +541,7 @@ footer div:last-of-type {
   overflow: auto;
   font-size: 14px;
 }
-/* line 320, ../sass/styles.sass */
+/* line 323, ../sass/styles.sass */
 #listado #scrollinterno article {
   clear: left;
   margin: 0 15px;
@@ -547,22 +552,22 @@ footer div:last-of-type {
   border-bottom: 2px solid black;
   overflow: auto;
 }
-/* line 330, ../sass/styles.sass */
+/* line 333, ../sass/styles.sass */
 #listado #scrollinterno article:first-of-type {
   border-top: 2px solid black;
 }
-/* line 332, ../sass/styles.sass */
+/* line 335, ../sass/styles.sass */
 #listado #scrollinterno article a {
   float: left;
   position: relative;
   cursor: pointer;
 }
-/* line 337, ../sass/styles.sass */
+/* line 340, ../sass/styles.sass */
 #listado #scrollinterno article a img {
   width: 185px;
   height: 132px;
 }
-/* line 340, ../sass/styles.sass */
+/* line 343, ../sass/styles.sass */
 #listado #scrollinterno article a > div {
   position: absolute;
   background: #4c4849;
@@ -579,32 +584,32 @@ footer div:last-of-type {
   font-size: 12px;
   transition-duration: 200ms;
 }
-/* line 356, ../sass/styles.sass */
+/* line 359, ../sass/styles.sass */
 #listado #scrollinterno article a:hover > div {
   transition-duration: 200ms;
   height: 0;
 }
-/* line 359, ../sass/styles.sass */
+/* line 362, ../sass/styles.sass */
 #listado #scrollinterno article div {
   float: left;
   margin: 0 15px;
 }
-/* line 362, ../sass/styles.sass */
+/* line 365, ../sass/styles.sass */
 #listado #scrollinterno article div h2 {
   font-size: 22px;
   margin: 0 0 0.5em 0;
 }
-/* line 365, ../sass/styles.sass */
+/* line 368, ../sass/styles.sass */
 #listado #scrollinterno article div p {
   font-size: 16px;
   margin: 0 0 0.5em 0;
 }
-/* line 369, ../sass/styles.sass */
+/* line 372, ../sass/styles.sass */
 #listado #scrollinterno article div li:before {
   content: "- ";
 }
 
-/* line 373, ../sass/styles.sass */
+/* line 376, ../sass/styles.sass */
 div.contenedor section#nuestrasOficinas {
   float: right;
   height: 400px;
@@ -618,7 +623,7 @@ div.contenedor section#nuestrasOficinas {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
-/* line 386, ../sass/styles.sass */
+/* line 389, ../sass/styles.sass */
 div.contenedor section#nuestrasOficinas h1 {
   font-size: 25px;
   padding: 0 0 15px 0;
@@ -627,11 +632,11 @@ div.contenedor section#nuestrasOficinas h1 {
   -moz-box-sizing: border-box;
   border-bottom: 2px solid black;
 }
-/* line 393, ../sass/styles.sass */
+/* line 396, ../sass/styles.sass */
 div.contenedor section#nuestrasOficinas p {
   margin: 15px 0;
 }
-/* line 395, ../sass/styles.sass */
+/* line 398, ../sass/styles.sass */
 div.contenedor section#nuestrasOficinas article {
   float: left;
   height: 113px;
@@ -641,36 +646,36 @@ div.contenedor section#nuestrasOficinas article {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
-/* line 404, ../sass/styles.sass */
+/* line 407, ../sass/styles.sass */
 div.contenedor section#nuestrasOficinas article .telefonos {
   color: #666666;
   font-size: 14px;
 }
-/* line 407, ../sass/styles.sass */
+/* line 410, ../sass/styles.sass */
 div.contenedor section#nuestrasOficinas article .email {
   color: black;
   font-size: 13px;
 }
-/* line 410, ../sass/styles.sass */
+/* line 413, ../sass/styles.sass */
 div.contenedor section#nuestrasOficinas article h2 {
   font-size: 18px;
   margin: 0 0 0.5em 0;
 }
-/* line 413, ../sass/styles.sass */
+/* line 416, ../sass/styles.sass */
 div.contenedor section#nuestrasOficinas article ul {
   margin: 0 0 0.5em 0;
 }
-/* line 416, ../sass/styles.sass */
+/* line 419, ../sass/styles.sass */
 div.contenedor section#nuestrasOficinas .border {
   border-right: 2px solid black;
 }
 
-/* line 421, ../sass/styles.sass */
+/* line 424, ../sass/styles.sass */
 .nicescroll-rails {
   border-radius: 5px;
 }
 
-/* line 426, ../sass/styles.sass */
+/* line 429, ../sass/styles.sass */
 #prox {
   width: 400px;
   height: 200px;

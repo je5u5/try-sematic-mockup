@@ -3,3 +3,23 @@ nav > ul > li > ul {
   top: 40px;
   left: 20px;
 }
+
+/* line 6, ../sass/styles-ie7.sass */
+header > div.container > div#filtro > div {
+  height: 20px;
+}
+/* line 9, ../sass/styles-ie7.sass */
+header > div.container > div#filtro > div > div > div#zona, header > div.container > div#filtro > div > div#tipo {
+  overflow: hidden;
+  height: 100px;
+  position: relative;
+}
+/* line 13, ../sass/styles-ie7.sass */
+header > div.container > div#filtro > div > div > div#zona > ul, header > div.container > div#filtro > div > div#tipo > ul {
+  width: 190px;
+  float: none;
+}
+/* line 16, ../sass/styles-ie7.sass */
+header > div.container > div#filtro > div > div > div#zona > ul > li, header > div.container > div#filtro > div > div#tipo > ul > li {
+  width: 180px;
+}

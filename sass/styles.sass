@@ -94,11 +94,12 @@ header
 					margin: 0 6px 0 0
 					cursor: pointer
 					line-height: 20px
+					@include single-box-shadow(rgba(0,0,0,.2), 0px, 0px, 5px, 0px)
 
 					span
 						display: block
 					div
-						max-height: 200px
+						max-height: 100px
 						display: none
 
 						ul
@@ -129,7 +130,8 @@ header
 				padding: 0 5px
 				line-height: 17px
 				border-radius: 7px 7px 0 0
-
+				text-decoration: none
+				
 				&:hover
 					background: #B84E00
 			.active
@@ -142,6 +144,7 @@ nav
 	margin: 0 auto
 	float: right
 	width: 70%
+	z-index: -1
 
 	#socialmedia
 		float: right
@@ -241,7 +244,7 @@ footer
 		margin: 5px 0 5px -50px
 		line-height: 29px
 		font-family: OpenSans
-		font-size: 21px
+		font-size: 18px
 		text-align: right
 		text-decoration: none
 		box-sizing: border-box
