@@ -1,0 +1,5 @@
+/* line 2, ../sass/styles-ie7.sass */
+nav > ul > li > ul {
+  top: 40px;
+  left: 20px;
+}

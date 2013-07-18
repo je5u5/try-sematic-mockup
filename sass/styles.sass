@@ -6,18 +6,13 @@ $primario: #E57823
 $secundario: #4C4849
 $hover-menu: #00A2A0
 
-$tiempo: 400ms
+$tiempo: 200ms
 
 // imports
 @import "compass/css3"
 @import "compass/reset"
 @import "compass/typography"
 @import "fonts"
-
-//@import "font-awesome"
-//@import "icons/*.png"
-//@import "bourbon/bourbon"
-//@import "neat/neat"
 
 // utils
 .show
@@ -27,6 +22,7 @@ $tiempo: 400ms
 	width: $contentwidth
 	margin: 0 auto
 	height: 400px
+	@include clearfix
 
 // backgrounds
 html
@@ -142,15 +138,15 @@ header
 
 // menu
 nav
-	height: 100%
-	width: $contentwidth
 	position: relative
 	margin: 0 auto
+	float: right
+	width: 70%
 
 	#socialmedia
 		float: right
 		height: $navheight/2
-		line-height: $navheight/1.5
+		line-height: 75px
 		padding: 0 40px 0 0
 		text-align: right
 		width: 580px
@@ -160,56 +156,57 @@ nav
 			color: black
 
 			i
-				font-size: 25px
+				font-size: 20px
 				margin: 0 10px 0 0
 	>ul
 		float: right
 		height: $navheight/2	
-		font-family: CaviarDreams
+		font-family: "CaviarDreamsBold"
 		margin: 0 25px 0 0
 		font-size: 16px
 
 		>li
-			color: black
 			padding: 0 18px
 			position: relative
 			text-align: center
 			float: left
 
 			>a
-				color: inherit
+				color: black
 				text-shadow: 0 0.2em 0.2em #AAA
 				height: $navheight/2
-				display: table-cell
-				vertical-align: middle
+				line-height: $navheight/2
+				display: block
 				width: 80px
 				text-transform: lowercase
 				text-decoration: none
+				&:hover
+					color: $primario
 			ul
 				display: none
 				position: absolute
 				z-index: 1
-				line-height: 2em
-				margin: 0 -18px
-				width: 100%
+				margin: 0 -30px
+				width: 120px
+				background: white
+				border-radius: 0 0 7px 7px
+				padding: 0 10px
 
-				li
-					color: black
-					background: white
+				li					
 					transition-duration: $tiempo
 
 					a
 						text-decoration: none
-						color: inherit
+						color: black
 						text-shadow: 0 0.2em 0.2em #AAA
-					&:last-of-type
-						border-radius: 0 0 7px 7px
-					&:hover
-						transition-duration: $tiempo
-						color: $primario
-			&:hover
-				color: $primario
+						line-height: 1em
+						margin: 20px 0
+						display: block
 
+						&:hover
+							transition-duration: $tiempo
+							color: $primario 
+			&:hover
 				ul
 					display: block
 
