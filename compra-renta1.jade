@@ -11,38 +11,16 @@ html
 					span#ordenSeleccionado Ordenar:
 					#ordenOp
 						ul
-							li aaa
-							li aaa
-							li aaa
-							li kdfjg
-							li kjdhfkjasdh
-							li kjdhkjfdhas
-							li afkjhasdf
-							li aaa
-							li aaa
-							li aaa
-							li kdfjg
-							li kjdhfkjasdh
-							li kjdhkjfdhas
-							li afkjhasdf
+							- for (var j = 1; j <= 10; ++j) {
+							li Ordenar #{j}						
+							- }
 				div
 					span#criterioSeleccionado Criterio:
 					#criterioOp
 						ul
-							li aaa
-							li aaa
-							li aaa
-							li kdfjg
-							li kjdhfkjasdh
-							li kjdhkjfdhas
-							li afkjhasdf
-							li aaa
-							li aaa
-							li aaa
-							li kdfjg
-							li kjdhfkjasdh
-							li kjdhkjfdhas
-							li afkjhasdf
+							- for (var j = 1; j <= 10; ++j) {
+							li Criterio #{j}						
+							- }
 			#scrollinterno
 				article
 					a(href='compra-renta.html')
