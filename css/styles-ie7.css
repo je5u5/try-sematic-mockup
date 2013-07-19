@@ -33,3 +33,17 @@ header > div.container > div#filtro > div > div > div#zona > ul > li, header > d
   display: none;
   bottom: 30px;
 }
+
+/* line 29, ../sass/styles-ie7.sass */
+section #contacto form .row input {
+  width: 390px;
+}
+/* line 31, ../sass/styles-ie7.sass */
+section #contacto form .row textarea {
+  width: 379px;
+}
+
+/* line 34, ../sass/styles-ie7.sass */
+div.contenedor section#nuestrasOficinas article {
+  width: 220px;
+}

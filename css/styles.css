@@ -620,7 +620,6 @@ footer p:last-of-type a {
 /* line 380, ../sass/styles.sass */
 div.contenedor section#nuestrasOficinas {
   float: right;
-  height: 400px;
   width: 550px;
   margin: 0 50px 0 0;
   background: white;
@@ -631,59 +630,60 @@ div.contenedor section#nuestrasOficinas {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
-/* line 393, ../sass/styles.sass */
+/* line 392, ../sass/styles.sass */
 div.contenedor section#nuestrasOficinas h1 {
   font-size: 25px;
   padding: 0 0 15px 0;
   line-height: 20px;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #666666;
 }
-/* line 400, ../sass/styles.sass */
+/* line 399, ../sass/styles.sass */
 div.contenedor section#nuestrasOficinas p {
   margin: 15px 0;
 }
-/* line 402, ../sass/styles.sass */
+/* line 401, ../sass/styles.sass */
 div.contenedor section#nuestrasOficinas article {
   float: left;
   height: 113px;
   width: 230px;
-  margin: 15px;
+  margin: 10px 10px 10px 0;
   padding: 0 15px;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
-/* line 411, ../sass/styles.sass */
+/* line 410, ../sass/styles.sass */
 div.contenedor section#nuestrasOficinas article .telefonos {
   color: #666666;
   font-size: 14px;
 }
-/* line 414, ../sass/styles.sass */
+/* line 413, ../sass/styles.sass */
 div.contenedor section#nuestrasOficinas article .email {
   color: black;
-  font-size: 13px;
+  font-size: 12px;
 }
-/* line 417, ../sass/styles.sass */
+/* line 416, ../sass/styles.sass */
 div.contenedor section#nuestrasOficinas article h2 {
   font-size: 18px;
   margin: 0 0 0.5em 0;
 }
-/* line 420, ../sass/styles.sass */
+/* line 419, ../sass/styles.sass */
 div.contenedor section#nuestrasOficinas article ul {
   margin: 0 0 0.5em 0;
 }
-/* line 423, ../sass/styles.sass */
+/* line 422, ../sass/styles.sass */
 div.contenedor section#nuestrasOficinas .border {
-  border-right: 2px solid black;
+  border-right: 2px solid #666666;
+  margin: 10px;
 }
 
-/* line 428, ../sass/styles.sass */
+/* line 427, ../sass/styles.sass */
 .nicescroll-rails {
   border-radius: 5px;
 }
 
-/* line 433, ../sass/styles.sass */
+/* line 432, ../sass/styles.sass */
 #prox {
   width: 400px;
   height: 200px;
@@ -691,7 +691,7 @@ div.contenedor section#nuestrasOficinas .border {
   margin: 200px auto;
 }
 
-/* line 447, ../sass/styles.sass */
+/* line 446, ../sass/styles.sass */
 section {
   width: 1000px;
   font-family: Calibri;
@@ -701,15 +701,15 @@ section {
   *zoom: 1;
   margin: 0 auto;
 }
-/* line 457, ../sass/styles.sass */
+/* line 456, ../sass/styles.sass */
 section .whitecard, section #contacto {
   background-color: white;
   min-height: 200px;
   width: 510px;
   border-radius: 7px;
-  padding: 0 20px;
+  padding: 20px;
 }
-/* line 464, ../sass/styles.sass */
+/* line 463, ../sass/styles.sass */
 section .whiteh1, section #contacto h1 {
   font-size: 30px;
   padding: 22px 0px 0px;
@@ -717,30 +717,30 @@ section .whiteh1, section #contacto h1 {
   border-bottom-style: groove;
   min-height: 27px;
 }
-/* line 471, ../sass/styles.sass */
+/* line 470, ../sass/styles.sass */
 section .whitep, section #contacto p {
   padding: 10px 0;
 }
-/* line 475, ../sass/styles.sass */
+/* line 474, ../sass/styles.sass */
 section #galeria {
   width: 370px;
   height: 400px;
   float: left;
   margin-left: 40px;
 }
-/* line 480, ../sass/styles.sass */
+/* line 479, ../sass/styles.sass */
 section #galeria #picture {
   background-color: white;
   width: 350px;
   padding: 10px;
   border-radius: 7px 7px 0 0;
 }
-/* line 486, ../sass/styles.sass */
+/* line 485, ../sass/styles.sass */
 section #galeria #picture img {
   display: block;
   margin: 0 auto;
 }
-/* line 491, ../sass/styles.sass */
+/* line 490, ../sass/styles.sass */
 section #galeria #slider {
   background-color: white;
   width: 370px;
@@ -748,7 +748,7 @@ section #galeria #slider {
   margin: 0 auto;
   border-radius: 0 0 7px 7px;
 }
-/* line 498, ../sass/styles.sass */
+/* line 497, ../sass/styles.sass */
 section #galeria #slider .control, section #galeria #slider #prev, section #galeria #slider #next {
   width: 20px;
   height: 71px;
@@ -756,23 +756,23 @@ section #galeria #slider .control, section #galeria #slider #prev, section #gale
   background-color: transparent;
   cursor: pointer;
 }
-/* line 505, ../sass/styles.sass */
+/* line 504, ../sass/styles.sass */
 section #galeria #slider #prev {
   background: url(../img/flecha_izq.png) no-repeat right 15px;
 }
-/* line 508, ../sass/styles.sass */
+/* line 507, ../sass/styles.sass */
 section #galeria #slider #carousel {
   float: left;
 }
-/* line 511, ../sass/styles.sass */
+/* line 510, ../sass/styles.sass */
 section #galeria #slider #carousel img {
   margin: 0 5px;
 }
-/* line 513, ../sass/styles.sass */
+/* line 512, ../sass/styles.sass */
 section #galeria #slider #next {
   background: url(../img/flecha_der.png) no-repeat left 15px;
 }
-/* line 517, ../sass/styles.sass */
+/* line 516, ../sass/styles.sass */
 section #desarrollos {
   position: relative;
   float: right;
@@ -780,7 +780,7 @@ section #desarrollos {
   margin-right: 40px;
   font-size: 1.2em;
 }
-/* line 523, ../sass/styles.sass */
+/* line 522, ../sass/styles.sass */
 section #desarrollos .logo {
   float: right;
   -webkit-border-radius: 8px 8px 0 0;
@@ -794,7 +794,7 @@ section #desarrollos .logo {
   background: white;
   margin-right: 20px;
 }
-/* line 531, ../sass/styles.sass */
+/* line 530, ../sass/styles.sass */
 section #desarrollos .contenido {
   overflow: hidden;
   *zoom: 1;
@@ -807,29 +807,29 @@ section #desarrollos .contenido {
   -o-border-radius: 8px;
   border-radius: 8px;
 }
-/* line 537, ../sass/styles.sass */
+/* line 536, ../sass/styles.sass */
 section #desarrollos .contenido h1 {
   padding: 0px 35px 10px 310px;
   margin-bottom: 10px;
   text-align: center;
   border-bottom: 1px solid #333333;
 }
-/* line 542, ../sass/styles.sass */
+/* line 541, ../sass/styles.sass */
 section #desarrollos .contenido p {
   line-height: 1.3em;
 }
-/* line 544, ../sass/styles.sass */
+/* line 543, ../sass/styles.sass */
 section #desarrollos .contenido ul {
   list-style: square inside;
   padding: 0 0 0 12px;
 }
-/* line 548, ../sass/styles.sass */
+/* line 547, ../sass/styles.sass */
 section #desarrollos .contenido ul li {
   padding: 5px 0;
   float: left;
   min-width: 50%;
 }
-/* line 553, ../sass/styles.sass */
+/* line 552, ../sass/styles.sass */
 section #specifications {
   overflow: hidden;
   *zoom: 1;
@@ -846,33 +846,36 @@ section #specifications {
   -o-border-radius: 8px;
   border-radius: 8px;
 }
-/* line 563, ../sass/styles.sass */
+/* line 562, ../sass/styles.sass */
 section #specifications h1 {
   padding: 0px 35px 10px 310px;
   margin-bottom: 10px;
   text-align: center;
   border-bottom: 1px solid #333333;
 }
-/* line 568, ../sass/styles.sass */
+/* line 567, ../sass/styles.sass */
 section #specifications p {
   line-height: 1.3em;
 }
-/* line 570, ../sass/styles.sass */
+/* line 569, ../sass/styles.sass */
 section #specifications ul {
   list-style: square inside;
   padding: 0 0 0 12px;
 }
-/* line 574, ../sass/styles.sass */
+/* line 573, ../sass/styles.sass */
 section #specifications ul li {
   padding: 5px 0;
   float: left;
   min-width: 50%;
 }
-/* line 579, ../sass/styles.sass */
+/* line 578, ../sass/styles.sass */
 section #contacto {
-  height: 400px;
   float: right;
   margin: 0px 50px 0 0;
+}
+/* line 584, ../sass/styles.sass */
+section #contacto h1 {
+  padding-top: 0px;
 }
 /* line 591, ../sass/styles.sass */
 section #contacto form {
@@ -913,7 +916,7 @@ section #contacto form .row textarea {
   width: 80%;
   box-sizing: border-box;
   border-radius: 15px 0 0 15px;
-  height: 122px;
+  height: 100px;
   padding: 5px 5px;
   resize: none;
 }
