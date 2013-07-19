@@ -23,3 +23,13 @@ header > div.container > div#filtro > div > div > div#zona > ul, header > div.co
 header > div.container > div#filtro > div > div > div#zona > ul > li, header > div.container > div#filtro > div > div#tipo > ul > li {
   width: 180px;
 }
+
+/* line 21, ../sass/styles-ie7.sass */
+#scrollinterno article a:hover > span {
+  display: block;
+}
+/* line 24, ../sass/styles-ie7.sass */
+#scrollinterno article a > span {
+  display: none;
+  bottom: 30px;
+}

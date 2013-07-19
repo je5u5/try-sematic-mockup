@@ -319,64 +319,62 @@ footer
 
 					&:hover
 						background: #83684D
-	#scrollinterno
-		clear: both
-		height: 340px
-		margin: 50px 0 0 0
-		overflow: auto
-		font-size: 14px
 
-		article
-			clear: left
-			margin: 0 15px
-			padding: 15px
-			font-family: OpenSans
-			box-sizing: border-box
-			-moz-box-sizing: border-box
-			border-bottom: 2px solid black
-			overflow: auto
+#scrollinterno
+	@include clearfix
+	height: 340px
+	margin: 50px 0 0 0
+	font-size: 14px
 
-			&:first-of-type
-				border-top: 2px solid black
-			a
-				float: left
+	article
+		@include clearfix
+		margin: 0 15px
+		padding: 15px
+		font-family: "OpenSans"
+		border-bottom: 2px solid #666
+
+		&:first-of-type
+			border-top: 2px solid #666
+
+	
+		a
+			float: left
+			width: 185px
+			height: 132px
+			overflow: hidden
+			text-decoration: none
+			&:hover >span
+				bottom: 30px
+				transition-duration: $tiempo
+					
+			>span
+				background: $secundario
+				color: white
+				height: 30px
+				width: 100%
+				line-height: 28px
+				text-align: center
+				text-transform: uppercase
+				overflow: hidden
+				font-size: 12px
+				transition-duration: $tiempo
 				position: relative
-				cursor: pointer
-
-				img
-					width: 185px
-					height: 132px
-				>div
-					position: absolute
-					background: $secundario
-					color: white
-					bottom: 0
-					border: 0
-					margin: 0
-					height: 30px
-					width: 100%
-					line-height: 28px
-					text-align: center
-					text-transform: uppercase
-					overflow: hidden
-					font-size: 12px
-					transition-duration: $tiempo
-				&:hover
-					>div
-						transition-duration: $tiempo
-						height: 0
-			div
-				float: left
-				margin: 0 15px
-				h2
-					font-size: 22px
-					margin: 0 0 .5em 0
-				p
-					font-size: 16px
-					margin: 0 0 .5em 0
-				li
-					&:before
-						content: "- "
+				bottom: 0px
+				z-index: 99
+				display: block
+			
+		div
+			float: left
+			margin: 0 15px
+			h2
+				font-size: 22px
+				margin: 0 0 .5em 0
+			p
+				font-size: 16px
+				margin: 0 0 .5em 0
+			li
+				&:before
+					content: "- "
 // Nuestras-oficinas
 div.contenedor
 	section#nuestrasOficinas
@@ -475,27 +473,25 @@ section
 	//above classes to extend
 
 	#galeria
-		width: 410px
+		width: 370px
 		height: 400px
-		display: inline-block
-		vertical-align: bottom
-
+		float: left
+		margin-left: 40px
 		#picture
 			background-color: white
-			width: 370px
-			height: 310px
-			margin: 0 auto
+			width: 350px
+			padding: 10px
 			border-radius: 7px 7px 0 0
 
 			img
 				display: block
 				margin: 0 auto
-				padding: 13px 0 0 0
+				
 
 		#slider
 			background-color: white
 			width: 370px
-			height: 90px
+			height: 80px
 			margin: 0 auto
 			border-radius: 0 0 7px 7px
 
@@ -554,7 +550,31 @@ section
 					float: left
 					min-width: 50%
 
+	#specifications
+		@include clearfix
+		width: 500px
+		padding: 15px
+		background: white
+		float: right
+		position: relative
+		top: 160px
+		margin-right: 40px
+		@include border-radius(8px)
+		h1
+			padding: 0px 35px 10px 310px
+			margin-bottom: 10px
+			text-align: center
+			border-bottom: 1px solid #333
+		p
+			line-height: 1.3em
+		ul
+			list-style: square inside
+			padding: 0 0 0 12px
 
+			li
+				padding: 5px 0
+				float: left
+				min-width: 50%
 
 	#contacto
 		@extend .whitecard
@@ -628,6 +648,7 @@ section
 		float: left
 		position: absolute
 		bottom: 0px
+		margin-left: 40px
 
 		#placeslist
 			float: left
