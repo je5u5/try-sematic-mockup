@@ -110,7 +110,7 @@ $(document).ready(function(){
 
 			//$("body").css("background-image",src)
 
-			$('#mask').css({height: $(document).height(),width: $(document).width()})
+			$('#mask').css({height: $(window).height(),width: $(window).width()})
               .fadeIn('slow', function(){
 
               	  $('#imgbg').css('background-image', src);
@@ -118,5 +118,5 @@ $(document).ready(function(){
             });
 		}
 	});
-	$('#imgbg').css({height: $(document).height(),width: $(document).width()});
+	$('#imgbg').css({height: $(window).height(),width: $(window).width()});
 });

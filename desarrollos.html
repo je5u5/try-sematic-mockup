@@ -6,16 +6,18 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/styles.css"><!--[if lt IE 8]>
-    <link rel="stylesheet" href="css/styles-ie7.css"><![endif]--><!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="css/styles-ie7.css">
+    <script src="js/lte-ie7.js"></script><![endif]-->
     <script src="js/jquery-1.8.3.min.js"></script>
     <script src="js/jquery.nicescroll.min.js"></script>
     <script type="text/javascript" src="js/jcarousellite_1.0.1.min.js"></script>
     <script src="js/scripts.js"></script>
+    <!-- only IE --><!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/jquery-extra-selectors.js"></script>
+    <script src="js/selectivizr-min.js"></script><![endif]-->
   </head>
   <body>
-    <div id="mask"></div>
-    <div id="imgbg"></div>
     <header>
       <div class="container"><a id="logo" href="index.html"><img src="img/logo-good-house.png"></a>
         <div id="filtro"><a href="#" class="active">compra</a><a href="#">renta</a>
@@ -102,28 +104,24 @@
         </div>
         <div id="go"></div>
       </div>
-      <div id="places">
-        <div id="placesh1">
-          <div id="logos"><img src="http://placehold.it/150x145/87a0b5/ffffff" alt=""><span>Los Olivos</span></div>
+      <div id="desarrollos">
+        <div class="logo"><img src="http://placehold.it/150x145/87a0b5/ffffff" alt=""></div>
+        <div class="contenido">
+          <h1>Los Olivos</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod quis nostrud exercitation ullamco laboris nisi t aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate esse llum dolore eu fugiat nulla pariatur.</p>
+          <ul>
+            <li>lorem ipsum</li>
+            <li>lorem ipsum</li>
+            <li>lorem ipsum</li>
+            <li>lorem ipsum</li>
+            <li>lorem ipsum</li>
+            <li>lorem ipsum						</li>
+          </ul>
         </div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit, sed do eiusmod
-          quis nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate esse
-          cillum dolore eu fugiat nulla pariatur.
-        </p>
-        <ul>
-          <li>lorem ipsum</li>
-          <li>lorem ipsum</li>
-          <li>lorem ipsum</li>
-          <li>lorem ipsum</li>
-          <li>lorem ipsum</li>
-          <li>lorem ipsum</li>
-        </ul>
       </div>
     </section>
+    <div id="mask"></div>
+    <div id="imgbg"></div>
     <footer>
       <div>
         <p>Good-Haus, 2013. Todos los derechos reservados</p>

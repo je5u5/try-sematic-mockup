@@ -450,6 +450,8 @@ section
 	width: $sectionwidth
 	font-family: Calibri
 	font-size: 12px
+	position: relative
+	@include clearfix
 
 	margin: 0 auto
 
@@ -516,53 +518,43 @@ section
 				@extend .control
 				background: url(../img/flecha_der.png) no-repeat left 15px
 
-
-	#places
+	#desarrollos
+		position: relative
 		float: right
-		margin: 192px 50px 0 0
+		width: 520px
+		margin-right: 40px
+		font-size: 1.2em
+		.logo
+			float: right
+			@include border-radius(8px 8px 0 0)
+			width: 150px
+			height: 145px
+			padding: 15px
+			background: white
+			margin-right: 20px
+		.contenido
+			@include clearfix
+			width: 520px
+			padding: 15px
+			background: white
+			@include border-radius(8px)
+			h1
+				padding: 0px 35px 10px 310px
+				margin-bottom: 10px
+				text-align: center
+				border-bottom: 1px solid #333
+			p
+				line-height: 1.3em
+			ul
+				list-style: square inside
+				padding: 0 0 0 12px
 
-	#specifications
-		display: inline-block
-		vertical-align: bottom
+				li
+					padding: 5px 0
+					float: left
+					min-width: 50%
 
-	#specifications, #places
-		@extend .whitecard
-		font-size: $fontsize
-		font-family: $fontfamily
 
-		#logos
-			width: 180px
-			height: 170px
-			position: absolute
-			right: 45px
-			top: -165px
-			background-color: white
-			text-align: center
-			padding-top: 15px
-			font-family: "CaviarDreams"
-			border-radius: 5px 5px 0 0
-
-			img
-				display: block
-				margin: 0 auto
-			span
-				vertical-align: text-bottom
-				font-size: 25px
-
-		#placesh1
-			@extend .whiteh1
-			position: relative
-
-		p
-			@extend .whitep
-		ul
-			list-style: square inside
-			padding: 0 0 0 12px
-
-			li
-				padding: 5px 0
-				float: left
-				min-width: 50%
 
 	#contacto
 		@extend .whitecard
@@ -634,7 +626,8 @@ section
 		text-align: center
 		line-height: 32px
 		float: left
-		margin: 360px 0 0 50px
+		position: absolute
+		bottom: 0px
 
 		#placeslist
 			float: left
@@ -646,22 +639,22 @@ section
 			width: 160px
 
 		#back
-			width: 20px
-			height: 32px
+			width: 12px
+			height: 30px
 			float: left
 			background-color: transparent
 			cursor: pointer
-			background: url(../img/flecha_izq.png) no-repeat right 7px
-			background-size: 17px 20px
+			background: url(../img/flechas.png) center left no-repeat
+			margin-left: 5px
 
 		#go
-			width: 20px
-			height: 32px
+			width: 12px
+			height: 30px
 			float: right
 			background-color: transparent
 			cursor: pointer
-			background: url(../img/flecha_der.png) no-repeat right 7px
-			background-size: 17px 20px
+			margin-right: 5px
+			background: url(../img/flechas.png) center right no-repeat
 
 #mask
 	position: absolute

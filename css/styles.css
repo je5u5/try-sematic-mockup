@@ -700,36 +700,39 @@ section {
   width: 1000px;
   font-family: Calibri;
   font-size: 12px;
+  position: relative;
+  overflow: hidden;
+  *zoom: 1;
   margin: 0 auto;
 }
-/* line 457, ../sass/styles.sass */
-section .whitecard, section #specifications, section #places, section #contacto {
+/* line 459, ../sass/styles.sass */
+section .whitecard, section #contacto {
   background-color: white;
   min-height: 200px;
   width: 510px;
   border-radius: 7px;
   padding: 0 20px;
 }
-/* line 464, ../sass/styles.sass */
-section .whiteh1, section #specifications #placesh1, section #places #placesh1, section #contacto h1 {
+/* line 466, ../sass/styles.sass */
+section .whiteh1, section #contacto h1 {
   font-size: 30px;
   padding: 22px 0px 0px;
   border-bottom: 2px solid;
   border-bottom-style: groove;
   min-height: 27px;
 }
-/* line 471, ../sass/styles.sass */
-section .whitep, section #specifications p, section #places p, section #contacto p {
+/* line 473, ../sass/styles.sass */
+section .whitep, section #contacto p {
   padding: 10px 0;
 }
-/* line 475, ../sass/styles.sass */
+/* line 477, ../sass/styles.sass */
 section #galeria {
   width: 410px;
   height: 400px;
   display: inline-block;
   vertical-align: bottom;
 }
-/* line 481, ../sass/styles.sass */
+/* line 483, ../sass/styles.sass */
 section #galeria #picture {
   background-color: white;
   width: 370px;
@@ -737,13 +740,13 @@ section #galeria #picture {
   margin: 0 auto;
   border-radius: 7px 7px 0 0;
 }
-/* line 488, ../sass/styles.sass */
+/* line 490, ../sass/styles.sass */
 section #galeria #picture img {
   display: block;
   margin: 0 auto;
   padding: 13px 0 0 0;
 }
-/* line 493, ../sass/styles.sass */
+/* line 495, ../sass/styles.sass */
 section #galeria #slider {
   background-color: white;
   width: 370px;
@@ -751,7 +754,7 @@ section #galeria #slider {
   margin: 0 auto;
   border-radius: 0 0 7px 7px;
 }
-/* line 500, ../sass/styles.sass */
+/* line 502, ../sass/styles.sass */
 section #galeria #slider .control, section #galeria #slider #prev, section #galeria #slider #next {
   width: 20px;
   height: 71px;
@@ -759,91 +762,95 @@ section #galeria #slider .control, section #galeria #slider #prev, section #gale
   background-color: transparent;
   cursor: pointer;
 }
-/* line 507, ../sass/styles.sass */
+/* line 509, ../sass/styles.sass */
 section #galeria #slider #prev {
   background: url(../img/flecha_izq.png) no-repeat right 15px;
 }
-/* line 510, ../sass/styles.sass */
+/* line 512, ../sass/styles.sass */
 section #galeria #slider #carousel {
   float: left;
 }
-/* line 513, ../sass/styles.sass */
+/* line 515, ../sass/styles.sass */
 section #galeria #slider #carousel img {
   margin: 0 5px;
 }
-/* line 515, ../sass/styles.sass */
+/* line 517, ../sass/styles.sass */
 section #galeria #slider #next {
   background: url(../img/flecha_der.png) no-repeat left 15px;
 }
-/* line 520, ../sass/styles.sass */
-section #places {
+/* line 521, ../sass/styles.sass */
+section #desarrollos {
+  position: relative;
   float: right;
-  margin: 192px 50px 0 0;
+  width: 520px;
+  margin-right: 40px;
+  font-size: 1.2em;
 }
-/* line 524, ../sass/styles.sass */
-section #specifications {
-  display: inline-block;
-  vertical-align: bottom;
+/* line 527, ../sass/styles.sass */
+section #desarrollos .logo {
+  float: right;
+  -webkit-border-radius: 8px 8px 0 0;
+  -moz-border-radius: 8px 8px 0 0;
+  -ms-border-radius: 8px 8px 0 0;
+  -o-border-radius: 8px 8px 0 0;
+  border-radius: 8px 8px 0 0;
+  width: 150px;
+  height: 145px;
+  padding: 15px;
+  background: white;
+  margin-right: 20px;
 }
-/* line 528, ../sass/styles.sass */
-section #specifications, section #places {
-  font-size: 13px;
-  font-family: "Calibri";
+/* line 535, ../sass/styles.sass */
+section #desarrollos .contenido {
+  overflow: hidden;
+  *zoom: 1;
+  width: 520px;
+  padding: 15px;
+  background: white;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
 }
-/* line 533, ../sass/styles.sass */
-section #specifications #logos, section #places #logos {
-  width: 180px;
-  height: 170px;
-  position: absolute;
-  right: 45px;
-  top: -165px;
-  background-color: white;
+/* line 541, ../sass/styles.sass */
+section #desarrollos .contenido h1 {
+  padding: 0px 35px 10px 310px;
+  margin-bottom: 10px;
   text-align: center;
-  padding-top: 15px;
-  font-family: "CaviarDreams";
-  border-radius: 5px 5px 0 0;
+  border-bottom: 1px solid #333333;
 }
-/* line 545, ../sass/styles.sass */
-section #specifications #logos img, section #places #logos img {
-  display: block;
-  margin: 0 auto;
+/* line 546, ../sass/styles.sass */
+section #desarrollos .contenido p {
+  line-height: 1.3em;
 }
 /* line 548, ../sass/styles.sass */
-section #specifications #logos span, section #places #logos span {
-  vertical-align: text-bottom;
-  font-size: 25px;
-}
-/* line 552, ../sass/styles.sass */
-section #specifications #placesh1, section #places #placesh1 {
-  position: relative;
-}
-/* line 558, ../sass/styles.sass */
-section #specifications ul, section #places ul {
+section #desarrollos .contenido ul {
   list-style: square inside;
   padding: 0 0 0 12px;
 }
-/* line 562, ../sass/styles.sass */
-section #specifications ul li, section #places ul li {
+/* line 552, ../sass/styles.sass */
+section #desarrollos .contenido ul li {
   padding: 5px 0;
   float: left;
   min-width: 50%;
 }
-/* line 567, ../sass/styles.sass */
+/* line 559, ../sass/styles.sass */
 section #contacto {
   height: 400px;
   float: right;
   margin: 0px 50px 0 0;
 }
-/* line 579, ../sass/styles.sass */
+/* line 571, ../sass/styles.sass */
 section #contacto form {
   font-family: Calibri;
   font-size: 12px;
 }
-/* line 582, ../sass/styles.sass */
+/* line 574, ../sass/styles.sass */
 section #contacto form .row {
   padding: 0 0 11px 0;
 }
-/* line 585, ../sass/styles.sass */
+/* line 577, ../sass/styles.sass */
 section #contacto form .row label {
   width: 20%;
   display: block;
@@ -854,7 +861,7 @@ section #contacto form .row label {
   padding: 0 10px 0 0;
   box-sizing: border-box;
 }
-/* line 595, ../sass/styles.sass */
+/* line 587, ../sass/styles.sass */
 section #contacto form .row input {
   border: none;
   background-color: #eaedf4;
@@ -864,7 +871,7 @@ section #contacto form .row input {
   box-sizing: border-box;
   border-radius: 15px 0 0 15px;
 }
-/* line 604, ../sass/styles.sass */
+/* line 596, ../sass/styles.sass */
 section #contacto form .row textarea {
   border: none;
   font-family: Calibri;
@@ -877,7 +884,7 @@ section #contacto form .row textarea {
   padding: 5px 5px;
   resize: none;
 }
-/* line 616, ../sass/styles.sass */
+/* line 608, ../sass/styles.sass */
 section #contacto form button {
   background-color: #4c4849;
   color: white;
@@ -889,11 +896,11 @@ section #contacto form button {
   float: right;
   cursor: pointer;
 }
-/* line 626, ../sass/styles.sass */
+/* line 618, ../sass/styles.sass */
 section #contacto form button:hover {
   background-color: #605e5f;
 }
-/* line 629, ../sass/styles.sass */
+/* line 621, ../sass/styles.sass */
 section #controls {
   background-color: white;
   height: 32px;
@@ -902,41 +909,42 @@ section #controls {
   text-align: center;
   line-height: 32px;
   float: left;
-  margin: 360px 0 0 50px;
+  position: absolute;
+  bottom: 0px;
 }
-/* line 639, ../sass/styles.sass */
+/* line 632, ../sass/styles.sass */
 section #controls #placeslist {
   float: left;
   width: 160px;
   font-size: 18px;
 }
-/* line 644, ../sass/styles.sass */
+/* line 637, ../sass/styles.sass */
 section #controls span {
   float: left;
   width: 160px;
 }
-/* line 648, ../sass/styles.sass */
+/* line 641, ../sass/styles.sass */
 section #controls #back {
-  width: 20px;
-  height: 32px;
+  width: 12px;
+  height: 30px;
   float: left;
   background-color: transparent;
   cursor: pointer;
-  background: url(../img/flecha_izq.png) no-repeat right 7px;
-  background-size: 17px 20px;
+  background: url(../img/flechas.png) center left no-repeat;
+  margin-left: 5px;
 }
-/* line 657, ../sass/styles.sass */
+/* line 650, ../sass/styles.sass */
 section #controls #go {
-  width: 20px;
-  height: 32px;
+  width: 12px;
+  height: 30px;
   float: right;
   background-color: transparent;
   cursor: pointer;
-  background: url(../img/flecha_der.png) no-repeat right 7px;
-  background-size: 17px 20px;
+  margin-right: 5px;
+  background: url(../img/flechas.png) center right no-repeat;
 }
 
-/* line 666, ../sass/styles.sass */
+/* line 659, ../sass/styles.sass */
 #mask {
   position: absolute;
   top: 0;
@@ -948,7 +956,7 @@ section #controls #go {
   width: 100%;
 }
 
-/* line 675, ../sass/styles.sass */
+/* line 668, ../sass/styles.sass */
 #imgbg {
   position: absolute;
   z-index: -99;
