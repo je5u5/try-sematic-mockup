@@ -54,7 +54,6 @@
   font-style: normal;
 }
 
-/* line 50, ../sass/fonts.sass */
 .icon-twitter, .icon-linkedin, .icon-tumblr, .icon-github, .icon-pinterest, .icon-youtube, .icon-facebook, .icon-search {
   font-family: "icons";
   font-style: normal;
@@ -65,42 +64,34 @@
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 59, ../sass/fonts.sass */
 .icon-twitter:before {
   content: "\e001";
 }
 
-/* line 62, ../sass/fonts.sass */
 .icon-linkedin:before {
   content: "\e006";
 }
 
-/* line 65, ../sass/fonts.sass */
 .icon-tumblr:before {
   content: "\e007";
 }
 
-/* line 68, ../sass/fonts.sass */
 .icon-github:before {
   content: "\e00d";
 }
 
-/* line 71, ../sass/fonts.sass */
 .icon-pinterest:before {
   content: "\e00f";
 }
 
-/* line 74, ../sass/fonts.sass */
 .icon-youtube:before {
   content: "\e00a";
 }
 
-/* line 77, ../sass/fonts.sass */
 .icon-facebook:before {
   content: "\e004";
 }
 
-/* line 80, ../sass/fonts.sass */
 .icon-search:before {
   content: "\e000";
 }

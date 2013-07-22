@@ -54,14 +54,16 @@ header
 			display: block
 			height: 163px
 			width: 189px
-			margin: -63px 0 0 50px
+			margin: -63px 0 0 30px
 		#filtro
 			float: right
 			margin: -70px $navheight/2 0 0
 			height: $navheight/2
-			width: 480px
+			width: 535px
 			font-family: CaviarDreams
 			font-size: 14px
+			position: relative
+			z-index: 99999
 
 			.seleccionado
 				color: black
@@ -87,8 +89,8 @@ header
 					cursor: pointer
 				>div
 					float: left
-					width: 212px
-					background: white
+					width: 238px
+					background: white url(../img/flecha-combo.png) top right no-repeat
 					color: #AAA
 					padding: 0 3px
 					margin: 0 6px 0 0
@@ -104,7 +106,7 @@ header
 
 						ul
 							float: right
-							width: 212px
+							width: 238px
 							padding: 0 8px 0 0
 							box-sizing: border-box
 							-moz-box-sizing: border-box
@@ -140,7 +142,7 @@ header
 #socialmedia
 	float: right
 	height: $navheight/2
-	line-height: 75px
+	line-height: 50px
 	padding: 0 40px 0 0
 	text-align: right
 	width: 580px
@@ -150,7 +152,7 @@ header
 		color: black
 
 		i
-			font-size: 20px
+			font-size: 16px
 			margin: 0 10px 0 0
 
 // menu
@@ -164,7 +166,7 @@ nav
 	>ul
 		float: right
 		height: $navheight/2	
-		font-family: "CaviarDreamsBold"
+		font-family: "CaviarDreams"
 		margin: 0 25px 0 0
 		font-size: 16px
 
@@ -183,7 +185,7 @@ nav
 				width: 80px
 				text-transform: lowercase
 				text-decoration: none
-				&:hover
+				&:hover, &.active
 					color: $primario
 			ul
 				display: none
@@ -203,10 +205,10 @@ nav
 						color: black
 						text-shadow: 0 0.2em 0.2em #AAA
 						line-height: 1em
-						margin: 20px 0
+						margin: 10px 0
 						display: block
 
-						&:hover
+						&:hover, &.active
 							transition-duration: $tiempo
 							color: $primario 
 			&:hover
@@ -276,7 +278,7 @@ footer
 		float: left
 		font-size: 25px
 		padding: 15px
-		font-family: CaviarDreams
+		font-family: "CaviarDreams"
 		font-size: 25px
 		line-height: 20px
 		box-sizing: border-box
@@ -285,8 +287,8 @@ footer
 		float: right
 		height: auto
 		padding: 15px
-		font-family: OpenSans
-		font-size: 14px
+		font-family: "OpenSans"
+		font-size: 12px
 		box-sizing: border-box
 		-moz-box-sizing: border-box
 
@@ -294,7 +296,7 @@ footer
 			float: left
 			height: 20px
 			width: 100px
-			background: $primario
+			background: $primario url(../img/flecha-combo-02.png) top right no-repeat
 			color: white
 			cursor: pointer
 			box-sizing: border-box
@@ -309,9 +311,9 @@ footer
 				position: relative
 				z-index: 1
 				background: #F79B34
-				font-family: CaviarDreams
+				font-family: "CaviarDreams"
 				max-height: 200px
-				font-size: 14px
+				font-size: 12px
 				line-height: 20px
 
 				li
@@ -324,7 +326,8 @@ footer
 	@include clearfix
 	height: 340px
 	margin: 50px 0 0 0
-	font-size: 14px
+
+	
 
 	article
 		@include clearfix
@@ -367,14 +370,17 @@ footer
 			float: left
 			margin: 0 15px
 			h2
-				font-size: 22px
-				margin: 0 0 .5em 0
-			p
 				font-size: 16px
 				margin: 0 0 .5em 0
+			p
+				font-size: 13px
+				margin: 0 0 .5em 0
+				line-height: 1.3em
 			li
 				&:before
 					content: "- "
+					font-size: 13px
+					line-height: 1.4em
 // Nuestras-oficinas
 div.contenedor
 	section#nuestrasOficinas
@@ -409,7 +415,8 @@ div.contenedor
 
 			.telefonos
 				color: #666
-				font-size: 14px
+				font-size: 12px
+				line-height: 1.4em
 			.email
 				color: black
 				font-size: 12px
@@ -440,12 +447,12 @@ div.contenedor
 
 //vars
 $sectionwidth: 1000px
-$fontfamily: "Calibri"
+$fontfamily: "OpenSans"
 $fontsize: 13px
 //section
 section
 	width: $sectionwidth
-	font-family: Calibri
+	font-family: "OpenSans"
 	font-size: 12px
 	position: relative
 	@include clearfix
@@ -523,10 +530,12 @@ section
 			float: right
 			@include border-radius(8px 8px 0 0)
 			width: 150px
-			height: 145px
-			padding: 15px
+			height: 150px
+			padding: 15px 15px 0 15px
 			background: white
 			margin-right: 20px
+			position: relative
+			top: 10px
 		.contenido
 			@include clearfix
 			width: 520px
@@ -551,7 +560,7 @@ section
 
 	#specifications
 		@include clearfix
-		width: 500px
+		width: 510px
 		padding: 15px
 		background: white
 		float: right
@@ -582,20 +591,22 @@ section
 		margin: 0px 50px 0 0
 
 		h1
-			@extend .whiteh1
-			padding-top: 0px
+			font-size: 25px
+			padding: 0 0 15px 0
+			line-height: 20px
+			border-bottom: 2px solid #666
 
 		p
 			@extend .whitep
 
 		form
-			font-family: Calibri
+			font-family: "OpenSans"
 			font-size: 12px
 			.row
 				padding: 0 0 11px 0
 
 				label
-					width: 20%
+					width: 15%
 					display: block
 					float: left
 					height: 22px
@@ -607,25 +618,23 @@ section
 				input
 					border: none
 					background-color: #EAEDF4
-					width: 80%
+					width: 420px
 					height: 22px
 					text-indent: 5px
-					box-sizing: border-box
 					border-radius: 15px 0 0 15px
 
 				textarea
 					border: none
-					font-family: Calibri
+					font-family: "OpenSans"
 					font-size: 12px
 					background-color: #EAEDF4
-					width: 80%
-					box-sizing: border-box
+					width: 413px
 					border-radius: 15px 0 0 15px
 					height: 100px
 					padding: 5px 5px
 					resize: none
 
-			button
+			.enviar
 				background-color: #4C4849
 				color: white
 				display: block
@@ -635,6 +644,8 @@ section
 				border-radius: 15px
 				float: right
 				cursor: pointer
+				margin-right: 10px
+				@include box-shadow(-1px -3px 3px rgba(0, 0, 0, .5) inset, 0 2px 3px rgba(255, 255, 255, .8) inset)
 				&:hover
 					background-color: #605E5F
 
