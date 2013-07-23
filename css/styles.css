@@ -546,10 +546,11 @@ footer p:last-of-type a {
 div.contenedor section#nuestrasOficinas {
   float: right;
   width: 550px;
+  height: auto;
   margin: 0 50px 0 0;
   background: white;
   border-radius: 7px;
-  padding: 15px;
+  padding: 15px 15px 5px 15px;
   font-family: OpenSans;
   font-size: 12px;
   box-sizing: border-box;
@@ -564,13 +565,13 @@ div.contenedor section#nuestrasOficinas h1 {
   border-bottom: 2px solid #666666;
 }
 div.contenedor section#nuestrasOficinas p {
-  margin: 15px 0;
+  margin: 15px 0 18px;
 }
 div.contenedor section#nuestrasOficinas article {
   float: left;
   height: 113px;
   width: 230px;
-  margin: 10px 10px 10px 0;
+  margin: 10px 10px 20px 0;
   padding: 0 15px;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
