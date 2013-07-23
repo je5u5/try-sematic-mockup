@@ -21,7 +21,6 @@ function assignEvents() {
 			$("#zona").niceScroll().resize();
 			$("#tipo").niceScroll().resize();
 		}
-
 	}
 	
 	//Filtros - drop-down
@@ -42,6 +41,7 @@ function assignEvents() {
 		$("#zona li").off("click",unlock);
 		$("#zona li").on("click",changeZone);
 	}
+
 	function changeZone(){
 		$("#anyselector").html($(this).html());
 		$("#zona").removeClass("show");
@@ -75,18 +75,22 @@ function init_cover(){
 	$("body").append("<div class=whiteUp style='height: 0px; width: 100%;background: white;position: absolute;top: 0px;z-index: 10;'><div style='width: 100%;position: absolute;	background-color: white;height: 150px; bottom:-150px;'></div></div>");
 	$("body").append("<div class=whiteDown style='height: 100%; width: 100%;background: white;position: absolute;top: 150px;z-index: 10;'></div>");
 }	
+
 function cover(){
 	$(".whiteDown").animate({height:'100%'}, 500);
 	$(".whiteUp div").animate({height:'150px'}, 500);
 }
+
 function uncover(){
 	$(".whiteDown").animate({height:'0'}, 500);
 	$(".whiteUp div").animate({height:'0'}, 500);
 }
+
 function flasheo(){
 	init_cover();
 	uncover();
 }
+
 window.onload = flasheo;
 
 $(document).ready(function(){
@@ -102,13 +106,7 @@ $(document).ready(function(){
 		btnPrev: "#back",
 		visible: 1,
 		afterEnd: function (a){
-			//name = a.find("span").attr("class")
 			src = a.find("span").attr("title")
-
-			//$("#logos img").attr("src",src)
-			//$("#logos span").html(name)
-
-			//$("body").css("background-image",src)
 
 			$('#mask').css({height: $(window).height(),width: $(window).width()})
               .fadeIn('slow', function(){
@@ -119,4 +117,25 @@ $(document).ready(function(){
 		}
 	});
 	$('#imgbg').css({height: $(window).height(),width: $(window).width()});
+});
+
+//Contacto
+$(document).ready(function(){
+	$("#contacto form").submit(function () { 
+		check = $("#contacto form input[name=nombre]").val().trim().length;
+		if(!check) {return false;}
+			check = $("#contacto form input[name=mail]").val().trim().length;
+		if(!check) {return false;}
+			check = $("#contacto form input[name=telefono]").val().trim().length;
+		if(!check) {return false;}
+			check = $("#contacto form textarea[name=mensaje]").val().trim().length;
+		if(!check) {return false;}
+			return true;
+	});
+
+	//Ajuste para deshabilitar el link del contacto
+	isContacPage = location.href.indexOf("contacto.html")+1;
+	if(isContacPage){
+		$(".container a[href='contacto.html']").attr("href","javascript:");
+	}
 });
