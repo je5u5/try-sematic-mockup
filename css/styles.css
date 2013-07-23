@@ -293,7 +293,7 @@ header .container #filtro .active {
   float: right;
   height: 50px;
   line-height: 50px;
-  padding: 0 40px 0 0;
+  padding: 0 50px 0 0;
   text-align: right;
   width: 580px;
 }
@@ -303,7 +303,7 @@ header .container #filtro .active {
 }
 #socialmedia a i {
   font-size: 16px;
-  margin: 0 10px 0 0;
+  margin: 0 5px 0 0;
 }
 
 nav {
@@ -370,13 +370,13 @@ nav > ul > li:hover ul {
 
 footer {
   color: white;
-  overflow: auto;
+  overflow: hidden;
   font-family: OpenSans;
   font-size: 12px;
   text-shadow: 0 0.1em 0.2em #777777;
   position: absolute;
   bottom: 0px;
-  width: 100%;
+  width: 1000px;
 }
 footer div {
   width: 1000px;
