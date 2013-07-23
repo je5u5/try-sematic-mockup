@@ -448,6 +448,10 @@ footer p:last-of-type a {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
+#listado #ordenacion .deshabilitado {
+  color: #746e62;
+  background: #e57823 url(../img/flecha-combo-02-des.png) top right no-repeat;
+}
 #listado #ordenacion > div {
   float: left;
   height: 20px;

@@ -55,6 +55,7 @@ function assignEvents() {
  	function unlock2(){
 		$("#ordenSeleccionado").html($(this).html());
 		$("#ordenOp").removeClass("show");
+		$(".deshabilitado").removeClass("deshabilitado");
 		
 		$("#ordenacion>div span").last().click(dropDown);
 		//Filtros - tipos
