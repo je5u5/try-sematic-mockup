@@ -447,11 +447,13 @@ div.contenedor
 
 //vars
 $sectionwidth: 1000px
+$sectionheight: 400px
 $fontfamily: "OpenSans"
 $fontsize: 13px
 //section
 section
 	width: $sectionwidth
+	height: $sectionheight
 	font-family: "OpenSans"
 	font-size: 12px
 	position: relative
@@ -526,16 +528,18 @@ section
 		width: 520px
 		margin-right: 40px
 		font-size: 1.2em
+		top: 32px
 		.logo
 			float: right
 			@include border-radius(8px 8px 0 0)
 			width: 150px
-			height: 150px
+			height: 130px
 			padding: 15px 15px 0 15px
 			background: white
 			margin-right: 20px
+			margin-bottom: 20px
 			position: relative
-			top: 10px
+			top: 35px
 		.contenido
 			@include clearfix
 			width: 520px

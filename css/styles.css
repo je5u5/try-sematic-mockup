@@ -609,6 +609,7 @@ div.contenedor section#nuestrasOficinas .border {
 
 section {
   width: 1000px;
+  height: 400px;
   font-family: "OpenSans";
   font-size: 12px;
   position: relative;
@@ -681,6 +682,7 @@ section #desarrollos {
   width: 520px;
   margin-right: 40px;
   font-size: 1.2em;
+  top: 32px;
 }
 section #desarrollos .logo {
   float: right;
@@ -690,12 +692,13 @@ section #desarrollos .logo {
   -o-border-radius: 8px 8px 0 0;
   border-radius: 8px 8px 0 0;
   width: 150px;
-  height: 150px;
+  height: 130px;
   padding: 15px 15px 0 15px;
   background: white;
   margin-right: 20px;
+  margin-bottom: 20px;
   position: relative;
-  top: 10px;
+  top: 35px;
 }
 section #desarrollos .contenido {
   overflow: hidden;
