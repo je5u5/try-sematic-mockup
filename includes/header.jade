@@ -29,8 +29,11 @@ header
 					i.icon-tumblr
 		nav
 			ul
-				li 
-					a(href='#').active desarrollos
+				li
+					- if (ubi == "desarrollos")
+						a(href='#').active desarrollos
+					- else
+						a(href='#') desarrollos						
 					ul
 						li
 							a(href='desarrollos.html') Los Olivos
@@ -41,7 +44,10 @@ header
 						li
 							a(href='desarrollos.html') Ermita
 				li
-					a(href='#') corretaje
+					- if (ubi == "corretaje")
+						a(href='#').active corretaje
+					- else
+						a(href='#') corretaje
 					ul
 						li
 							a(href='compra-renta1.html') Compra
@@ -54,7 +60,10 @@ header
 				li
 					a(href='#') amigos
 				li
-					a(href='contacto.html') contacto
+					- if (ubi == "contacto")
+						a(href='contacto.html').active contacto
+					- else
+						a(href='contacto.html') contacto
 					ul
 						li
 							a(href='nuestras-oficinas.html') Nuestras oficinas
