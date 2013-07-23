@@ -642,7 +642,7 @@ section #galeria {
 section #galeria #picture {
   background-color: white;
   width: 350px;
-  padding: 10px;
+  padding: 16px 10px 14px;
   border-radius: 7px 7px 0 0;
 }
 section #galeria #picture img {
@@ -730,12 +730,12 @@ section #desarrollos .contenido ul li {
 section #specifications {
   overflow: hidden;
   *zoom: 1;
-  width: 510px;
+  width: 490px;
   padding: 15px;
   background: white;
   float: right;
   position: relative;
-  top: 160px;
+  top: 213px;
   margin-right: 40px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
