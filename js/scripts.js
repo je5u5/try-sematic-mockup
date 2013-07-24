@@ -121,21 +121,6 @@ $(document).ready(function(){
 });
 
 //Contacto
-/*
-$(document).ready(function(){
-	$("#contacto form").submit(function () { 
-		check = $("#contacto form input[name=nombre]").val().trim().length;
-		if(!check) {return false;}
-			check = $("#contacto form input[name=mail]").val().trim().length;
-		if(!check) {return false;}
-			check = $("#contacto form input[name=telefono]").val().trim().length;
-		if(!check) {return false;}
-			check = $("#contacto form textarea[name=mensaje]").val().trim().length;
-		if(!check) {return false;}
-			return true;
-	});
-});
-*/
 (function($,W,D)
 {
     var JQUERY4U = {};
