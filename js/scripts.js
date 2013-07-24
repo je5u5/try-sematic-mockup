@@ -144,7 +144,8 @@ $(document).ready(function(){
                     nombre: "Por favor, escriba su nombre.",
                     telefono: "Por favor, escriba su teléfono.",
                     mail: {
-                        required: "Por favor, ingrese una direccion de correo válida"
+                        required: "Por favor, ingrese una direccion de correo válida.",
+                        email: "Por favor, ingrese una direccion de correo válida."
                     },
                     mensaje: "Por favor, escriba su mensaje."
                 },
