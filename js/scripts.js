@@ -134,9 +134,4 @@ $(document).ready(function(){
 			return true;
 	});
 
-	//Ajuste para deshabilitar el link del contacto
-	isContacPage = location.href.indexOf("contacto.html")+1;
-	if(isContacPage){
-		$(".container a[href='contacto.html']").attr("href","javascript:");
-	}
 });
