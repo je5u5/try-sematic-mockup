@@ -11,6 +11,7 @@
     <script src="js/jquery-1.8.3.min.js"></script>
     <script src="js/jquery.nicescroll.min.js"></script>
     <script type="text/javascript" src="js/jcarousellite_1.0.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/scripts.js"></script>
     <!-- only IE --><!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -100,19 +101,19 @@
         </p>
         <form>
           <div class="row">
-            <label>Nombre:</label>
-            <input name="nombre">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre">
           </div>
           <div class="row">
-            <label>E-mail:</label>
-            <input name="mail">
+            <label for="mail">E-mail:</label>
+            <input type="text" name="mail">
           </div>
           <div class="row">
-            <label>Teléfono:</label>
-            <input name="telefono">
+            <label for="telefono">Teléfono:</label>
+            <input type="text" name="telefono">
           </div>
           <div class="row">
-            <label>Mensaje:</label>
+            <label for="mensaje">Mensaje:</label>
             <textarea name="mensaje"></textarea>
           </div>
           <input type="submit" value="Enviar" class="enviar">

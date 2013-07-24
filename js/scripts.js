@@ -121,6 +121,7 @@ $(document).ready(function(){
 });
 
 //Contacto
+/*
 $(document).ready(function(){
 	$("#contacto form").submit(function () { 
 		check = $("#contacto form input[name=nombre]").val().trim().length;
@@ -133,5 +134,45 @@ $(document).ready(function(){
 		if(!check) {return false;}
 			return true;
 	});
-
 });
+*/
+(function($,W,D)
+{
+    var JQUERY4U = {};
+
+    JQUERY4U.UTIL =
+    {
+        setupFormValidation: function()
+        {
+            //form validation rules
+            $("#contacto form").validate({
+                rules: {
+                    nombre: "required",
+                    telefono: "required",
+                    mail: {
+                        required: true,
+                        email: true
+                    },
+                    mensaje: "required"
+                },
+                messages: {
+                    nombre: "Por favor, escriba su nombre.",
+                    telefono: "Por favor, escriba su teléfono.",
+                    mail: {
+                        required: "Por favor, ingrese una direccion de correo válida"
+                    },
+                    mensaje: "Por favor, escriba su mensaje."
+                },
+                submitHandler: function(form) {
+                    form.submit();
+                }
+            });
+        }
+    }
+
+    //when the dom has loaded setup form validation rules
+    $(D).ready(function($) {
+        JQUERY4U.UTIL.setupFormValidation();
+    });
+
+})(jQuery, window, document);

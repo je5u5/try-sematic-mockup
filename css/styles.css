@@ -614,7 +614,7 @@ div.contenedor section#nuestrasOficinas .border {
 
 section {
   width: 1000px;
-  height: 400px;
+  min-height: 400px;
   font-family: "OpenSans";
   font-size: 12px;
   position: relative;
@@ -796,6 +796,11 @@ section #contacto form .row label {
   padding: 0 10px 0 0;
   box-sizing: border-box;
 }
+section #contacto form .row label.error {
+  width: auto;
+  float: none;
+  height: 16px;
+}
 section #contacto form .row input {
   border: none;
   background-color: #eaedf4;
@@ -809,7 +814,7 @@ section #contacto form .row textarea {
   font-family: "OpenSans";
   font-size: 12px;
   background-color: #eaedf4;
-  width: 413px;
+  width: 410px;
   border-radius: 15px 0 0 15px;
   height: 100px;
   padding: 5px 5px;

@@ -456,7 +456,7 @@ $fontsize: 13px
 //section
 section
 	width: $sectionwidth
-	height: $sectionheight
+	min-height: $sectionheight
 	font-family: "OpenSans"
 	font-size: 12px
 	position: relative
@@ -621,6 +621,10 @@ section
 					text-align: right
 					padding: 0 10px 0 0
 					box-sizing: border-box
+				label.error
+					width: auto
+					float: none
+					height: 16px
 
 				input
 					border: none
@@ -635,7 +639,7 @@ section
 					font-family: "OpenSans"
 					font-size: 12px
 					background-color: #EAEDF4
-					width: 413px
+					width: 410px
 					border-radius: 15px 0 0 15px
 					height: 100px
 					padding: 5px 5px

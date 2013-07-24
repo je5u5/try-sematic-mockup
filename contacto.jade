@@ -14,16 +14,16 @@ html
 					o cualquier tipo de comentario al respecto.
 				form
 					.row
-						label Nombre:
-						input(name="nombre")
+						label(for="nombre") Nombre:
+						input(type="text",name="nombre")
 					.row
-						label E-mail:
-						input(name="mail")
+						label(for="mail") E-mail:
+						input(type="text",name="mail")
 					.row
-						label Teléfono:
-						input(name="telefono")
+						label(for="telefono") Teléfono:
+						input(type="text",name="telefono")
 					.row
-						label Mensaje:
+						label(for="mensaje") Mensaje:
 						textarea(name="mensaje")
 					input(type="submit", value="Enviar").enviar
 		include includes/footer
