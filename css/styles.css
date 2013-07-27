@@ -785,6 +785,7 @@ section #contacto form {
 }
 section #contacto form .row {
   padding: 0 0 11px 0;
+  position: relative;
 }
 section #contacto form .row label {
   width: 15%;
@@ -800,6 +801,9 @@ section #contacto form .row label.error {
   width: auto;
   float: none;
   height: 16px;
+  position: absolute;
+  top: 0;
+  right: 4px;
 }
 section #contacto form .row input {
   border: none;
