@@ -152,6 +152,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   content: "\e000";
 }
 
+html, body {
+  height: 100%;
+}
+
+#wrapper {
+  min-height: 100%;
+}
+#wrapper section {
+  overflow: auto;
+  padding-bottom: 50px;
+}
+
+footer {
+  position: relative;
+  margin-top: -50px;
+  height: 50px;
+  clear: both;
+}
+
+body:before {
+  content: "";
+  height: 100%;
+  float: left;
+  width: 0;
+  margin-top: -32767px;
+}
+
 .show {
   display: block !important;
 }
@@ -374,16 +401,11 @@ footer {
   font-family: OpenSans;
   font-size: 12px;
   text-shadow: 0 0.1em 0.2em #777777;
-  position: absolute;
-  bottom: 0px;
-  width: 1000px;
-}
-footer div {
   width: 1000px;
   margin: 0 auto;
 }
 footer p {
-  padding: 10px 0;
+  line-height: 50px;
 }
 footer p:first-of-type {
   float: left;

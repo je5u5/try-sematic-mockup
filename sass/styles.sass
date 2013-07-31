@@ -14,6 +14,30 @@ $tiempo: 200ms
 @import "compass/typography"
 @import "fonts"
 
+// nasty hack para que el footer siempre esté hasta abajo
+html, body
+	height: 100%
+
+#wrapper
+	min-height: 100%
+
+	section
+		overflow: auto
+		padding-bottom: 50px // mismo alto que el footer
+
+footer
+	position: relative
+	margin-top: -50px // mimo alto que el footer, pero negativo
+	height: 50px
+	clear: both
+
+body:before // Opera fix
+	content: ""
+	height: 100%
+	float: left
+	width: 0
+	margin-top: -32767px
+
 // utils
 .show
 	display: block !important
@@ -222,14 +246,13 @@ footer
 	font-family: OpenSans
 	font-size: 12px
 	text-shadow: 0 0.1em 0.2em #777
-	position: absolute
-	bottom: 0px
+	//position: absolute
+	//bottom: 0px
 	width: $contentwidth
-	div
-		width: $contentwidth
-		margin: 0 auto
+	margin: 0 auto
+		
 	p
-		padding: 10px 0
+		line-height: 50px
 		&:first-of-type
 			float: left
 		&:last-of-type
